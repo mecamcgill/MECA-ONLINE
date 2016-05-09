@@ -116,7 +116,7 @@ a > img {
 	color:#CDCBCB;
 }
 .lgray-bg{
-	background:#F7F7F7;
+	background:#ebe8e8;
 }
 .dgray-bg{
 	background:#454545;
@@ -188,7 +188,15 @@ i, em, .italic{
 iframe{
 	border:0;
 }
-
+.radius1
+{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+.radius2
+{
+    border-radius: 50px;
+}
 /* ==================================================
    2. Typography
 ================================================== */
@@ -941,16 +949,16 @@ html[xmlns] .slides {
 	text-decoration:none;
 }
 .flexslider .flex-prev, .flexslider .flex-next{
-	background:rgba(34,34,34,.4);
-	color:#F9F9F9;
+	background:rgba(45,123,141,.0);
+	color:rgb(45,123,141);
 	margin-bottom:10px;
 	position:absolute;
 	top:50%;
 	right:10px;
-	font-size:14px;
+	font-size:40px;
 	line-height:25px;
-	width:25px;
-	height:25px;
+	width:40px;
+	height:20px;
   	font-style: normal;
   	font-weight: normal;
   	-webkit-font-smoothing: antialiased;
@@ -961,7 +969,7 @@ html[xmlns] .slides {
 	margin-top:-13px;
 }
 .flexslider .flex-prev:hover, .flexslider .flex-next:hover{
-	background:rgba(34,34,34,.7);
+	color:#1e5b69;
 }
 .flexslider .flex-prev{
 	left:10px;
@@ -969,10 +977,12 @@ html[xmlns] .slides {
 }
 .flexslider .flex-prev:before{
   content: "<";
+    font-size:40px;
 }
 .flexslider .flex-next:before{
   content: ">";
   content: ">";
+    font-size:40px;
 }
 .hero-slider.flexslider .flex-prev, .hero-slider.flexslider .flex-next{
 	height:70px;
@@ -2135,26 +2145,7 @@ body.boxed .body{
 .site-footer .social-icons-rounded a:hover{
 	color:#fff;
 }
-#back-to-top{
-	position:fixed;
-	right:-40px;
-	bottom:15px;
-	background:rgba(0,0,0,.8);
-	width:40px;
-	height:40px;
-	text-align:center;
-	color:#fff;
-	line-height:43px;
-	overflow:hidden;
-	font-size:17px;
-	display:block;
-	z-index:1111;
-	-webkit-transition:all 0.3s ease 0.2s;
-	-moz-transition:all 0.3s ease 0.2s;
-	-ms-transition:all 0.3s ease 0.2s;
-	-o-transition:all 0.3s ease 0.2s;
-	transition:all 0.3s ease 0.1s;
-}
+
 .cta{
 	border:1px solid #E6E6E6;
 	padding:25px;
