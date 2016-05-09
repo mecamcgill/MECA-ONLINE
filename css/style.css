@@ -6,12 +6,13 @@ Last change:	12/15/15
 Author:	imithemes 
 -------------------------------------------------------------------*/
 /* Stylesheets and Google fonts import */
-@import url("font-awesome.css");
-@import url("line-icons.css");
-@import url("animations.css");
+@import url("css/font-awesome.css");
+@import url("css/line-icons.css");
+@import url("css/animations.css");
 @import url(http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Dosis);
+@import url(https://fonts.googleapis.com/css?family=Chewy);
 
 
 /*------------------------------------------------------------------
