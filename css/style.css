@@ -941,7 +941,7 @@ html[xmlns] .slides {
 	text-decoration:none;
 }
 .flexslider .flex-prev, .flexslider .flex-next{
-	background:rgba(34,34,34,.7);
+	background:rgba(34,34,34,.4);
 	color:#F9F9F9;
 	margin-bottom:10px;
 	position:absolute;
@@ -951,7 +951,6 @@ html[xmlns] .slides {
 	line-height:25px;
 	width:25px;
 	height:25px;
-  	font-family: FontAwesome;
   	font-style: normal;
   	font-weight: normal;
   	-webkit-font-smoothing: antialiased;
@@ -962,17 +961,18 @@ html[xmlns] .slides {
 	margin-top:-13px;
 }
 .flexslider .flex-prev:hover, .flexslider .flex-next:hover{
-	background:rgba(34,34,34,1);
+	background:rgba(34,34,34,.7);
 }
 .flexslider .flex-prev{
 	left:10px;
 	right:auto;
 }
 .flexslider .flex-prev:before{
-  content: "\f104";
+  content: "<";
 }
 .flexslider .flex-next:before{
-  content: "\f105";
+  content: ">";
+  content: ">";
 }
 .hero-slider.flexslider .flex-prev, .hero-slider.flexslider .flex-next{
 	height:70px;
