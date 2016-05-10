@@ -116,7 +116,7 @@ a > img {
 	color:#CDCBCB;
 }
 .lgray-bg{
-	background:#ebe8e8;
+	background:#F7F7F7;
 }
 .dgray-bg{
 	background:#454545;
@@ -188,15 +188,7 @@ i, em, .italic{
 iframe{
 	border:0;
 }
-.radius1
-{
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-}
-.radius2
-{
-    border-radius: 50px;
-}
+
 /* ==================================================
    2. Typography
 ================================================== */
