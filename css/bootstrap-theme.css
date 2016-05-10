@@ -79,6 +79,7 @@ a:focus, .btn:focus,
 }
 .btn-primary {
   border-color: #2b669a;
+    text-shadow: none;
 }
 .btn-primary:hover,
 .btn-primary:focus {
@@ -192,8 +193,7 @@ a:focus, .btn:focus,
   overflow:hidden;
 }
 .btn-primary:after{
-	content:"\f178";
-	font:normal normal normal 14px/1 FontAwesome;
+	content:"<";
 	font-size:inherit;
 	text-rendering:auto;
 	-webkit-font-smoothing:antialiased;
