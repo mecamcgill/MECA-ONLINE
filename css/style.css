@@ -699,6 +699,11 @@ p.meta-data{
 	z-index:1;
 	display:inline-block;
 	max-width:100%;
+    width: 120px;
+    width:120px;
+}
+.img-circle {
+    border-radius: 50%;
 }
 .format-gallery .media-box{
 	display:block;
@@ -987,7 +992,7 @@ html[xmlns] .slides {
 }
 .flexslider .flex-prev, .flexslider .flex-next{
 	background:rgba(45,123,141,.0);
-	color:#a78a6b;
+	color:floralwhite;
 	margin-bottom:10px;
 	position:absolute;
 	top:50%;
@@ -1006,7 +1011,7 @@ html[xmlns] .slides {
 	margin-top:-13px;
 }
 .flexslider .flex-prev:hover, .flexslider .flex-next:hover{
-	color:#ceb9a2;
+	color:white;
 }
 .flexslider .flex-prev{
 	left:10px;
