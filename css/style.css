@@ -750,7 +750,8 @@ p.meta-data{
 	margin:-22px 0 0 -22px;
 }
 .img-thumbnail img:hover, .img-thumbnail:hover{
-	opacity:.9
+	opacity:.9;
+    border-radius: 100%;
 }
 .media-box:hover .zoom, .media-box:hover .expand{
 	opacity:1;
