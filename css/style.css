@@ -1,8 +1,4 @@
 
-/* Stylesheets and Google fonts import */
-@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto300,400,700|Dosis|Shadows+Into+Light|Indie+Flower);
-
-
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -32,6 +28,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -131,6 +128,7 @@ strong, .strong {
 }
 p {
 	margin: 0 0 20px;
+    font-size: 12px;
 }
 i, em, .italic{
 	font-style:italic;
@@ -285,7 +283,7 @@ h6{
 	color:#333;
 	font-weight:400;
 	line-height:1.5em;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 h1{
 	font-size:42px;
@@ -307,7 +305,7 @@ h4{
 }
 h5{
 	font-size:15px;
-	font-family:"Lato", sans-serif;
+font-family: 'Lato', sans-serif;
 }
 h6{
 	font-size:13px;
@@ -336,7 +334,10 @@ h1 .label, h2 .label, h3 .label, h4 .label, h5 .label, h6 .label{
     opacity: 0.6;
     color: #302323 important!;
 }
-
+p{
+        letter-spacing: 0.5px;
+    font-size: 1em;
+}
 .huge{
 	font-size:10em;
 }
@@ -687,9 +688,8 @@ label {
 	font-size:12px;
 	line-height: 16px;
 	display:block;
-	font-weight:400;
 	text-transform:uppercase;
-	font-family:"Lato", sans-serif;
+font-family: 'Lato', sans-serif;
 }
 .meta-data a{
 	color:#999;
@@ -784,7 +784,7 @@ p.meta-data{
 }
 .img-thumbnail img:hover, .img-thumbnail:hover{
 	opacity:.9;
-    border-radius: 100%;
+
 }
 .media-box:hover .zoom, .media-box:hover .expand{
 	opacity:1;
@@ -1274,9 +1274,8 @@ html[xmlns] .slides {
 body{
 	background-color:#fff;
 	color:#898989;
-	font-size:15px;
-	font-weight:400;
-	font-family:"Lato", sans-serif;
+	font-size:1em;
+font-family: 'Lato', sans-serif;
 	line-height:1.55em;
 	background-attachment:fixed;
 	overflow-x:hidden;
@@ -1404,7 +1403,7 @@ body.boxed .body{
 	float:left;
 	margin-left:25px;
 	margin-top:12px;
-	font-family:"Lato", sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 }
 .dd-menu > li > a{
 	display:block;
@@ -1729,7 +1728,7 @@ body.boxed .body{
 	font-size:25px;
 	color:#fff;
 	display:block;
-	font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 .featured-texts{
 	border-top:1px solid #e6e6e6;
@@ -1753,7 +1752,7 @@ body.boxed .body{
 	font-size:30px;
 	color:#333;
 	display:block;
-	font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 
 .cause-thumb{
@@ -2031,7 +2030,7 @@ body.boxed .body{
 	margin-bottom:15px;
 }
 .testimonial-block blockquote p{
-	font-family:"Lora",serif;
+font-family: 'Josefin Sans', sans-serif;
 	font-style: normal;
 	font-size:18px;
 	line-height:28px;
@@ -2574,7 +2573,7 @@ body.boxed .body{
 .comments li h5 span{
 	color:#999;
 	font-weight:400;
-	font-family:"Lora", serif;
+font-family: 'Josefin Sans', sans-serif;
 }
 .post-comment-content{
 	padding-left:100px;
@@ -2843,7 +2842,7 @@ body.boxed .body{
 	font-size:14px;
 	margin-bottom:26px;
 	letter-spacing:1px;
-	font-family:"Lato",sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 }
 .footer_widget h4.widgettitle:before, .footer_widget h4.widgettitle:after{
 	display:none;
