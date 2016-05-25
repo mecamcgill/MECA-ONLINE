@@ -253,14 +253,14 @@ background: rgba(255 ,255,255,0.6);
 #englishb:hover,
 #koreanb:hover{
 background: rgba(255 ,255,255,0.6);
-     color:red;
+     color:#a2978c;;
 }
 .languageswitchb {
         color:black;
 }
 .languageswitchb:hover{
-     color:red;
-    border-color:red important!;
+     color:#a2978c;
+    border-color:#a2978c important!;
 
 
 }
@@ -1313,7 +1313,7 @@ body.boxed .body{
 }
 .site-header-wrapper{
 	width:100%;
-    margin-top: 15px;
+    padding: 0.2em;
 	position:absolute;
 	z-index:999;
 }
@@ -1566,6 +1566,16 @@ font-family: 'Josefin Sans', sans-serif;
 	min-height:40px;
 	color:#fff;
 	background:#333;
+}
+#whitebg{
+    color:#302323;
+}
+#whitebg:hover{
+    color:#a2978c;
+}
+#whitebg.current{
+    color:#a2978c;
+
 }
 .topbar .header-info-col{
 	border:0;
