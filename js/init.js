@@ -1,12 +1,12 @@
 jQuery(function($){
 	"use strict";
 
-var BORNTOGIVE = window.BORNTOGIVE || {};
+var MECA = window.MECA || {};
 
 /* ==================================================
 	Contact Form Validations
 ================================================== */
-	BORNTOGIVE.ContactForm = function(){
+	MECA.ContactForm = function(){
 		$('.contact-form').each(function(){
 			var formInstance = $(this);
 			formInstance.submit(function(){
@@ -44,7 +44,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
 	Scroll Functions
 ================================================== */
-	BORNTOGIVE.scrollToTop = function(){
+	MECA.scrollToTop = function(){
 			var windowWidth = $(window).width(),
 			didScroll = false;
 	
@@ -82,7 +82,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Accordion
 ================================================== */
-	BORNTOGIVE.accordion = function(){
+	MECA.accordion = function(){
 		var accordion_trigger = $('.accordion-heading.accordionize');
 		
 		accordion_trigger.delegate('.accordion-toggle','click', function(event){
@@ -102,7 +102,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Toggle
 ================================================== */
-	BORNTOGIVE.toggle = function(){
+	MECA.toggle = function(){
 		var accordion_trigger_toggle = $('.accordion-heading.togglize');
 		
 		accordion_trigger_toggle.delegate('.accordion-toggle','click', function(event){
@@ -120,7 +120,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Tooltip
 ================================================== */
-	BORNTOGIVE.toolTip = function(){ 
+	MECA.toolTip = function(){ 
 		$('a[data-toggle=tooltip]').tooltip(); 
 		$('a[data-toggle=tooltip]').tooltip();
 		$('a[data-toggle=popover]').popover({html:true}).on("click", function(e) { 
@@ -131,7 +131,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Twitter Widget
 ================================================== */
-	BORNTOGIVE.TwitterWidget = function() {
+	MECA.TwitterWidget = function() {
 		$('.twitter-widget').each(function(){
 			var twitterInstance = $(this); 
 			var twitterTweets = twitterInstance.attr("data-tweets-count") ? twitterInstance.attr("data-tweets-count") : "1"
@@ -146,7 +146,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Hero Flex Slider
 ================================================== */
-	BORNTOGIVE.heroflex = function() {
+	MECA.heroflex = function() {
 		$('.heroflex').each(function(){
 				var carouselInstance = $(this); 
 				var carouselAutoplay = carouselInstance.attr("data-autoplay") == 'yes' ? true : false
@@ -177,7 +177,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Flex Slider
 ================================================== */
-	BORNTOGIVE.galleryflex = function() {
+	MECA.galleryflex = function() {
 		$('.galleryflex').each(function(){
 				var carouselInstance = $(this); 
 				var carouselAutoplay = carouselInstance.attr("data-autoplay") == 'yes' ? true : false
@@ -209,7 +209,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Owl Carousel
 ================================================== */
-	BORNTOGIVE.OwlCarousel = function() {
+	MECA.OwlCarousel = function() {
 		$('.owl-carousel').each(function(){
 				var carouselInstance = $(this); 
 				var carouselColumns = carouselInstance.attr("data-columns") ? carouselInstance.attr("data-columns") : "1"
@@ -243,7 +243,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Magnific Popup
 ================================================== */
-	BORNTOGIVE.Magnific = function() {
+	MECA.Magnific = function() {
 		jQuery('.format-gallery').each(function(){
 			$(this).magnificPopup({
 				delegate: 'a.popup-image', // child items selector, by clicking on it popup will open
@@ -266,7 +266,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Animated Counters
 ================================================== */
-	BORNTOGIVE.Counters = function() {
+	MECA.Counters = function() {
 		$('.counters').each(function () {
 			$(".timer .count").appear(function() {
 			var counter = $(this).html();
@@ -282,7 +282,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    SuperFish menu
 ================================================== */
-	BORNTOGIVE.SuperFish = function() {
+	MECA.SuperFish = function() {
 		$('.sf-menu').superfish({
 			  delay: 200,
 			  animation: {opacity:'show', height:'show'},
@@ -297,14 +297,14 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Header Functions
 ================================================== */
-	BORNTOGIVE.StickyHeader = function() {
+	MECA.StickyHeader = function() {
 		$(".header-style2 .site-header").sticky();
 		$(".header-style3 .fw-menu-wrapper").sticky();
 	}
 /* ==================================================
 	Responsive Nav Menu
 ================================================== */
-	BORNTOGIVE.MobileMenu = function() {
+	MECA.MobileMenu = function() {
 		// Responsive Menu Events
 		$('#menu-toggle').on("click", function(){
 			$(this).toggleClass("opened");
@@ -325,7 +325,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    IsoTope Portfolio
 ================================================== */
-		BORNTOGIVE.IsoTope = function() {	
+		MECA.IsoTope = function() {	
 		$("ul.sort-source").each(function() {
 			var source = $(this);
 			var destination = $("ul.sort-destination[data-sort-id=" + $(this).attr("data-sort-id") + "]");
@@ -392,7 +392,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
    Pricing Tables
 ================================================== */
 	var $tallestCol;
-	BORNTOGIVE.pricingTable = function(){
+	MECA.pricingTable = function(){
 		$('.pricing-table').each(function(){
 			$tallestCol = 0;
 			$(this).find('> div .features').each(function(){
@@ -405,7 +405,7 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
 /* ==================================================
    Circle Progress
 ================================================== */
-	BORNTOGIVE.CProgress = function() {
+	MECA.CProgress = function() {
 		$('.cProgress').each(function(){
 			var cproInstance = $(this); 
 			var cprocomplete = cproInstance.attr("data-complete") ? cproInstance.attr("data-complete") : "0.1"
@@ -426,23 +426,23 @@ var BORNTOGIVE = window.BORNTOGIVE || {};
    Init Functions
 ================================================== */
 $(document).ready(function(){
-	BORNTOGIVE.ContactForm();
-	BORNTOGIVE.scrollToTop();
-	BORNTOGIVE.accordion();
-	BORNTOGIVE.toggle();
-	BORNTOGIVE.toolTip();
-	BORNTOGIVE.TwitterWidget();
-	BORNTOGIVE.OwlCarousel();
-	BORNTOGIVE.Magnific();
-	BORNTOGIVE.SuperFish();
-	BORNTOGIVE.Counters();
-	BORNTOGIVE.IsoTope();
-	BORNTOGIVE.StickyHeader();
-	BORNTOGIVE.heroflex();
-	BORNTOGIVE.galleryflex();
-	BORNTOGIVE.pricingTable();
-	BORNTOGIVE.MobileMenu();
-	BORNTOGIVE.CProgress();
+	MECA.ContactForm();
+MECA.scrollToTop();
+	MECA.accordion();
+	MECA.toggle();
+	MECA.toolTip();
+	MECA.TwitterWidget();
+	MECA.OwlCarousel();
+	MECA.Magnific();
+	MECA.SuperFish();
+	MECA.Counters();
+	MECA.IsoTope();
+	MECA.StickyHeader();
+	MECA.heroflex();
+	MECA.galleryflex();
+	MECA.pricingTable();
+	MECA.MobileMenu();
+	MECA.CProgress();
 	$('.selectpicker').selectpicker({container:'body'});
 	WWHGetter();
 	// apply matchHeight to each item container's items
@@ -503,7 +503,7 @@ $(window).load(function(){
 	$(".additional-images .owl-carousel .item-video").each(function(){
 		$(this).append("<span class='icon'><i class='fa fa-play'></i></span>");
 	});
-	BORNTOGIVE.StickyHeader();
+	MECA.StickyHeader();
 	$('.carousel-wrapper').css('background','none');
 	
 });
@@ -579,7 +579,7 @@ if(!Modernizr.touch) {
 function parallaxInit() {
 	$('.parallax1').parallax("50%", 0.1);
 	$('.parallax2').parallax("50%", 0.1);
-	$('.parallax3').parallax("100%", 0.8);
+	$('.parallax3').parallax("50%", 0.8);
 	$('.parallax4').parallax("50%", 0.1);
 	$('.parallax5').parallax("50%", 0.1);
 	$('.parallax6').parallax("50%", 0.1);

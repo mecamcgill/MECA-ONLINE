@@ -1287,9 +1287,9 @@ html[xmlns] .slides {
 body{
 	background-color:#fff;
 	color:#898989;
-	font-size:1em;
+	font-size:0.94em;
 font-family: 'Lato', sans-serif;
-	line-height:1.55em;
+	line-height:1.75em;
 	background-attachment:fixed;
 	overflow-x:hidden;
 }
@@ -3275,6 +3275,10 @@ font-family: 'Josefin Sans', sans-serif;
 	opacity:0;
 	padding:3px;
 }
+.nopointer{
+    	pointer-events:none;
+}
+
 .icon-box .ibox-icon i:hover,.icon-box:hover .ibox-icon i {
 	background-color:#505050;
 	color:#fff;
@@ -3386,7 +3390,7 @@ font-family: 'Josefin Sans', sans-serif;
 	-moz-background-size:cover;
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-color:#333;
+	background-color:none;
 	position:relative;
 }
 .touch .parallax, .page-banner.parallax{
