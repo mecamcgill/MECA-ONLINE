@@ -579,7 +579,7 @@ if(!Modernizr.touch) {
 function parallaxInit() {
 	$('.parallax1').parallax("50%", 0.1);
 	$('.parallax2').parallax("50%", 0.1);
-	$('.parallax3').parallax("50%", 0.1);
+	$('.parallax3').parallax("100%", 0.8);
 	$('.parallax4').parallax("50%", 0.1);
 	$('.parallax5').parallax("50%", 0.1);
 	$('.parallax6').parallax("50%", 0.1);

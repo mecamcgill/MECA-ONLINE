@@ -247,19 +247,19 @@ background: rgba(255 ,255,255,0.6);
 }
 #englishb {
     height:25px;
-    color:black;
+    color:#a2978c;
     border-color:black;
 }
 #englishb:hover,
 #koreanb:hover{
 background: rgba(255 ,255,255,0.6);
-     color:#a2978c;;
+     color:black;
 }
 .languageswitchb {
-        color:black;
+           color:#a2978c;
 }
 .languageswitchb:hover{
-     color:#a2978c;
+     color:black;
     border-color:#a2978c important!;
 
 
@@ -1574,13 +1574,14 @@ font-family: 'Josefin Sans', sans-serif;
 	background:#333;
 }
 #whitebg{
-    color:#302323;
+
+    color:#a2978c;
 }
 #whitebg:hover{
-    color:#a2978c;
+    color:#302323;
 }
 #whitebg.current{
-    color:#a2978c;
+    color:#302323;
 
 }
 .topbar .header-info-col{
