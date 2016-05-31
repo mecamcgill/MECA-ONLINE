@@ -233,30 +233,37 @@ video {
     height: 100%;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+ background: url('images/banner1') no-repeat;
   background-size: cover;
   transition: 1s opacity;
      object-fit: cover;
-    opacity: 0.6
+    opacity: 0.8;
 }
 #latestwrapper{
     position: relative;
 
 }
 .latest {
-height:350px;
+height:300px;
     padding: 60px;
     overflow: hidden;
+background-color: #d9d8d8;
 
 }
-
+.border-right{
+        border-right: white solid 2px;
+}
 .latest h3{
-    font-size: 2em;
-    line-height: 45px;
-    letter-spacing: 2px;
+    font-size: 1.3em;
+    line-height: 30px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
       -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.latest p{
+    font-size: 1.0em;
+    line-height: 20px;
 }
 #shade{
     width: 100%;
