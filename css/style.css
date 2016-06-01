@@ -3782,11 +3782,17 @@ font-family: 'Josefin Sans', sans-serif;
    7. Responsive Media Queries
 ================================================== */
 @media (min-width:1200px){
+    #mobileonly{
+        display: none;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.site-header .header-info-col{
 		display:none;
 	}
+       #mobileonly{
+        display: none;
+    }
 }
 @media only screen and (max-width: 992px) {
 	.pricing-column .features{
@@ -3965,6 +3971,13 @@ font-family: 'Josefin Sans', sans-serif;
 	.partner-carousel .push-top{
 		margin-top:10px;
 	}
+    .disable-mobile{
+    display: none !important;
+    }
+   .border-right{
+    border-right: none;
+    border-bottom: solid 2px white;
+    }
 }
 @media only screen and (max-width: 767px) {
 	/* Isotope */
@@ -4146,6 +4159,9 @@ font-family: 'Josefin Sans', sans-serif;
     font-size:35px !important;
        margin: 5px !important;
     }
+    .carousel-wrapper{
+        display: none;
+    }
 	.copyrights-col-left{
 		margin-bottom:15px;
 	}
@@ -4176,6 +4192,9 @@ font-family: 'Josefin Sans', sans-serif;
 	.featured-block{
 		margin-bottom:40px;
 	}
+    h1{
+        line-height: 60px;
+    }
 }
 
 
