@@ -36,19 +36,7 @@
     <script src="js/modernizr.js">
     </script><!-- Modernizr -->
 
-   <script>
-$(document).ready(function(){
-var owl = $(".owl-carousel");
-owl.owlCarousel({
-    items: 1,
-    autoplay: true,
-    autoPlaySpeed: 5000,
-    autoPlayTimeout: 5000
-    autoplayHoverPause: true
-});
-</script>
 
-    </script>
 </head>
 
 <body class="home">
@@ -61,15 +49,15 @@ owl.owlCarousel({
         <div class="site-header-wrapper antialiased">
             <header class="site-header6">
                 <div class="container">
-                    <div class="site-logo noselect">
-                        <img src="images/logo1.png" class="nopointer" style="opacity:0.7">
+                    <div class="site-logo ">
+                       <a href="index.html"> <img src="images/logo1.png" class=" logoclick"></a>
                     </div>
                     <a class="visible-sm visible-xs" href="#" id=
                     "menu-toggle">MENU</a>
 
                     <ul class="sf-menu dd-menu pull-right" role="menu">
                         <li><a class="navlinkcurrent" href="#" style=
-                        "color:#302323">Home</a>
+                        "color:black">Home</a>
                         </li>
 
 
@@ -113,13 +101,13 @@ owl.owlCarousel({
                                 <div class="flex-caption-table">             
                                     <div class="flex-caption-cell">              
                                         <div class=
-                                        "flex-caption-text text-align-center" style="z-index:1000">
-                                            <h2 style="font-size:20px;">MECA
+                                        "flex-caption-text  text-align-center" style="z-index:1000">
+                                            <h2 class="mobile-text-h2" style="font-size:20px;">MECA
                                             Presents:</h2>
-                                            <p style=
+                                            <p class="mobile-text-p" style=
                                             "font-family:'Raleway', sans-serif ;font-weight:700; font-size:75px;">
                                                 Montreal & Me</p>
-                                            <p class="lead">An event every
+                                            <p class="mobile-text-lead" class="lead">An event every
                                             weekend for the month of September.<br>
                                             </p>
                                             <a class="btn btn-primary" href=
@@ -131,7 +119,7 @@ owl.owlCarousel({
                             </div>
                         </div>
               
-<video autoplay  poster="images/slide4.jpg" id="bgvid" loop>  
+<video autoplay  poster="images/slide3.jpg" id="bgvid" loop>  
 <source src="splash.webm" type="video/webm">
 <source src="splash.mp4" type="video/mp4">
 </video>
@@ -172,21 +160,18 @@ owl.owlCarousel({
         </div>
      
         <div id="main-container">
-
+<div class="disable-mobile" style="height:300px;"></div>
             <div class="content" style=
-            "background-image:url(); background-repeat: no-repeat; background-attachment: relative; background-position: center top;background-color: rgb(237, 237, 237); margin-top:300px;">
+            "background-image:url(); background-repeat: no-repeat; background-attachment: relative; background-position: center top;background-color: rgb(237, 237, 237);position:relative">
      
 
-                <div class="container" style="padding: 80px 0px 90px 0px; ">
+                <div class="container" style="padding: 50px 0px 40px 0px; ">
                     <div class="text-align-center" ><br>
-                        <h1 style=
-                        "font-size:3.8em;font-family:'Raleway', sans-serif ;font-weight:700;">
-                        We Are MECA</h1>
+                        <h1 class="thick" style="font-size:4.2em;">
+                            <span class="highlgight">We are <span class="dotted">MECA.</span></span></h1>
 
-
-                        <p class="lead">We help fellow Koreans get accustomed
-                        to the vibrant culture of Canada<br>
-                        and we introduce fellow Canadians to the remarkable
+<br>
+                        <p class="lead">We create a nogtalgic environment for our fellow Koreans <br>while introducing fellow Canadians to the remarkable
                         culture of Korea.</p>
 
 
@@ -206,7 +191,7 @@ owl.owlCarousel({
 
                                         <div class="col-md-6">
                                             <h3 style="font-size:1.85em;">We
-                                            Promote Education</h3>
+                                            Promote <span class="dotted">Education</span> </h3>
 
 
                                             <p >We
@@ -222,7 +207,7 @@ owl.owlCarousel({
                                             
                                             
                                              <h3 style="font-size:1.85em;">We
-                                            Promote Culture</h3>
+                                            Promote <span class="dotted">Culture</span></h3>
 
 
                                             <p >We host
@@ -237,18 +222,20 @@ owl.owlCarousel({
                                             right here in Montreal.</p>
                                         </div>
                                     </div>
-                                    <br>
+
  </div>
                             </div>
 
 
             </div>
 
-<br>
-                        <h3>We are on a lookout for amazing people<br>
-                        Join the executive team</h3>
-                        <a class="btn btn-default" href="apply.html">Available
-                        Positions</a>
+
+            <div id="prefooter" class="text-align-center" style="padding:45px;">
+      <h3>We are on a lookout for awesome people<br>
+                       Join the executive team</h3>
+                        <a class="btn btn-primary" href="apply.html">Available
+                        Positions</a><br>
+        </div>          
                     </div>
                 </div>
             </div>
@@ -257,30 +244,32 @@ owl.owlCarousel({
     <!-- Site Footer -->
 
 
-    <div class="site-footer-bottom" style="background-color:white">
+    <div class="site-footer-bottom" style="background-color:#2f3234">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <div class="copyrights-col-left">
-                        <p>&copy; MECA 2016. All Rights Reserved</p>
+                        <p>&copy; MECA 2016 </p>
                     </div>
                 </div>
 
 
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4 text-align-center">
+                    <a href="index.html"> <img src="images/footerlogo.png"></a>
                 </div>
 
-
+                <div class="col-md4 col-sm-4">
                 <div class="copyrights-col-right">
                     <ul class="footer-menu">
-                        <li><a href="apply.html">Become an Executive</a>
+                        <li><a href="">Our Facebook</a>
                         </li>
-
-
-                        <li><a href="#">Report a bug</a>
+                        <li><a href="">Email</a>
+                        </li>
+                        <li><a href="">한국어</a>
                         </li>
                     </ul>
                 </div>
+        </div>
             </div>
         </div>
     </div>

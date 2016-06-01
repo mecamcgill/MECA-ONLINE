@@ -237,7 +237,7 @@ video {
   background-size: cover;
   transition: 1s opacity;
      object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 #latestwrapper{
     position: relative;
@@ -251,7 +251,33 @@ background-color: #d9d8d8;
 
 }
 .border-right{
-        border-right: white solid 2px;
+        border-right: solid 2px white;
+}
+.highlight {
+  display: inline;
+  background: #ab9c88;
+  color: #fff;
+  padding:15px;
+}
+.dotted{
+    color:  #ab4048;
+   
+}
+.thick{
+    font-family:'Raleway', sans-serif ;font-weight:700;
+}
+.logoclick{
+opacity:0.7;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.logoclick:hover{
+opacity:1;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    
 }
 .latest h3{
     font-size: 1.3em;
@@ -321,6 +347,12 @@ background: rgba(255 ,255,255,0.6);
 text-align: justify;
   text-justify: distribute;
 }
+
+
+
+
+    
+
 /* ==================================================
    2. Typography
 ================================================== */
@@ -1469,7 +1501,7 @@ body.boxed .body{
 	position:relative;
 	display:inline-block;
 	float:left;
-	margin-left:25px;
+	margin-left:35px;
 	margin-top:12px;
 font-family: 'Josefin Sans', sans-serif;
 }
@@ -1691,10 +1723,13 @@ font-family: 'Josefin Sans', sans-serif;
 }
 .hero-slider, .hero-slider.flexslider ul.slides li, .flex-caption-cell{
 	height:600px;
+
 }
 .header-style2 .hero-slider, .header-style3 .hero-slider, .header-style2 .hero-slider.flexslider ul.slides li, .header-style3 .hero-slider.flexslider ul.slides li, .header-style2 .flex-caption-cell, .header-style3 .flex-caption-cell{
 	height:550px;
+
 }
+
 .page-banner{
 	min-height:300px;
 	position:relative;
@@ -1749,6 +1784,7 @@ font-family: 'Josefin Sans', sans-serif;
 }
 .flex-caption-text{
 	display:block;
+
 }
 .header-style2 .flex-caption-text, .header-style3 .flex-caption-text{
 	padding-top:0;
@@ -3934,6 +3970,13 @@ font-family: 'Josefin Sans', sans-serif;
 	.isotope-hidden {
 		display: none !important;
 	}
+    .disable-mobile{
+    display: none;
+    }
+    .border-right{
+    border-right: none;
+    border-bottom: solid 2px white;
+    }
 	.grid-item .media-box{
 		margin-bottom:0;
 	}
@@ -4075,9 +4118,17 @@ font-family: 'Josefin Sans', sans-serif;
 	.header-style2 .hero-slider, .header-style3 .hero-slider, .header-style2 .hero-slider.flexslider ul.slides li, .header-style3 .hero-slider.flexslider ul.slides li, .header-style2 .flex-caption-cell, .header-style3 .flex-caption-cell{
 		height:250px;
 	}
-	.flex-caption{
-
+	.flex-caption {
+    margin-top:10px;
 	}
+    .mobile-text-h2{
+    font-size:12px !important;
+               margin: 0px !important;
+    }    
+    .mobile-text-p{
+    font-size:35px !important;
+       margin: 5px !important;
+    }
 	.copyrights-col-left{
 		margin-bottom:15px;
 	}
