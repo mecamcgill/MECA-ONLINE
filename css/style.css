@@ -282,7 +282,7 @@ color: black;
 }
 .highlighter {
   display: inline;
-  background: rgba(233,206,148,0.5);
+  background: rgba(233,206,148,0.2);
   color: #fff;
   padding-top:5px;
 padding-bottom: 5px;
@@ -352,7 +352,7 @@ opacity:1;
 #englishb:hover,
 #koreanb:hover{
 background: rgba(255 ,255,255,0.6);
-     color:black;
+     color:#ab4048;
 }
 .languageswitchb {
            color:#a2978c;
@@ -369,9 +369,28 @@ text-align: justify;
   text-justify: distribute;
 }
 
+.centerp {
+  position: relative;
+}
 
+.centerc {
+  width: 700px;
+  height: 200px;
+  padding: 20px;
 
+    
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
+  margin: -120px 0 0 -370px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
     
 
 /* ==================================================
@@ -1402,6 +1421,15 @@ font-family: 'Lato', sans-serif;
 	background-attachment:fixed;
 	overflow-x:hidden;
 }
+bodykr{
+	background-color:#fff;
+	color:#898989;
+	font-size:1em;
+font-family: 'Helvetica', serif;
+	line-height:1.85em;
+	background-attachment:fixed;
+	overflow-x:hidden;
+}
 body.boxed{
 	background-color:#333;
 }
@@ -1687,11 +1715,11 @@ font-family: 'Josefin Sans', sans-serif;
     color:#778792;
 }
 #whitebg:hover{
-    color:#ab8989;
+    color:#ab4048;
 }
 #whitebg.current{
-    color:#ab8989;
-
+    color:#ab4048;
+    cursor: default;
 }
 
 .sponsorshipgrid{
