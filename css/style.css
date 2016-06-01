@@ -247,7 +247,7 @@ video {
 height:300px;
 padding: 60px;
 overflow: hidden;
-transition: background-color 0.5s ease;
+transition: background-color 0.8s ease;
 background-color: #d9d8d8;
 color: black;
 }
@@ -280,11 +280,15 @@ color: black;
 .border-right{
         border-right: solid 2px white;
 }
-.highlight {
+.highlighter {
   display: inline;
-  background: #ab9c88;
+  background: rgba(233,206,148,0.5);
   color: #fff;
-  padding:15px;
+  padding-top:5px;
+padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 .dotted{
     color:  #ab4048;
@@ -460,6 +464,9 @@ blockquote cite:before{
 p.lead{
 	font-size:20px;
 	line-height:28px;
+}
+p.lead2{
+font-size:1.1em; line-height:22px;
 }
 p.md{
 	font-size:16px;
@@ -1419,7 +1426,7 @@ body.boxed .body{
 }
 .site-header-wrapper{
 	width:100%;
-    padding: 0.2em;
+    padding-top: 0.5em;
 	position:absolute;
 	z-index:999;
     
@@ -1677,13 +1684,20 @@ font-family: 'Josefin Sans', sans-serif;
 }
 #whitebg{
 
-    color:#a2978c;
+    color:#778792;
 }
 #whitebg:hover{
-    color:#302323;
+    color:#ab8989;
 }
 #whitebg.current{
-    color:#302323;
+    color:#ab8989;
+
+}
+
+.sponsorshipgrid{
+    height: 400px;
+}
+.sponsorshipgrid:hover{
 
 }
 .topbar .header-info-col{
@@ -2331,8 +2345,9 @@ font-family: 'Josefin Sans', sans-serif;
 }
 .site-footer-bottom{
 	background-color:#222;
-	padding:20px 0;
+	padding:35px 35px;
 	color:#999;
+    
 }
 .site-footer-bottom p{
 	margin-bottom:0;
