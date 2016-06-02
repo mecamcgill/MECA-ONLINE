@@ -224,7 +224,6 @@ background: rgba(255 ,255,255,0.6);
 }
 video { display: block; }
 #videosplash { 
-    max-height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
