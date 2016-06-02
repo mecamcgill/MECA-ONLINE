@@ -233,7 +233,7 @@ video { display: block; }
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- background: url('images/still.jpg') no-repeat;
+ background: url('http://mecamcgill.com/images/still.jpg') no-repeat;
   transition: 1s opacity;
      object-fit: cover ;
     opacity: 0.6;
