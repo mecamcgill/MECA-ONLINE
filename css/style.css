@@ -374,7 +374,7 @@ video {
 }
 
 .logoclick {
-    opacity: .7;
+    opacity: .85;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
@@ -468,7 +468,25 @@ video {
     width: 60%;
     padding: 10px;
 }
-
+.eventspannel{
+    min-height: 200px;
+    padding: 25px;
+    border-bottom: solid 5px #e4cc5f;
+    background-color:#f8f1d2
+}
+.eventstitle{
+    line-height: 40px;
+    font-size: 2em;
+    background-color:#f8f1d2
+}
+#eventsdesc{
+    padding-top:75px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100%;
+    position: relative;
+    background-color:#f8f1d2;
+}
 #clouds {
     padding: 100px 0;
 }
