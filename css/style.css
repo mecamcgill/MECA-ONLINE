@@ -321,6 +321,9 @@ video {
     border-bottom: solid 12px #ededed;
         border-top: solid 8px #ededed;
 }
+    .homegl{
+        height: 300px;
+    }  
 
 .bleft {
     border-left: solid 12px #ededed;
@@ -4814,7 +4817,7 @@ body.boxed .body {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1230px) {
     .site-header .header-info-col {
         display: none;
     }
@@ -4822,7 +4825,14 @@ body.boxed .body {
     #mobileonly {
         display: none;
     }
-    
+    .latest {
+    height:370px;
+    border-top: solid 12px #ededed !important;
+    border-bottom: solid 12px #ededed !important;
+}
+    .homegl{
+        height: 370px;
+    }  
 }
 
 @media only screen and (max-width: 992px) {
@@ -4830,6 +4840,20 @@ body.boxed .body {
     height:350px;
     border-top: solid 12px #ededed !important;
     border-bottom: solid 12px #ededed !important;
+}
+    .latest h3 {
+    font-size: 1.4em;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.latest p {
+    font-size: 0.95em;
+    line-height: 20px;
 }
     .pricing-column .features {
         margin-bottom: 0;
