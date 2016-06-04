@@ -341,9 +341,20 @@ video {
     color: #fff;
 }
 
+.jobselect{
+    border: solid 20px #f4f4f4;
+    min-height: 300px;
+    background-color:white;
+    padding: 50px;
+}
 
-
-
+.jobselect .meta-data{
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+.jobselect h3{
+    font-size: 2em;
+}
 #details {
     font-size: .9em;
     line-height: 17px !important;
@@ -409,6 +420,38 @@ video {
     opacity: 1;
 }
 
+#recruitmentheader{
+    height: 90vh;
+   padding-top: 200px;
+    
+}
+#recruitmentheading{
+    width:700px;
+	height:200px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-120px 0 0 -350px;
+   
+}
+#membershiphead{
+    height: 90vh;
+}
+#membershipheading{
+    width:600px;
+	height:200px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-170px 0 0 -300px;
+}
+#membership{
+    background-color:#e3b5b5; width:100%;height:90vh; min-height:300px;overflow:hidden; z-index:-1000;
+}
+#village{
+    padding-top: 310px;
+    position: relative
+}
 .stopfade {
     opacity: .5;
 }
@@ -497,7 +540,7 @@ video {
     background-color:#f8f1d2;
 }
 #clouds {
-    padding: 100px 0;
+    padding: 200px 0;
 }
 
 /*Time to finalise the cloud shape*/
@@ -5111,7 +5154,34 @@ body.boxed .body {
         overflow: visible !important;
         height: auto !important;
     }
-
+    #recruitmentheader{
+    height: 500px;
+   padding-top: 200px;
+    
+}
+#recruitmentheading{
+    width:auto;
+	height:auto;
+	position:absolute;
+	left:auto;
+	top:170px;
+	margin:0;
+   
+}
+        #membershiphead{
+    height: 500px;
+   padding-top: 200px;
+    
+}
+#membershipheading{
+    width:auto;
+	height:auto;
+	position:absolute;
+	left:auto;
+	top:170px;
+	margin:0;
+   
+}
     .isotope-item {
         position: static !important;
         margin-right: auto;
