@@ -277,7 +277,7 @@ video {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(http://mecamcgill.com/images/still.jpg) no-repeat;
+
     transition: 1s opacity;
     object-fit: cover;
     opacity: .9;
@@ -285,6 +285,12 @@ video {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.splash-home{
+        background: url(http://mecamcgill.com/images/still.jpg) no-repeat;
+}
+.splash-404{
+        background: url(http://mecamcgill.com/images/404still.jpg) no-repeat;
 }
 
 #banner {
