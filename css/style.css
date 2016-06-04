@@ -5159,9 +5159,17 @@ body.boxed .body {
         height: auto !important;
     }
     #recruitmentheader{
-    height: 500px;
+    height: 90vh;
    padding-top: 200px;
     
+}
+    #village{
+  position: relative;
+    padding-top: 0;
+  top: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 #recruitmentheading{
     width:auto;
