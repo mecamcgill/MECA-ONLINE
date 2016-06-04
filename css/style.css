@@ -450,7 +450,8 @@ video {
 }
 #village{
   position: relative;
-  top: 80%;
+    padding-top: 300px;
+  top: 90%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
