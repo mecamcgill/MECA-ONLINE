@@ -5072,11 +5072,11 @@ body.boxed .body {
 }
 
 .bleft {
-    border-left: none;
+    border-left: 0px;;
 }
 
 .bright {
-    border-right: none;
+    border-right: 0px;
 }
 
 }
@@ -5359,7 +5359,7 @@ body.boxed .body {
     
 .latest {
     
-    border: solid 12px #ededed !important;
+    border-top: solid 6px #ededed !important;
 }
 
 .bleft {
