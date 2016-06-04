@@ -292,10 +292,7 @@ video {
 .splash-404{
         background: url(http://mecamcgill.com/images/404still.jpg) no-repeat;
 }
-.resfsizefix{
-    transition: height 100s ease;
--webkit-transition: height 100s ease;
-}
+
 
 #banner {
     position: absolute;
@@ -5163,6 +5160,12 @@ body.boxed .body {
 }
 
 @media only screen and (max-width: 767px) {
+    
+    .resizefix{
+    transition: height 10000s ease;
+-webkit-transition: height 10000s ease;
+        -ms-transition: height 10000s ease;
+}
     /* Isotope */
     .isotope {
         overflow: visible !important;
