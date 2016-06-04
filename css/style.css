@@ -4998,6 +4998,24 @@ body.boxed .body {
     .disable-mobile {
         display: none !important;
     }
+    
+#latestwrapper {
+    position: relative;
+}
+
+.latest {
+    
+    border: solid 12px #ededed !important;
+}
+
+.bleft {
+    border-left: none;
+}
+
+.bright {
+    border-right: none;
+}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -5275,6 +5293,20 @@ body.boxed .body {
     h1 {
         line-height: 60px;
     }
+    
+.latest {
+    
+    border: solid 12px #ededed !important;
+}
+
+.bleft {
+    border-left: none;
+}
+
+.bright {
+    border-right: none;
+}
+
 }
 
 /* -------------------------------- 
