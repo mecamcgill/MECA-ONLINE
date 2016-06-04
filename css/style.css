@@ -2284,6 +2284,8 @@ body.boxed .body {
     margin-top: 10px;
     color: #fff;
     margin-left: 40px;
+    z-index: 10000;
+
 }
 
 .header-style2 #menu-toggle,.header-style3 #menu-toggle,.sticky #menu-toggle {
