@@ -318,8 +318,8 @@ video {
     transition: background-color .8s ease;
     background-color: #d9d8d8;
     color: #000;
-    border-top: solid 8px #ededed;
     border-bottom: solid 12px #ededed;
+        border-top: solid 8px #ededed;
 }
 
 .bleft {
@@ -337,6 +337,9 @@ video {
 .latest:hover h3,.latest:hover p,.latest:hover details {
     color: #fff;
 }
+
+
+
 
 #details {
     font-size: .9em;
