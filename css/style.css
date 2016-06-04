@@ -292,6 +292,10 @@ video {
 .splash-404{
         background: url(http://mecamcgill.com/images/404still.jpg) no-repeat;
 }
+.resfsizefix{
+    transition: height 100s ease;
+-webkit-transition: height 100s ease;
+}
 
 #banner {
     position: absolute;
