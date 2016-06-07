@@ -4915,9 +4915,11 @@ body.boxed .body {
 
 @media only screen and (max-width: 992px) {
         .latest {
-    height:350px;
-    border-top: solid 12px #ededed !important;
-    border-bottom: solid 12px #ededed !important;
+    height:150px !important;
+    border-top: solid 5px #ededed !important;
+    border-bottom: solid 5px #ededed !important;
+    padding: 15px;
+            text-align: center
 }
     .latest h3 {
     font-size: 1.4em;
@@ -5448,11 +5450,18 @@ display: none;
         margin: 5px !important;
     }
     .mobile-text-lead {
-        font-size: 17px !important;
-        line-height: 25px;
+        font-size: 1.1em !important;
+        line-height: 1.3em;
         padding: 5px !important;
     }
-
+    .homeh3{
+        font-size:1.5em !important;
+        text-align: center;
+    }
+    .homep{
+        font-size: 1em !important;
+        text-align: center;
+    }
     .carousel-wrapper {
         display: none;
     }
@@ -5499,6 +5508,7 @@ display: none;
 
     h1 {
         line-height: 60px;
+        font-size: 2.7em !important;
     }
     
 .latest {
