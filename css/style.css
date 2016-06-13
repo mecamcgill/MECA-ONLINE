@@ -680,19 +680,23 @@ animation: animatedgradient 6s ease infinite;
 }
 .eventfeatured{
     height: 500px;
-    border-top: solid 10px #e3d69a;
-    border-bottom: solid 10px #e3d69a;
-    -webkit-box-shadow:inset 0px 0px 0px 3px #d0c389;
-    -moz-box-shadow:inset 0px 0px 0px 3px #d0c389;
-    box-shadow:inset 0px 0px 0px 3px #d0c389;
+    border-top: solid 10px #f4f4f4;
+    border-bottom: solid 10px #f4f4f4;
+
+    
+}
+.eventfeatured2{
+    height: 300px;
+    margin: 15px;
+    border-left: solid 10px #f4f4f4;
+    border-right: solid 10px #f4f4f4;
+   
 }
 .event2 {
     height: 250px;
 
-    border: solid 10px #e3d69a;
-    -webkit-box-shadow:inset 0px 0px 0px 3px #d0c389;
-    -moz-box-shadow:inset 0px 0px 0px 3px #d0c389;
-    box-shadow:inset 0px 0px 0px 3px #d0c389;
+    border: solid 10px #f4f4f4;
+  
 }
 
 .event2 h2 {
@@ -702,12 +706,130 @@ animation: animatedgradient 6s ease infinite;
     text-transform: uppercase;
     color:white;line-height:1em;bottom:0px;position:absolute;
 }
-.eventfeatured h2 {
+.eventfeatured2 h2 {
     margin-top: 95px;
     font-size:1.5em;
     line-height: 0.85em;
     text-transform: uppercase;
     color:white;line-height:1em;bottom:0px;position:absolute;
+}.eventfeatured h2 {
+    margin-top: 95px;
+    font-size:1.5em;
+    line-height: 0.85em;
+    text-transform: uppercase;
+    color:white;line-height:1em;bottom:0px;position:absolute;
+}
+/*---------------*/
+/***** Layla *****/
+/*---------------*/
+
+figure.effect-layla {
+	background: #18a367;
+}
+
+figure.effect-layla img {
+	height: 390px;
+}
+
+figure.effect-layla figcaption {
+	padding: 3em;
+}
+
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+}
+
+figure.effect-layla figcaption::before {
+	top: 50px;
+	right: 30px;
+	bottom: 50px;
+	left: 30px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+figure.effect-layla figcaption::after {
+	top: 30px;
+	right: 50px;
+	bottom: 30px;
+	left: 50px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+figure.effect-layla h2 {
+	padding-top: 26%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-layla p {
+	padding: 0.5em 2em;
+	text-transform: none;
+	opacity: 0;
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+}
+
+figure.effect-layla img,
+figure.effect-layla h2 {
+	-webkit-transform: translate3d(0,-30px,0);
+	transform: translate3d(0,-30px,0);
+}
+
+figure.effect-layla img,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,
+figure.effect-layla p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-layla:hover img {
+	opacity: 0.7;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::before,
+figure.effect-layla:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::after,
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p,
+figure.effect-layla:hover img {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
 }
 
 /* ==================================================
@@ -2833,7 +2955,9 @@ body.boxed .body {
     width: 50px;
     text-align: center;
     font-family: 'Dosis',sans-serif;
-    opacity: 0.8
+    opacity: 0.8;
+    background-color: transparent!important;
+    text-shadow: 2px 2px #666666;
 }
 
 .event-time {
