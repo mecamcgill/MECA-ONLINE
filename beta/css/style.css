@@ -60,6 +60,27 @@ h2 {
     font-size: 3.5vw;
     line-height: 3.8vw;
 }
+.lead {
+    margin-top: 1.3vw;
+    font-size: 1.4vw;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+background-color: #f2d5b2;
+    color: black !important;
+    padding: 1px 20px 1px 20px;
+    border-radius: 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    opacity: 1.0 !impotant;
+}
+a {
+    color:black;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
 
 /*Classes*/
 .nodrag{
@@ -108,11 +129,7 @@ h2 {
 
         padding: 0 80px 0 80px;
 }
-.col-50{
-    width: 49%;
-    display: inline-block;
-    vertical-align:top;
-}
+
 .v-h-center{
     /* must be wrapped in relative parent div*/
     position: absolute;
@@ -181,22 +198,10 @@ h2 {
 }
 
 
-#lang{
-display: none;
-    right:20px;
-     font-family: 'Lato', sans-serif;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 0.8em;
-    letter-spacing: 0.6px;
-}
 nav{
 float: right;
 }
-.current{
-    color: deeppink;
-    cursor: pointer;
-}
+
 .menu li a{
       -moz-transition: all .1s ease-in;
     -o-transition: all .1s ease-in;
@@ -237,10 +242,7 @@ nav ul li a {
 opacity: 0.65;
     
 }
-.caption{
-    position: absolute;
-    line-height: 2.5em;
-}
+
 .logowrap:hover{
     background-image: url(logohover.gif);
 }
@@ -256,43 +258,16 @@ opacity: 0.65;
 .s-1{
     position: relative;
     width: 100%;
-    padding-bottom: 29%;
- 
+    height: 100% ;
+  display: inline-block; 
 }
-
-.s-1 h2{
-    color:#b55252;
+.s-1:after{
+  padding-top:28.5%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
 }
-.s1 .lead{
-    color:#b55252;
-}
-.s2 h2{
-    font-size: 3.5vw;
-    letter-spacing: 1vw;
-    color: whitesmoke;
-    font-family: 'Lato', Sans-serif;
-}
-.s2 ,lead{
-    color: whitesmoke;
-}
-.s3 h2{
-    font-size: 2.7vw;
-     letter-spacing: 0.2vw;
-    color: white;
- font-family: 'Lato', Sans-serif;
-}
-.s2 .textarea{
-    position: absolute;
-    top:100px;
-}
-.s3 .textarea{
-    position: absolute;
-    color: white;
-    width: 100%;
-    bottom: 75px;
-}
-
-.s2, .s3{
+.s-2{
     overflow: hidden;
       width: 49%;
     padding-top: 25px;
@@ -301,38 +276,59 @@ opacity: 0.65;
     height: 100% ;
  
 }
-.s2:after, .s3:after {
+.s-2:after{
   padding-top:125%;
   /* 16:9 ratio */
   display: block;
   content: '';
 }
+
 .imgbg{
-    width: 100%;
-    z-index:-11;position:absolute;left:0;
+  position:absolute;
+    left:0;
+        width: 100%;
    
 }
-.lead {
-    margin-top: 1.3vw;
-    font-size: 1.4vw;
+/* Card1 Styling */
+#card1 h2{
+    color:#b55252;
 }
-.btn{
-    position: relative;
-    display: inline-block;
-background-color: #f2d5b2;
-    color: black !important;
-    padding: 1px 20px 1px 20px;
-    border-radius: 2px;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8em;
-    opacity: 1.0 !impotant;
+#card1 .lead{
+    color:#b55252;
 }
-a {
-    color:black;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
+#card1 .caption{
+    position: absolute;
+    line-height: 2.5em;
 }
+/* Card2 Styling */
+#card2 h2{
+    font-size: 3.5vw;
+    letter-spacing: 1vw;
+    color: whitesmoke;
+    font-family: 'Lato', Sans-serif;
+}
+#card2 .lead{
+    color: whitesmoke;
+}
+
+#card2 .caption{
+    position: absolute;
+    top:100px;
+}
+/* Card3 Styling */
+#card3 .caption{
+    position: absolute;
+    color: white;
+    width: 100%;
+    bottom: 75px;
+}
+#card3 h2{
+    font-size: 2.7vw;
+     letter-spacing: 0.2vw;
+    color: white;
+ font-family: 'Lato', Sans-serif;
+}
+
 
 
 #footer{
