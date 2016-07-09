@@ -56,283 +56,273 @@ table {
 	border-spacing: 0;
 }
 /* Global Styling */
+
 h2 {
-    font-size: 3.5vw;
-    line-height: 3.8vw;
+  font-size: 3.5vw;
+  line-height: 3.8vw;
 }
-.lead {
-    margin-top: 1.3vw;
-    font-size: 1.4vw;
-}
-.btn{
-    position: relative;
-    display: inline-block;
-background-color: #f2d5b2;
-    color: black !important;
-    padding: 1px 20px 1px 20px;
-    border-radius: 2px;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8em;
-    opacity: 1.0 !impotant;
-}
+
 a {
-    color:black;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
+
 
 /*Classes*/
-.nodrag{
-    pointer-events: none;
-     -khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-.text-align-right{
-    text-align: right;
-}
-.text-align-left{
-    text-align: left;
-}
-.text-align-center{
-    text-align: center;
-}
-.antialiased{
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.nowrap{
-    white-space: nowrap;
-}
-.floatleft{
-    float: left;
-}
-.floatright{
-    float:right;
-}
-.bg-1{
-    background-color: white;
-}
-.bg-2{
-    background-color: aquamarine;
-}
-.font-default{
-    font-family: 'David Libre', serif; 
-}
-.font-2{
-    font-family: 'Lato', sans-serif;
-}
-.wrapper{
-
-        padding: 0 80px 0 80px;
+.lead {
+  margin-top: 1.3vw;
+  font-size: 1.4vw;
 }
 
-.v-h-center{
-    /* must be wrapped in relative parent div*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.btn {
+  position: relative;
+  display: inline-block;
+  background-color: #f2d5b2;
+  color: black !important;
+  padding: 1px 20px 1px 20px;
+  border-radius: 2px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8em;
+  opacity: 1.0 !impotant;
 }
-.v-center{
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-}
-.h-center{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-.fadein {
-    -webkit-animation: fadein 2s;
-/* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s;
-/* Firefox < 16 */
-    -ms-animation: fadein 2s;
-/* Internet Explorer */
-    -o-animation: fadein 2s;
-/* Opera < 12.1 */
-    animation: fadein 2s;
-}
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
+.nodrag {
+  pointer-events: none;
 }
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.nocursor{
+    -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+
+.text-align-right {
+  text-align: right;
 }
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+.wrapper {
+  padding: 0 80px 0 80px;
+}
+
+.v-h-center {
+  position: absolute;   /* must be wrapped in relative parent div*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.h-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 
 /*Styling*/
-#menu{
-    position: relative;
-    padding-top: 15px;
-    width: 100%;
-    height:85px; 
-    color: #333;
- background-color: #fafaf3;
-    z-index: 1000;
+
+#menu {
+  position: relative;
+  padding-top: 15px;
+  width: 100%;
+  height: 85px;
+  color: #333;
+  background-color: #fafaf3;
+  z-index: 1000;
 }
 
-
-nav{
-float: right;
+nav {
+  float: right;
 }
 
-.menu li a{
-      -moz-transition: all .1s ease-in;
-    -o-transition: all .1s ease-in;
-    -webkit-transition: all .1s ease-in;
-    transition: all .1s ease-in; 
+.menu li a {
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
-.menu:hover, .menu:hover li a {
+
+.menu:hover,
+.menu:hover li a {
   color: #dcdcdc;
 }
+
 .menu li a:hover {
-color: deeppink;
+  color: deeppink;
 }
+
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul li a {
-    font-family: 'Lato', sans-serif;
-    padding: 25px 15px;
-    text-decoration: none;
-    font-size: 0.9em;
-    letter-spacing: 0.6px;
-    
-}
-.logowrap{
-    background-image: url(logo.png);
-    height: 70px;
-    width: 200px;
-    opacity: 0.8;
-}
-.imglink{
-       -moz-transition: all .1s ease-in;
-    -o-transition: all .1s ease-in;
-    -webkit-transition: all .1s ease-in;
-    transition: all .1s ease-in; 
-}
-.imglink:hover{
-opacity: 0.65;
-    
+  font-family: 'Lato', sans-serif;
+  padding: 25px 15px;
+  text-decoration: none;
+  font-size: 0.9em;
+  letter-spacing: 0.6px;
 }
 
-.logowrap:hover{
-    background-image: url(logohover.gif);
+.logowrap {
+  background-image: url(logo.png);
+  height: 70px;
+  width: 200px;
+  opacity: 0.8;
 }
-#content{
-    height: auto;
-    width: 100%;
-    top: 0px;
-    background-color: #fafaf3;
-    z-index: 5;
-    position: relative;
-    overflow: hidden;
+
+.imglink {
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
-.s-1{
-    position: relative;
-    width: 100%;
-    height: 100% ;
-  display: inline-block; 
+
+.imglink:hover {
+  opacity: 0.65;
 }
-.s-1:after{
-  padding-top:28.5%;
+
+.logowrap:hover {
+  background-image: url(logohover.gif);
+}
+
+#content {
+  height: auto;
+  width: 100%;
+  top: 0px;
+  background-color: #fafaf3;
+  z-index: 5;
+  position: relative;
+  overflow: hidden;
+}
+
+.s-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.s-1:after {
+  padding-top: 28.5%;
   /* 16:9 ratio */
   display: block;
   content: '';
 }
-.s-2{
-    overflow: hidden;
-      width: 49%;
-    padding-top: 25px;
+
+.s-2 {
+  overflow: hidden;
+  width: 49%;
+  padding-top: 25px;
   display: inline-block;
   position: relative;
-    height: 100% ;
- 
+  height: 100%;
 }
-.s-2:after{
-  padding-top:125%;
+
+.s-2:after {
+  padding-top: 125%;
   /* 16:9 ratio */
   display: block;
   content: '';
 }
 
-.imgbg{
-  position:absolute;
-    left:0;
-        width: 100%;
-   
+.imgbg {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
+
+
 /* Card1 Styling */
-#card1 h2{
-    color:#b55252;
+
+#card1 h2 {
+  color: #b55252;
+
 }
-#card1 .lead{
-    color:#b55252;
+
+#card1 .lead {
+  color: #b55252;
 }
-#card1 .caption{
-    position: absolute;
-    line-height: 2.5em;
+
+#card1 .caption {
+  position: absolute;
+  line-height: 2.5em;
 }
+
+#card1 .btn{
+    margin-top: 2vw;
+}
+
+
 /* Card2 Styling */
-#card2 h2{
-    font-size: 3.5vw;
-    letter-spacing: 1vw;
-    color: whitesmoke;
-    font-family: 'Lato', Sans-serif;
-}
-#card2 .lead{
-    color: whitesmoke;
+
+#card2 h2 {
+  font-size: 3.5vw;
+  letter-spacing: 1vw;
+  color: whitesmoke;
+  font-family: 'Lato', Sans-serif;
 }
 
-#card2 .caption{
-    position: absolute;
-    top:100px;
+#card2 .lead {
+  color: whitesmoke;
 }
+
+#card2 .caption {
+  position: absolute;
+  top: 100px;
+}
+
+
 /* Card3 Styling */
-#card3 .caption{
-    position: absolute;
-    color: white;
-    width: 100%;
-    bottom: 75px;
-}
-#card3 h2{
-    font-size: 2.7vw;
-     letter-spacing: 0.2vw;
-    color: white;
- font-family: 'Lato', Sans-serif;
+
+#card3 .caption {
+  position: absolute;
+  color: white;
+  width: 100%;
+  bottom: 75px;
 }
 
+#card3 h2 {
+  font-size: 2.7vw;
+  letter-spacing: 0.2vw;
+  color: white;
+  font-family: 'Lato', Sans-serif;
+}
 
-
-#footer{
-    background-color: #e5e5e5;
-    width: 100%;
-    min-height: 200px;
+#footer {
+  background-color: #e5e5e5;
+  width: 100%;
+  min-height: 200px;
 }
