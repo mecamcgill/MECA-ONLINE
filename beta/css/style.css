@@ -71,11 +71,9 @@ a {
 
 
 /*Classes*/
-.lead {
-  margin-top: 1.3vw;
-  font-size: 1.4vw;
+.relative{
+    position: relative;
 }
-
 .btn {
   position: relative;
   display: inline-block;
@@ -131,6 +129,9 @@ a {
 .wrapper {
   padding: 0 80px 0 80px;
 }
+.wrapper .wrapper{
+    padding: 0;
+}
 
 .v-h-center {
   position: absolute;   /* must be wrapped in relative parent div*/
@@ -151,6 +152,11 @@ a {
   transform: translate(-50%, 0);
 }
 
+.divider {
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
 
 /*Styling*/
 
@@ -169,10 +175,10 @@ nav {
 }
 
 .menu li a {
-  -moz-transition: all .1s ease-in;
-  -o-transition: all .1s ease-in;
-  -webkit-transition: all .1s ease-in;
-  transition: all .1s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .menu:hover,
@@ -197,7 +203,7 @@ nav ul li a {
 }
 
 .logowrap {
-  background-image: url(logo.png);
+  background-image: url(logo.svg);
   height: 70px;
   width: 200px;
   opacity: 0.8;
@@ -227,7 +233,12 @@ nav ul li a {
   position: relative;
   overflow: hidden;
 }
-
+.row{
+    position: relative;
+    width:100%;
+    height: 100%;
+    background-color: red;
+}
 .s-1 {
   position: relative;
   width: 100%;
@@ -245,7 +256,7 @@ nav ul li a {
 .s-2 {
   overflow: hidden;
   width: 49%;
-  padding-top: 25px;
+
   display: inline-block;
   position: relative;
   height: 100%;
@@ -258,6 +269,29 @@ nav ul li a {
   content: '';
 }
 
+.s-3 {
+    margin-top: 35px;
+  overflow: hidden;
+  width: 32%;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.s-3-middle{
+    position: relative;
+    overflow: hidden;
+     margin: 35px 2% 0 2%;
+    width: 32%;
+float: left;
+   
+}
+
+.s-3:after, .s-3-middle:after {
+  padding-top: 100%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
 .imgbg {
   position: absolute;
   left: 0;
@@ -268,12 +302,13 @@ nav ul li a {
 /* Card1 Styling */
 
 #card1 h2 {
+    font-size: 5vw;
   color: #b55252;
-
 }
 
 #card1 .lead {
   color: #b55252;
+    font-size: 1.5vw;
 }
 
 #card1 .caption {
@@ -282,7 +317,7 @@ nav ul li a {
 }
 
 #card1 .btn{
-    margin-top: 2vw;
+    margin-top: 1.6vw;
 }
 
 
@@ -290,13 +325,15 @@ nav ul li a {
 
 #card2 h2 {
   font-size: 3.5vw;
-  letter-spacing: 1vw;
+  letter-spacing: 0.8vw;
+    margin-bottom: 1vw;
   color: whitesmoke;
   font-family: 'Lato', Sans-serif;
 }
 
 #card2 .lead {
   color: whitesmoke;
+    font-size: 1.5vw;
 }
 
 #card2 .caption {
@@ -304,12 +341,15 @@ nav ul li a {
   top: 100px;
 }
 
+#card2 .btn{
+    margin-top: 1.3vw;
+}
+
 
 /* Card3 Styling */
 
 #card3 .caption {
   position: absolute;
-  color: white;
   width: 100%;
   bottom: 75px;
 }
@@ -321,6 +361,76 @@ nav ul li a {
   font-family: 'Lato', Sans-serif;
 }
 
+#card3 .lead{
+      color: white;
+    font-size: 1.25vw;
+    letter-spacing: 0.02vw;
+    line-height: 1px;
+}
+
+#card3 .btn{
+    margin-top: 1.3vw;
+}
+
+/*Card4 Styling*/
+#card4 .caption{
+   position: absolute;
+    width: 100%;
+    color: #b55252;
+}
+
+#card4 h2{
+    font-size: 2.5vw;
+}
+
+#card4 .lead{
+    font-size: 1.25vw;
+    letter-spacing: 0.02vw;
+    line-height: 1px;
+}
+#card4 .btn{
+    margin-top: 1.3vw;
+}
+
+/*Card5 Styling*/
+#card5 .caption{
+   position: absolute;
+    width: 100%;
+    color: #b55252;
+}
+
+#card5 h2{
+    font-size: 2.5vw;
+}
+
+#card5 .lead{
+    font-size: 1.25vw;
+    letter-spacing: 0.02vw;
+    line-height: 1px;
+}
+#card5 .btn{
+    margin-top: 1.3vw;
+}
+
+/*Card6 Styling*/
+#card6 .caption{
+   position: absolute;
+    width: 100%;
+    color: #b55252;
+}
+
+#card6 h2{
+    font-size: 2.5vw;
+}
+
+#card6 .lead{
+    font-size: 1.25vw;
+    letter-spacing: 0.02vw;
+    line-height: 1px;
+}
+#card6 .btn{
+    margin-top: 1.3vw;
+}
 #footer {
   background-color: #e5e5e5;
   width: 100%;
