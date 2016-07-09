@@ -237,14 +237,14 @@ nav ul li a {
 opacity: 0.65;
     
 }
-.text{
+.caption{
     position: absolute;
     line-height: 2.5em;
 }
 .logowrap:hover{
     background-image: url(logohover.gif);
 }
-#herosplash{
+#content{
     height: auto;
     width: 100%;
     top: 0px;
@@ -253,47 +253,60 @@ opacity: 0.65;
     position: relative;
     overflow: hidden;
 }
-.s1 h2{
+.s-1{
+    position: relative;
+    width: 100%;
+    padding-bottom: 29%;
+ 
+}
+
+.s-1 h2{
     color:#b55252;
 }
 .s1 .lead{
     color:#b55252;
 }
 .s2 h2{
-    font-size: 4vw;
-    color: white;
-    font-family: 'Lato';
+    font-size: 3.5vw;
+    letter-spacing: 1vw;
+    color: whitesmoke;
+    font-family: 'Lato', Sans-serif;
 }
 .s2 ,lead{
-    color: white;
+    color: whitesmoke;
 }
 .s3 h2{
-    font-size: 4vw;
+    font-size: 2.7vw;
+     letter-spacing: 0.2vw;
     color: white;
-    font-family: 'Lato';
+ font-family: 'Lato', Sans-serif;
 }
 .s2 .textarea{
     position: absolute;
-    top: 75px;
+    top:100px;
 }
 .s3 .textarea{
     position: absolute;
+    color: white;
+    width: 100%;
     bottom: 75px;
 }
-.s1{
-    position: relative;
-    width: 100%;
-    padding-bottom: 29%;
+
+.s2, .s3{
+    overflow: hidden;
+      width: 49%;
+    padding-top: 25px;
+  display: inline-block;
+  position: relative;
+    height: 100% ;
  
 }
-.s2, .s3{
-    position: relative;
-    overflow: hidden;
-    padding-top: 30px;
-    width: 49%;
-    height: 700px;
+.s2:after, .s3:after {
+  padding-top:125%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
 }
-
 .imgbg{
     width: 100%;
     z-index:-11;position:absolute;left:0;
@@ -307,10 +320,12 @@ opacity: 0.65;
     position: relative;
     display: inline-block;
 background-color: #f2d5b2;
+    color: black !important;
     padding: 1px 20px 1px 20px;
     border-radius: 2px;
     font-family: 'Lato', sans-serif;
     font-size: 0.8em;
+    opacity: 1.0 !impotant;
 }
 a {
     color:black;
@@ -318,6 +333,10 @@ a {
     text-decoration: none;
     display: inline-block;
 }
-#content{
-    background-color: white;
+
+
+#footer{
+    background-color: #e5e5e5;
+    width: 100%;
+    min-height: 200px;
 }
