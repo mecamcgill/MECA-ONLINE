@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -13,19 +14,23 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script type="text/javascript">
-      //paste this code under the head tag or in a separate js file.
-      // Wait for window load
       $(window).load(function() {
-        // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");;
+        $(".delay").delay(5000).fadeIn(500);;
+        $(".delay2").delay(15000).fadeIn(500);;
+        $(".delay3").delay(20000).fadeIn(500);;
+        $(".delay4").delay(25000).fadeIn(500);;
+        $(".delay5").delay(30000).fadeIn(500);;
       });
-
     </script>
-
+    
   </head>
 
   <body>
-    <div class="se-pre-con"></div>
+      
+      
+    <div class="se-pre-con"><span class="delay">Sorry for the wait.<br><span class="delay2">Okay. This is taking some time.</span><span class="delay3"><br>Either something is wrong on our end or you're on Second Cup's wifi.</span><span class="delay4"><br>Sorry Second Cup.</span><span class="delay5"><br>Okay something is wrong.  <br>Try refreshing the page or if that still doesn't work, try visiting us later.</span></span></div>
+      <div id="top-menu"></div>
     <div id="menu">
       <div class="wrapper">
         <a href="index.html">
@@ -34,15 +39,11 @@
         </a>
         <nav>
           <ul class="menu">
-            <li><a>Events</a></li>
-
-
-            <li><a>Membership</a>
-
-            </li>
-            <li><a>First Year Guide</a></li>
-            <li><a>About</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="fyg.html">First Year Guide</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
           </ul>
     
@@ -51,7 +52,7 @@
     </div>
     <div id="content" class="h-center text-align-center">
       <div class="wrapper">
-        <div id="card1" class="s-1 imglink">
+        <a href="events.html"><div id="card1" class="s-1 imglink">
           <img  src="images/image1.jpg" class="imgbg nodrag">
           <div class="caption v-h-center">
             <h2>#YourFirstMonth</h2>
@@ -60,9 +61,9 @@
             <span class="btn">View Events</span>
           </div>
 
-        </div>
-      <div class="divider"></div>
-        <div id="card2" class="floatleft s-2 imglink">
+        </div></a>
+       <div class="divider"></div>
+        <a href="freshmanmt.html"><div id="card2" class="floatleft s-2 imglink">
           <img class="imgbg nodrag" src="images/image2.jpg">
           <div class="caption h-center">
             <h2 class="nowrap">FRESHMAN MT</h2>
@@ -70,7 +71,7 @@
             <br>
             <span class="btn">Find Out More</span>
           </div>
-        </div>
+        </div></a></a>
         <div id="card3" class="floatright s-2 imglink ">
           <img class="imgbg nodrag" src="images/image3.jpg">
           <div class="caption text-aign-left h-center">
@@ -86,7 +87,7 @@
       </div>
 
  <div class="wrapper">
-          <div id="card4" class="floatleft s-3 imglink"> 
+           <a href="membership.html"><div id="card4" class="floatleft s-3 imglink"> 
               <img class="imgbg nodrag" src="images/image4.jpg">  
               <div class="caption text-aign-left v-h-center">   
             <h2>Become a Member</h2>
@@ -94,8 +95,8 @@
             <br>
             <span class="btn">Join</span>
               </div>
-          </div>
-        <div id="card5" class="s-3-middle imglink"> 
+               </div></a>
+         <a href="recruitment.html"><div id="card5" class="s-3-middle imglink"> 
            <img class="imgbg nodrag" src="images/image5.jpg" > 
             <div class="caption text-ailgn-left v-h-center"> 
             <h2>We Are Recruiting</h2>
@@ -103,8 +104,8 @@
               <br>Exclusively available on our First Year Guide</span>
             <br>
             <span class="btn">Read Now</span>
-          </div> </div>
-          <div id="card6" class="floatright s-3 imglink"> 
+             </div> </div></a>
+           <a href="photo.html"><div id="card6" class="floatright s-3 imglink"> 
               <img class="imgbg nodrag" src="images/image6.jpg"> 
               <div class="caption text-aign-left v-h-center">
             <h2>Submit your photos</h2>
@@ -112,7 +113,7 @@
               <br>-Exclusively on our First Year Guide-</span>
             <br>
             <span class="btn">Read Now</span>
-          </div></div>
+          </div></div></a>
               </div>
     </div>
       <div class="divider"></div>
