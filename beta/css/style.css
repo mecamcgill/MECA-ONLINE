@@ -38,7 +38,7 @@ body {
 	line-height: 1.5em;
     font-family: 'David Libre', serif; 
     font-size: 1em;
-    background-color: #fafaf3;
+    background-color: #ffff6c;
 }
 ol, ul {
 	list-style: none;
@@ -62,12 +62,7 @@ h2 {
   line-height: 3.8vw;
 }
 
-a {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+
 
 
 /*Classes*/
@@ -154,12 +149,33 @@ a {
 
 .divider {
     position: relative;
+    background-color:#fafaf3;
     width: 100%;
     height: 25px;
 }
+.delay {
+    display:none;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: fixed;
+    top: 40px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    
+}
+.delay2,.delay3,.delay4,.delay5{display: none;}
 
 /*Styling*/
-
+#top-menu{
+    height: 15px;
+    background-color: #ffff6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.001em;
+    line-height: 40px;
+}
 #menu {
   position: relative;
   padding-top: 15px;
@@ -169,12 +185,15 @@ a {
   background-color: #fafaf3;
   z-index: 1000;
 }
-
-nav {
+nav{
   float: right;
 }
 
 .menu li a {
+    color: #424242;
+      text-align: center;
+  text-decoration: none;
+  display: inline-block;
   -moz-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
@@ -198,14 +217,14 @@ nav ul li a {
   font-family: 'Lato', sans-serif;
   padding: 25px 15px;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.8em;
   letter-spacing: 0.6px;
 }
 
 .logowrap {
   background-image: url(logo.svg);
   height: 70px;
-  width: 200px;
+  width: 170px;
   opacity: 0.8;
 }
 
@@ -432,7 +451,9 @@ float: left;
     margin-top: 1.3vw;
 }
 #footer {
-  background-color: #e5e5e5;
+position: relative;
+    z-index: 500000;
+  background-color: #f6f6f0;
   width: 100%;
-  min-height: 200px;
+  min-height: 75px;
 }
