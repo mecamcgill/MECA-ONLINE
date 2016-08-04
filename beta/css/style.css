@@ -122,7 +122,7 @@ h2 {
 }
 
 .wrapper {
-  padding: 0 120px 0 120px;
+  padding: 0 9% 0 9%;
 }
 .wrapper .wrapper{
     padding: 0;
@@ -258,68 +258,66 @@ nav ul li a {
   overflow: hidden;
 }
 
-.s-1 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
 
-.s-1:after {
-  padding-top: 28.5%;
-  /* 16:9 ratio */
-  display: block;
-  content: '';
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-.s-2 {
-  overflow: hidden;
-  width: 49.5%;
-  display: inline-block;
-  position: relative;
-  height: 600px;
+[class*='col-'] {
+  padding-right: 20px;
 
 }
-
-.s-2:after {
-  padding-top: 125%;
-  /* 16:9 ratio */
-  display: block;
-  content: '';
+.no{
+    padding-right: 0;
 }
-
-.s-3 {
-    margin-top: 35px;
-  overflow: hidden;
-  width: 32%;
-  display: inline-block;
-  position: relative;
-  height: 100%;
+[class*='col-'] {
+  float: left;
 }
-.s-3-middle{
-    position: relative;
-    overflow: hidden;
-     margin: 35px 2% 0 2%;
-    width: 32%;
-float: left;
-   
-}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-.s-3:after, .s-3-middle:after {
-  padding-top: 100%;
-  /* 16:9 ratio */
-  display: block;
-  content: '';
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.imgbg {
-  position: absolute;
-  left: 0;
-  width: 100%;
+.top {
+  padding: 20px 0 0 0 ;
 }
-
-
+.bottom{ 
+padding: 0 0 20px 0}
 /* Card1 Styling */
+.caption{
+        position: relative;
+}
+.module{
+    width: 100%;
+}
 
+#card1 .caption{
+      background-image: url(image1.jpg);
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+            background-position: right bottom; 
+        height: 320px;
+
+}
+#card1 .module{
+
+}
 #card1 h2 {
     font-size: 5vw;
   color: #b55252;
@@ -330,10 +328,6 @@ float: left;
     font-size: 1.5vw;
 }
 
-#card1 .caption {
-  position: absolute;
-  line-height: 2.5em;
-}
 
 #card1 .btn{
     margin-top: 1.6vw;
@@ -341,13 +335,20 @@ float: left;
 
 
 /* Card2 Styling */
-#card2{
-    background-color: red;
+#card2 .module{
+padding: 40px;
+}
+#card2 .caption{
+      background-image: url(image2.jpg);
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     height: 600px;
 }
 #card2 h2 {
   font-size: 3.5vw;
   letter-spacing: 0.01vw;
-    margin-bottom: 1vw;
   color: whitesmoke;
   font-family: 'Lato', Sans-serif;
 }
@@ -357,11 +358,7 @@ float: left;
     font-size: 1.5vw;
 }
 
-#card2 .caption {
-  position: absolute;
-  top: 100px;
-    width: 80%;
-}
+
 
 #card2 .btn{
     margin-top: 1.3vw;
@@ -369,14 +366,19 @@ float: left;
 
 
 /* Card3 Styling */
-#card3 {
-   background-color: red;
-    he
+#card3 .module {
+position: absolute;
+    padding: 40px;
+    bottom: 0;
 }
 #card3 .caption {
-  position: absolute;
-  width: 85%;
-  bottom: 75px;
+ background-image: url(image3.jpg);
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+
 }
 
 #card3 h2 {
@@ -398,9 +400,14 @@ float: left;
 }
 
 /*Card4 Styling*/
+
 #card4 .caption{
-   position: absolute;
-    width: 100%;
+     background-image: url(image4.jpg);
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+height: 300px;
     color: #b55252;
 }
 
@@ -414,13 +421,17 @@ float: left;
     line-height: 1px;
 }
 #card4 .btn{
-    margin-top: 1.3vw;
+
 }
 
 /*Card5 Styling*/
 #card5 .caption{
-   position: absolute;
-    width: 100%;
+     background-image: url(image5.jpg);
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+height: 300px;
     color: #b55252;
 }
 
@@ -434,13 +445,20 @@ float: left;
     line-height: 1px;
 }
 #card5 .btn{
-    margin-top: 1.3vw;
+
 }
 
 /*Card6 Styling*/
+#card6{
+
+}
 #card6 .caption{
-   position: absolute;
-    width: 100%;
+       background-image: url(image6.jpg);
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+height: 300px;
     color: #b55252;
 }
 
