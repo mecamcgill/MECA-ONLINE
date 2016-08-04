@@ -38,7 +38,7 @@ body {
 	line-height: 1.5em;
     font-family: 'David Libre', serif; 
     font-size: 1em;
-    background-color: #ffff6c;
+    background-color: #fafaf3;
 }
 ol, ul {
 	list-style: none;
@@ -122,7 +122,7 @@ h2 {
 }
 
 .wrapper {
-  padding: 0 80px 0 80px;
+  padding: 0 120px 0 120px;
 }
 .wrapper .wrapper{
     padding: 0;
@@ -151,7 +151,7 @@ h2 {
     position: relative;
     background-color:#fafaf3;
     width: 100%;
-    height: 25px;
+    height: 10px;;
 }
 .delay {
     display:none;
@@ -168,13 +168,17 @@ h2 {
 
 /*Styling*/
 #top-menu{
-    height: 15px;
-    background-color: #ffff6c;
+    height: 45px;
+    width: 100%;
+    background-color: rgba(245,245,245,0.85);
     font-family: 'Lato', sans-serif;
     font-size: 0.6em;
     text-transform: uppercase;
     letter-spacing: 0.001em;
     line-height: 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
 }
 #menu {
   position: relative;
@@ -217,7 +221,7 @@ nav ul li a {
   font-family: 'Lato', sans-serif;
   padding: 25px 15px;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.9em;
   letter-spacing: 0.6px;
 }
 
@@ -237,6 +241,7 @@ nav ul li a {
 
 .imglink:hover {
   opacity: 0.65;
+
 }
 
 .logowrap:hover {
@@ -252,12 +257,7 @@ nav ul li a {
   position: relative;
   overflow: hidden;
 }
-.row{
-    position: relative;
-    width:100%;
-    height: 100%;
-    background-color: red;
-}
+
 .s-1 {
   position: relative;
   width: 100%;
@@ -274,11 +274,11 @@ nav ul li a {
 
 .s-2 {
   overflow: hidden;
-  width: 49%;
-
+  width: 49.5%;
   display: inline-block;
   position: relative;
-  height: 100%;
+  height: 600px;
+
 }
 
 .s-2:after {
@@ -341,10 +341,12 @@ float: left;
 
 
 /* Card2 Styling */
-
+#card2{
+    background-color: red;
+}
 #card2 h2 {
   font-size: 3.5vw;
-  letter-spacing: 0.8vw;
+  letter-spacing: 0.01vw;
     margin-bottom: 1vw;
   color: whitesmoke;
   font-family: 'Lato', Sans-serif;
@@ -358,6 +360,7 @@ float: left;
 #card2 .caption {
   position: absolute;
   top: 100px;
+    width: 80%;
 }
 
 #card2 .btn{
@@ -366,22 +369,25 @@ float: left;
 
 
 /* Card3 Styling */
-
+#card3 {
+   background-color: red;
+    he
+}
 #card3 .caption {
   position: absolute;
-  width: 100%;
+  width: 85%;
   bottom: 75px;
 }
 
 #card3 h2 {
   font-size: 2.7vw;
-  letter-spacing: 0.2vw;
-  color: white;
+  letter-spacing: -0.1vw;
+  color: #65726b;
   font-family: 'Lato', Sans-serif;
 }
 
 #card3 .lead{
-      color: white;
+    color: #65726b;
     font-size: 1.25vw;
     letter-spacing: 0.02vw;
     line-height: 1px;
@@ -457,4 +463,3 @@ position: relative;
   width: 100%;
   min-height: 75px;
 }
- 
