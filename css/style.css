@@ -477,6 +477,7 @@ position: absolute;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+      background-position: center center;
   height: 600px;
 }
 
@@ -511,6 +512,8 @@ position: absolute;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    background-repeat: no-repeat;
+      background-position: bottom left;
   height: 600px;
 }
 
@@ -598,23 +601,25 @@ position: relative;
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     
-    
+    .nomobile{
+        display: none;
+    }
 
 
     [class*="col-"] {
         width: 100%;
-          padding: 10px 0 10px 0;
+          padding: 0 ;
     }
     .bottom, .top{
         padding: 0;
     }
     .wrapper {
-  padding: 0 2% 0 2%;
+  padding: 0 25px 0 25px;
 }
     
     
     .caption{
-        border-radius: 10px;
+        border-radius: 0;
     }    
     .tag{
         font-size: 0.5em;
@@ -623,23 +628,24 @@ position: relative;
 display: none;
 }
 #card1 .caption {
-  height: 220px;
+  height: 95vw;
+  background-position: left bottom;
 }
 
 #card1 h2 {
-  font-size: 3.5em;
+  font-size: 10.5vw;
   color: #b55252;
-
+    padding-bottom: 7vw;
 }
 
 #card1 .lead {
   color: #b55252;
-    line-height: 50px;
-  font-size: 1.2em;
+    line-height: 2vw;
+  font-size: 4vw;
 }
 #card1 .cta{
       color: #b55252;
-      font-size: 1.2em;
+      font-size: 4vw;
     bottom: 50px;
       font-family: 'Lato', Sans-serif;
 position: absolute;
@@ -659,11 +665,11 @@ position: absolute;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 300px;
+  height: 95vw;
 }
 
 #card2 h2 {
-  font-size: 3.5em;
+  font-size: 8vw;
   letter-spacing: 0.01vw;
   color: whitesmoke;
   font-family: 'Lato', Sans-serif;
@@ -671,8 +677,8 @@ position: absolute;
 
 #card2 .lead {
   color: whitesmoke;
-    line-height: 2.5em;
-  font-size: 1.5em;
+    line-height: 10vw;
+  font-size: 5.5vw;
 }
 
 #card2 .btn {
@@ -694,27 +700,24 @@ position: absolute;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 300px;
+  height: 95vw;
 }
 
 #card3 h2 {
-  font-size: 3.5em;
+  font-size: 8.5vw;
   letter-spacing: -0.2vw;
-line-height: 1em;
   color: #65726b;
   font-family: 'Lato', Sans-serif;
+    line-height: 8vw;
 }
 
 #card3 .lead {
   color: #65726b;
-  font-size: 1.25em;
+  font-size: 3.5vw;
   letter-spacing: 0.01vw;
-  line-height: 1px;
+  line-height: 6vw
 }
 
-#card3 .btn {
-  margin-top: 1.3vw;
-}
 
 
 /*Card4 Styling*/
@@ -725,14 +728,14 @@ line-height: 1em;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 400px;
+  height: 95vw;
   color: white;
     overflow: hidden;
 }
 
 #card4 h2 {
     position: relative;
-  font-size: 3.5em;
+  font-size:9vw;
   letter-spacing: -0.1vw;
     line-height: 1em;
     color: white;
@@ -743,9 +746,9 @@ line-height: 1em;
 
 #card4 .lead {
 position: relative;
-  font-size: 1.2em;
+  font-size: 3.5vw;
   letter-spacing: 0.02vw;
-  line-height: 1px;
+  line-height: 5.5vw;
         z-index: 10;
 }
 
