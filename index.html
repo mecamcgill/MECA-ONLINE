@@ -19,15 +19,21 @@
 
 
   <div class="se-pre-con" style="display:none;"></div>
-
-  <div id="menu">
+    <div class=" nav-spacer"></div>
+  <div id="menu" class="nav-down">
     <div class="wrapper">
       <a href="index.html">
         <div class="logowrap v-center">
         </div>
       </a>
         <a class="menu-toggle mobileonly" style="float:right" href="#">
-        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+        <button id="menu-btn" class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
+  <span class="hamburger-box hamburger--elastic">
+    <span class="hamburger-inner hamburger--elastic"></span>
+  </span>
+            
+</button>
+            <div class="hamburger-label">Menu</div>
         </a>
       <nav >
 
@@ -44,7 +50,7 @@
       </nav>
     </div>
   </div>
-    <a class="togglemenu2"><div id="darkness" class="displaynone"></div></a>
+    <a class="menu-toggle-secondary"><div id="darkness" class="displaynone"></div></a>
   <div id="content" class="h-center text-align-center">
 <br>
     <div class="wrapper grid ">
@@ -108,7 +114,7 @@
               </div>
                 
                 <!--- Animation by cihadturhan, sourced from his CodePen: http://codepen.io/cihadturhan/pen/jwipD !-->
-                <div class="object"> 
+                <div class="object" > 
        <div id="holder">
             <div id="viewport">
                 <div class="subviewport expl">
@@ -352,16 +358,71 @@
 			});
 		</script>
 <script>
-    $('.menu-toggle').click( function() {
-    $("nav").toggleClass("slidein");
-    $("#darkness").removeClass("displaynone");
-    $("body").toggleClass("disablescroll");
-} );
-    $('.togglemenu2').click( function() {
-    $("nav").removeClass("slidein");
-    $("#darkness").toggleClass("displaynone");
-    $("body").removeClass("disablescroll");
-} );
+    
+    $(".menu-toggle-secondary").bind("click", (function () {
+
+	$(".menu-toggle").trigger("click");
+
+}));
+    
+    $('.menu-toggle').click(function() {
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+         // odd clicks
+        $("nav").removeClass("slidein");
+        $( "#darkness" ).hide();
+        $("body").removeClass("disablescroll");
+          $(".hamburger").removeClass("is-active");
+      } else {
+         // even clicks
+        $("nav").toggleClass("slidein");
+        $( "#darkness" ).show();
+        $("body").toggleClass("disablescroll");
+         $(".hamburger").toggleClass("is-active");
+      }
+      $(this).data("clicks", !clicks);
+    });
+    
+    
+    // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#menu').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('#menu').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('#menu').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
     </script>
+  
 </body>
 </html>
