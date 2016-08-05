@@ -13,12 +13,21 @@
       <link href="css/animation.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=David+Libre|Lato|Lora:700" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script type='text/javascript'>
+
+    	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
 </head>
 
 <body>
 
 
-  <div class="se-pre-con" style="display:none;"></div>
+  <div class="se-pre-con"></div>
     <div class=" nav-spacer"></div>
   <div id="menu" class="nav-down">
     <div class="wrapper">
@@ -73,7 +82,7 @@
       <div class="col-12 top" >
           
         <a href="freshmanmt.html">
-          <div id="card2" class="col-6  " data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+          <div id="card2" class="col-6  " data-aos="fade-up" data-aos-delay="100" data-aos-offset="5" data-aos-once="true">
             <div class="caption text-align-left">
               <div class="module">
                 <span class="tag">Flagship Event</span>
@@ -86,7 +95,7 @@
         </a>
         </a>
         
-        <div id="card3" class="col-6  no" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+        <div id="card3" class="col-6  no" data-aos="fade-up" data-aos-delay="200"  data-aos-offset="1" data-aos-once="true">
             <a href="membership.html">
           <div id="backgroundmove" class="caption text-align-left">
             <div class="module">
@@ -104,7 +113,7 @@
       <div class="col-12 top">
           
         <a href="recruitment.html" >
-          <div id="card4" class="col-12 no" data-aos="fade-up" data-aos-once="true">
+          <div id="card4" class="col-12 no" data-aos="fade-up"   data-aos-offset="40"  data-aos-once="true">
             <div class="caption text-align-right">
                 
               <div class="module v-h-center">
@@ -342,21 +351,29 @@
       
     
     </div>
-  <div id="footer" class="grid">
-          <div class="col-12"><img class="object nodrag nocursor" src="images/logo.gif"></div>
+  <div id="footer" class="grid" >
+          <div class="col-12"><img class="object nodrag nocursor" src="images/logo.gif" data-aos="fade-up" data-aos-once="true" data-aos-offset="15" ></div>
       </div>
     
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
 		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
 
 		<script>
-			AOS.init({
+          $(window).load(function() {
+  AOS.init({
       duration: 400,
       easing: 'ease-in-sine',
 			});
+}); 
+			
+    
 		</script>
+
+
+
+
 <script>
     
     $(".menu-toggle-secondary").bind("click", (function () {
