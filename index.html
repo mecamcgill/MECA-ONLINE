@@ -10,11 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/animation.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=David+Libre|Lato|Lora:700" rel="stylesheet">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-
-
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
 </head>
 
 <body>
@@ -29,12 +27,13 @@
         </div>
       </a>
       <nav>
+
         <ul class="menu">
           <li><a href="events.html">Events</a></li>
           <li><a href="membership.html">Membership</a></li>
           <li><a href="fyg.html">First Year Guide</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="about.html" style="color:hotpink">Recruitment</a></li>
+                      <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -48,7 +47,7 @@
     <div class="wrapper grid ">
 
       <a href="events.html">
-        <div id="card1" class="col-12 imglink no">
+        <div id="card1" class="col-12 no" data-aos="fade-up" data-aos-once="true">
           <div class="caption">
                              <div class="tag">Featured</div>
             <div class="module v-h-center">
@@ -62,10 +61,10 @@
         </div>
       </a>
         
-      <div class="col-12 top ">
+      <div class="col-12 top" >
           
         <a href="freshmanmt.html">
-          <div id="card2" class="col-6 imglink ">
+          <div id="card2" class="col-6  " data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <div class="caption text-align-left">
               <div class="module">
                 <span class="tag">Flagship Event</span>
@@ -78,7 +77,7 @@
         </a>
         </a>
         
-        <div id="card3" class="col-6 imglink no">
+        <div id="card3" class="col-6  no" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
             <a href="membership.html">
           <div id="backgroundmove" class="caption text-align-left">
             <div class="module">
@@ -95,8 +94,8 @@
 
       <div class="col-12 top">
           
-        <a href="recruitment.html">
-          <div id="card4" class="col-12 no imglink">
+        <a href="recruitment.html" >
+          <div id="card4" class="col-12 no" data-aos="fade-up" data-aos-once="true">
             <div class="caption text-align-right">
                 
               <div class="module v-h-center">
@@ -335,7 +334,21 @@
     
     </div>
   <div id="footer" class="grid">
-          <div class="col-12"><img class="object" src="images/logo.gif"></div>
+          <div class="col-12"><img class="object nodrag nocursor" src="images/logo.gif"></div>
       </div>
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+
+		<script>
+			AOS.init({
+      duration: 400,
+      easing: 'ease-in-sine',
+			});
+		</script>
+
+		
 </body>
 </html>
