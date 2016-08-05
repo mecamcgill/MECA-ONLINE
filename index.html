@@ -42,7 +42,7 @@
           <li><a href="membership.html">Membership</a></li>
           <li><a href="fyg.html">First Year Guide</a></li>
           <li><a href="about.html" style="color:hotpink">Recruitment</a></li>
-                      <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -373,9 +373,11 @@
         $( "#darkness" ).hide();
         $("body").removeClass("disablescroll");
           $(".hamburger").removeClass("is-active");
+          $("#menu").removeClass("colorless");
       } else {
          // even clicks
         $("nav").toggleClass("slidein");
+        $("#menu").toggleClass("colorless");
         $( "#darkness" ).show();
         $("body").toggleClass("disablescroll");
          $(".hamburger").toggleClass("is-active");

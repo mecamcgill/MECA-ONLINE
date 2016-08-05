@@ -657,7 +657,10 @@ position: relative;
     }
     #menu{
         position: fixed;
-        z-index: 1000;
+        z-index: 100;
+    }
+    .colorless{
+                background-color: rgba(0,0,0,0) !important;
     }
     nav {
         position: fixed;
@@ -666,14 +669,31 @@ position: relative;
         top:0;
   background-color: #fafaf3;
         width: 50%;
-        z-index: 2000;
+        z-index: 12;
 -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
         
     }
-   
+   #darkness{
+        position: fixed;
+        background-color: black;
+        top:0;
+        width: 100%;
+        height: 140%;
+        z-index: 11;
+        opacity: 0.75;
+               display: none;
+    }
+    .displaynone{
+        opacity: 0;
+        display: none;
+         -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+    }
     .slidein{
         right:0;
     }
@@ -706,9 +726,12 @@ nav ul {
         right: 25px;
         cursor: grab;
         z-index: 10000;
-     
-
     }
+
+
+.logowrap:hover {
+background-image: url(logo.svg);
+}
     .hamburger{
         position: absolute;
          outline:none !important;
@@ -729,24 +752,7 @@ nav ul {
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
     }
-    #darkness{
-        position: fixed;
-        background-color: black;
-        top:0;
-        width: 100%;
-        height: 140%;
-        z-index: 100;
-        opacity: 0.75;
-               display: none;
-    }
-    .displaynone{
-        opacity: 0;
-        display: none;
-         -moz-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-    }
+    
     [class*="col-"] {
         width: 100%;
           padding: 0 ;
