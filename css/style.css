@@ -613,7 +613,10 @@ nav ul li a {
 .bg-404 .divider,  .bg-404 #content, .bg-404 .nav-spacer, .bg-404 nav, .bg-404, .bg-404 #menu {
     background-color: #ffff66;
 }
+.bg-404 #textwrap{
 
+    width: 100%;
+}
 .bg-404 h1{
         margin-top: 1vw;
     font-size:5.5vw;
@@ -631,6 +634,7 @@ nav ul li a {
 }
 .bg-404 a{
     color: royalblue;
+    text-decoration: none;
 }
 .bg-404 a:hover{
     color: dimgray;
