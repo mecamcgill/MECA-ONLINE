@@ -555,7 +555,8 @@ nav ul li a {
   color: #65726b;
   font-size: 1.25vw;
   letter-spacing: 0.01vw;
-  line-height: 1px;
+padding-top: 1vw;    
+  line-height: 1.2vw;
 }
 
 #card3 .btn {
@@ -647,7 +648,17 @@ nav ul li a {
 }
 @media only screen and (max-width: 768px) {
     .right-mobile, .left-mobile{
-    text-align: center;
+    text-align: center;     
+}
+     .bg-404 h1{
+    margin-top: 5vw;
+    font-size:10.5vw;
+    line-height: 5vw;
+      font-family: 'Lato', Sans-serif; 
+}
+    .bg-404 .lead{
+    font-size: 20vw;
+        position: relative;
 }
 }
 
@@ -668,16 +679,7 @@ nav ul li a {
     line-height: 1.3em;
         font-size: 0.8em;
     }
-    .bg-404 h1{
-    margin-top: 5vw;
-    font-size:10.5vw;
-    line-height: 5vw;
-      font-family: 'Lato', Sans-serif; 
-}
-    .bg-404 .lead{
-    font-size: 20vw;
-        position: relative;
-}
+   
 }
 
 @media only screen and (max-width: 780px) {
