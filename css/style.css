@@ -49,6 +49,8 @@ body {
   font-family: 'David Libre', serif;
   font-size: 1em;
   background-color: #fafaf3;
+width: 100%;
+overflow-x: hidden;
 }
 
 ol,
@@ -188,7 +190,7 @@ h2 {
   background-color: #fafaf3;
   width: 100%;
   height: 10px;
-  ;
+
 }
 
 .delay {
