@@ -436,6 +436,7 @@ background-size: contain;
 /* Card1 Styling */
 #card1, #card2, #card3, #card4{
     position: relative;
+    overflow: hidden; 
 }
 .caption {
   position: relative;
@@ -477,7 +478,10 @@ background-size: contain;
   box-shadow: 0px 0px 11px -1px rgba(196, 172, 183, 1);
 }
 
-#card1 .module {}
+#card1 .module {
+      padding: 40px;
+    position: absolute;
+}
 
 #card1 h2 {
   font-size: 5vw;
@@ -502,6 +506,7 @@ background-size: contain;
 /* Card2 Styling */
 
 #card2 .module {
+    position: absolute;
   padding: 40px;
 }
 
@@ -604,7 +609,7 @@ padding-top: 1vw;
 }
 
 #card4 .module {
-  position: relative;
+  position: absolute;
   padding: 40px;
   z-index: 10;
 }
