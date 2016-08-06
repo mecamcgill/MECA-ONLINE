@@ -335,6 +335,8 @@ nav ul li a {
 
 .logowrap:hover {
   background-image: url(logohover.gif);
+background-size: 150px;
+    background-repeat: no-repeat;
 }
 
 #content {
@@ -648,20 +650,80 @@ padding-top: 1vw;
 .left-mobile{
     text-align: left;
 }
+
+
 @media only screen and (max-width: 768px) {
-    .right-mobile, .left-mobile{
-    text-align: center;     
+        .right-mobile, .left-mobile{
+        text-align: center;     
+    }
+         .bg-404 h1{
+        margin-top: 5vw;
+        font-size:10.5vw;
+        line-height: 5vw;
+          font-family: 'Lato', Sans-serif; 
+    }
+        .bg-404 .lead{
+        font-size: 20vw;
+            position: relative;
+    }
+        .bg-404 #content{
+        padding-top: 200px;
+        height: 90vh;
+        padding-bottom: 200px;
+    }  
 }
-     .bg-404 h1{
-    margin-top: 5vw;
-    font-size:10.5vw;
+
+
+.bg-recruitment .divider,  .bg-recruitment #content, .bg-recruitment .nav-spacer, .bg-recruitment nav, .bg-recruitment, .bg-recruitment #menu {
+    background-color: #72b1d2;
+}
+.bg-recruitment h1{
+        margin-top: 1vw;
+    font-size:5.5vw;
     line-height: 5vw;
-      font-family: 'Lato', Sans-serif; 
+      font-family: 'Lora', serif; 
+    color: white;
 }
-    .bg-404 .lead{
-    font-size: 20vw;
-        position: relative;
+.bg-recruitment h2{
+font-family: 'Lato', Sans-serif;
+    font-size: 2.3vw;
 }
+
+.bg-recruitment .lead{
+    font-size: 1.3vw;
+    color: aliceblue;
+}
+.bg-recruitment #content{
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+.bg-recruitment .spacer{
+    width: 100%;
+    height: 10vw;
+}
+.bg-recruitment .featured{
+    width: 100%;
+    height: 15vw;
+    padding: 30px;
+    text-align: center;
+  
+        background-color: aliceblue;
+    color: black;
+}
+.bg-recruitment .cards{
+    height: 20vw;
+
+      padding: 60px;
+        text-align: left;
+    background-color: aliceblue;
+}
+
+.ballonwrap {
+    position: absolute;
+    top: -200px;
+    transform: scale(0.8);
+    z-index: -1;
+    width: 100%;
 }
 
 /* END OF PAGE COLORS */
@@ -681,11 +743,23 @@ padding-top: 1vw;
     line-height: 1.3em;
         font-size: 0.8em;
     }
-   
+   .notablet {
+       display: none !important;
 }
-
+}
+@media (min-width:500px)and (max-width: 780px) {
+      .wrapper {
+    padding: 0 7.5% 0 7.5% !important;
+  }
+    .caption{
+        height: 70vw !important;
+    }
+}
 @media only screen and (max-width: 780px) {
   /* For mobile phones: */
+    .ballonwrap {
+display: none;
+}
   .nomobile {
     display: none;
   }
@@ -946,4 +1020,38 @@ padding-top: 1vw;
   .imglink:hover {
     opacity: 0.65;
   }
+    .bg-recruitment h1{
+    font-size:11.5vw;
+    line-height: 11vw;
+
+}
+.bg-recruitment h2{
+font-family: 'Lato', Sans-serif;
+    font-size: 6.3vw;
+}
+
+.bg-recruitment .lead{
+    font-size: 4.3vw;
+}
+.bg-recruitment #content{
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+.bg-recruitment .spacer{
+    width: 100%;
+    height: 10vw;
+}
+.bg-recruitment .featured{
+    width: 100%;
+    height: 55vw;
+    border-radius: 0px;
+
+}
+.bg-recruitment .cards{
+    height: 60vw;
+    border-radius: 0px;
+
+ 
+
+}
 }
