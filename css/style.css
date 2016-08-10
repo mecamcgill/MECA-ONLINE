@@ -46,11 +46,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1.5em;
-  font-family: 'David Libre', serif;
   font-size: 1em;
   background-color: #fafaf3;
 width: 100%;
 overflow-x: hidden !important;
+
 }
 
 ol,
@@ -84,7 +84,10 @@ h2 {
   line-height: 3.8vw;
 }
 
-
+.Reem, h2, h1{font-family: 'Reem Kufi', sans-serif;}
+.tag, .menu, .bg-recruitment h2, .bg-recruitment p, Lato{font-family: 'Work+Sans:200', sans-serif;}
+.David, .lead, {font-family: 'David Libre', serif; letter-spacing: 1px;}
+.Lora, .bg-recruitment h3{font-family: 'Lora', serif;}
 /*Classes*/
 
 .relative {
@@ -104,7 +107,7 @@ h2 {
   display: inline-block;
   padding: 0px 5px 0px 5px;
   border-radius: 2px;
-  font-family: 'Lato', sans-serif;
+ 
   font-size: 0.7em;
   text-transform: uppercase;
   color: white;
@@ -154,7 +157,7 @@ h2 {
 }
 
 .wrapper {
-  padding: 0 9% 0 9%;
+  padding: 0 10% 0 10%;
     position: relative;
 }
 
@@ -202,7 +205,7 @@ h2 {
   position: fixed;
   top: 40px;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+
 }
 
 .delay2,
@@ -223,7 +226,7 @@ h2 {
   height: 85px;
   color: #333;
   z-index: 1000;
-  font-family: 'Lato', sans-serif;
+ 
   text-transform: uppercase;
   font-size: 0.8em;
   z-index: -1;
@@ -237,7 +240,7 @@ h2 {
   height: 50px;
   width: 100%;
   background-color: rgba(245, 245, 245, 0.90);
-  font-family: 'Lato', sans-serif;
+ 
   font-size: 0.7em;
   text-transform: uppercase;
   letter-spacing: 0.001em;
@@ -272,7 +275,7 @@ h2 {
 }
 
 #menu {
-  position: fixed;
+  position: absolute;
   margin-top: 0;
   padding-top: 10px;
   width: 100%;
@@ -311,7 +314,7 @@ nav ul li {
 }
 
 nav ul li a {
-  font-family: 'Lato', sans-serif;
+ 
   padding: 25px 15px;
   text-decoration: none;
   font-size: 0.8em;
@@ -363,7 +366,7 @@ background-size: contain;
 }
 
 .no {
-  padding-right: 0;
+  padding-right: 0 ;
 }
 
 [class*='col-'] {
@@ -432,6 +435,96 @@ background-size: contain;
   padding: 0 0 15px 0
 }
 
+/* ACCORDION STYLING */
+
+.accordion .transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+
+.accordion .no-select, h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+  
+
+
+.accordion ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accordion ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+.accordion ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accordion ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accordion ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accordion ul li:last-of-type {
+  padding-bottom: 0;
+}
+.accordion ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accordion ul li i:before, ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+.accordion ul li i:before {
+  transform: translate(-3px, 0) rotate(45deg);
+}
+.accordion ul li i:after {
+  transform: translate(2px, -2px) rotate(-45deg);
+}
+.accordion ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accordion ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.accordion ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 1px) rotate(45deg);
+}
+.accordion ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-3px, 0px) rotate(-45deg);
+}
+
+
+
 
 /* Card1 Styling */
 #card1, #card2, #card3, #card4{
@@ -498,7 +591,7 @@ background-size: contain;
   color: #b55252;
   font-size: 1.2vw;
   bottom: 50px;
-  font-family: 'Lato', Sans-serif;
+ 
   position: absolute;
 }
 
@@ -524,7 +617,7 @@ background-size: contain;
   font-size: 4vw;
   letter-spacing: 0.01vw;
   color: whitesmoke;
-  font-family: 'Lato', Sans-serif;
+ 
 }
 
 #card2 .lead {
@@ -560,7 +653,7 @@ background-size: contain;
   font-size: 3.5vw;
   letter-spacing: -0.2vw;
   color: #65726b;
-  font-family: 'Lato', Sans-serif;
+ 
 }
 
 #card3 .lead {
@@ -595,7 +688,7 @@ padding-top: 1vw;
   letter-spacing: -0.1vw;
   line-height: 3.5vw;
   color: white;
-  font-family: 'Lato', Sans-serif;
+ 
   text-transform: uppercase;
   z-index: 10;
 }
@@ -634,7 +727,7 @@ padding-top: 1vw;
         margin-top: 1vw;
     font-size:5.5vw;
     line-height: 5vw;
-      font-family: 'Lato', Sans-serif; 
+      
 }
 
 .bg-404 .lead{
@@ -668,7 +761,7 @@ padding-top: 1vw;
         margin-top: 5vw;
         font-size:10.5vw;
         line-height: 5vw;
-          font-family: 'Lato', Sans-serif; 
+          
     }
         .bg-404 .lead{
         font-size: 20vw;
@@ -688,29 +781,75 @@ padding-top: 1vw;
 .bg-recruitment {
     background-color: white;
 }
+.bg-recruitment .content2 .wrapper{
+
+    padding: 0 6.5% 0 6.5%;
+  
+}
+.hero {
+    min-height: 65vh;
+}
 .bg-recruitment h1{
         margin-top: 1vw;
     font-size:5.5vw;
     line-height: 5vw;
-      font-family: 'Lora', serif; 
+
     color: white;
 }
 .bg-recruitment h2{
-font-family: 'Lato', Sans-serif;
-    font-size: 2.3vw;
+ color: #47515b;
+    font-size: 1.3em;
+    color: black;
+    line-height: 20px;
+}
+.bg-recruitment h3{
+ color: #47515b;
+    font-size: 2.3em;
+    line-height: 0em;
+    padding: 100px 0 15px 0;
+
 }
 .bg-recruitment .content2{
     position:relative;
-    background-color:white !important ;
+    background-color:white!important ;
     min-height: 100%;
 }
 .bg-recruitment .lead{
     font-size: 1.3vw;
     color: aliceblue;
+   
+}
+.bg-recruitment .lead2{
+    font-size: 1em;
+padding-bottom: 50px;
+   
+}
+.bg-recruitment p{
+    font-size: 1em;
+    color: #676f78;
+    line-height: 1.3em;
+    padding-top: 20px;
+    
+}
+.bg-recruitment .cta{
+    display: block;
+    color: #72b1d2;
+    text-decoration: none;
+  padding: 20px;
+}
+.bg-recruitment .featured p{
+        font-size: 1.1em;
+    color:aliceblue;
 }
 .bg-recruitment #content{
     padding-top: 150px;
 
+}
+.bg-recruitment  [class*='col-'] {
+  padding-right: 20px;
+}
+.no {
+    padding-right: 0px !important;
 }
 .bg-recruitment .spacer{
     width: 100%;
@@ -718,26 +857,31 @@ font-family: 'Lato', Sans-serif;
 }
 .bg-recruitment .overlay{
     width: 100%;
-
   position: relative;
-            min-height: 400px;
+        height: 400px;
 }
-.bg-recruitment .featured{
-    position:absolute; top:-60px;
-     padding: 75px;
-    width: 100%;
- 
+.bg-recruitment .module{
+    padding: 40px;
+    height: 200px;
     text-align: center;
-    background-color: hotpink;
-    color: white;
+border: solid 1px #d2d6d9;
+    background-color: white;
 }
-.bg-recruitment .cards{
-    height: 20vw;
+.subtext{
+    font-size: 0.8em;
+}
 
-      padding: 60px;
-        text-align: left;
-    background-color: aliceblue;
+.bg-recruitment .featured{
+    position:absolute; 
+    top:-60px;
+     padding: 140px;
+width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #f8875a;
+
 }
+
 
 .ballonwrap {
     position: absolute;
@@ -811,6 +955,7 @@ display: none;
   #menu {
     position: fixed;
     z-index: 100;
+      top: 0;
   }
   .colorless {
     background-color: rgba(0, 0, 0, 0) !important;
@@ -863,7 +1008,7 @@ display: none;
   }
   nav ul li a {
     position: relative;
-    font-family: 'Lato', sans-serif;
+   
     padding: 20px 20px;
     text-decoration: none;
     font-size: 0.9em;
@@ -889,7 +1034,7 @@ display: none;
   .hamburger-label {
     text-transform: uppercase;
     color: black;
-    font-family: 'Lato', Sans-serif;
+   
     font-size: 10px;
     position: absolute;
     right: 0;
@@ -925,7 +1070,7 @@ display: none;
     background-position: left bottom;
   }
   #card1 h2 {
-    font-size: 10.5vw;
+    font-size: 9.5vw;
     color: #b55252;
     padding-bottom: 7vw;
   }
@@ -938,7 +1083,7 @@ display: none;
     color: #b55252;
     font-size: 4vw;
     bottom: 50px;
-    font-family: 'Lato', Sans-serif;
+   
     position: absolute;
   }
   /* Card2 Styling */
@@ -957,7 +1102,7 @@ display: none;
     font-size: 8vw;
     letter-spacing: 0.01vw;
     color: whitesmoke;
-    font-family: 'Lato', Sans-serif;
+   
   }
   #card2 .lead {
     color: whitesmoke;
@@ -985,7 +1130,7 @@ display: none;
     font-size: 8.5vw;
     letter-spacing: -0.2vw;
     color: #65726b;
-    font-family: 'Lato', Sans-serif;
+   
     line-height: 8vw;
   }
   #card3 .lead {
@@ -1012,7 +1157,7 @@ display: none;
     letter-spacing: -0.1vw;
     line-height: 1em;
     color: white;
-    font-family: 'Lato', Sans-serif;
+   
     text-transform: uppercase;
     z-index: 10;
   }
@@ -1048,7 +1193,7 @@ display: none;
 
 }
 .bg-recruitment h2{
-font-family: 'Lato', Sans-serif;
+ 
     font-size: 6.3vw;
 }
 
