@@ -79,7 +79,10 @@ table {
 
 
 /* Global Styling */
-
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 h2 {
   font-size: 3.5vw;
   line-height: 3.8vw;
