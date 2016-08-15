@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>Talk to Us | MECA</title>
+  <meta content="MECA is an official club of McGill that promotes and celebrates Academia and Korean Culture. We host bold events, conferences, and mentorship programs. Become a member today." name="description">
+  <meta content="McGill Korean Society Club Association Culture" name="keywords">
+  <meta content="MECA McGill" name="author">
+  <meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/animation.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=David+Libre|Work+Sans:200|Lora:700|Reem+Kufi" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script type='text/javascript'>
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+  </script>
+</head>
+
+<body class=" bg-contact">
+
+
+  <div class="se-pre-con"></div>
+  <div class=" nav-spacer"></div>
+  <div id="menu" class="nav-down">
+    <div class="wrapper">
+      <a href="index.html">
+        <div class="logowrap v-center">
+        </div>
+      </a>
+      <a class="menu-toggle mobileonly" style="float:right">
+        <button id="menu-btn" class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
+  <span class="hamburger-box hamburger--elastic">
+    <span class="hamburger-inner hamburger--elastic"></span>
+  </span>
+            
+</button>
+        <div class="hamburger-label Lato">Menu</div>
+      </a>
+      <nav>
+
+        <ul class="menu">
+          <li><a href="events.html">Events</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="recruitment.html">Recruitment</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+  <a class="menu-toggle-secondary">
+    <div id="darkness" class="displaynone"></div>
+  </a>
+  <div id="content" class="h-center text-align-center">
+    <br><br>
+    <div class="wrapper grid contact">
+
+<div class="col-5" data-aos="fade-up" data-aos-once="false" >
+    <div class="module">
+    <h1>Hello!</h1>
+    <p class="lead text-align-center">Whether you are a fellow student at McGill curious about the best places to study or an executive of another club wishing to collaborate on an event, we want to hear from you. <br>  <br> <br>
+
+        </p>
+        </div>
+    </div>
+      <div class="col-7 no" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+
+          <form action="https://formspree.io/ilovemeca@gmail.com"
+      method="POST">
+<input placeholder="Name" type="text" required>
+<input placeholder="Email" type="email" required>
+              <textarea placeholder="Your Message" type="text" required ></textarea>
+              <button type="submit" value="Send"> Send</button>
+</form>
+
+
+</div>
+
+      <div class="col-12 top no">
+
+
+      </div>
+
+
+    </div>
+    <div id="footer" class="grid">
+      <div class="col-12"><img class="object nodrag nocursor" src="images/footer.gif" data-aos="fade-up" data-aos-once="false" data-aos-offset="15"></div>
+    </div>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <script>
+      $(window).load(function() {
+  AOS.init({
+      duration: 400,
+      easing: 'ease-in-sine',
+			});
+});
+    </script>
+    <script>
+      $(".menu-toggle-secondary").bind("click", (function () {
+  
+  	$(".menu-toggle").trigger("click");
+  
+  }));
+      
+      $('.menu-toggle').click(function() {
+        var clicks = $(this).data('clicks');
+        if (clicks) {
+           // odd clicks
+          $("nav").removeClass("slidein");
+          $( "#darkness" ).hide();
+          $("body").removeClass("disablescroll");
+            $(".hamburger").removeClass("is-active");
+            $("#menu").removeClass("colorless");
+        } else {
+           // even clicks
+          $("nav").toggleClass("slidein");
+          $("#menu").toggleClass("colorless");
+          $( "#darkness" ).show();
+          $("body").toggleClass("disablescroll");
+           $(".hamburger").toggleClass("is-active");
+        }
+        $(this).data("clicks", !clicks);
+      });
+            
+      // Hide Header on on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('#menu').outerHeight();
+  
+  $(window).scroll(function(event){
+      didScroll = true;
+  });
+  setInterval(function() {
+      if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+      }
+  }, 250);
+  function hasScrolled() {
+      var st = $(this).scrollTop();
+      // Make sure they scroll more than delta
+      if(Math.abs(lastScrollTop - st) <= delta)
+          return;
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight){
+          // Scroll Down
+          $('#menu').removeClass('nav-down').addClass('nav-up');
+      } else {
+          // Scroll Up
+          if(st + $(window).height() < $(document).height()) {
+              $('#menu').removeClass('nav-up').addClass('nav-down');
+          }
+      }
+      
+      lastScrollTop = st;
+  }
+    </script>
+
+</body>
+
+</html>
