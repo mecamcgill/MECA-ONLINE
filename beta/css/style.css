@@ -372,7 +372,7 @@ background-size: contain;
 }
 
 [class*='col-'] {
-  padding-right: 1.3vw;
+  padding-right: 15px;
 }
 
 .no {
@@ -438,11 +438,11 @@ background-size: contain;
 }
 
 .top {
-  padding-top: 1.3vw;
+  padding-top: 15px;
 }
 
 .bottom {
-  padding-bottom:1.3vw;
+  padding-bottom:15px;
 }
 
 
@@ -459,7 +459,6 @@ background-size: contain;
 .caption {
   position: relative;
   width: 100%;
-  border-radius: 5px;
   -moz-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   -webkit-transition: all .1s ease-in;
@@ -485,13 +484,13 @@ background-size: contain;
 }
 
 #card1 .caption {
-  background-image: url(image1.jpg);
+  background-image: url(imae1.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: right bottom;
-  height: 20vw;
+  height: 23em;
 }
 
 #card1 .module {
@@ -533,7 +532,7 @@ background-size: contain;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  height: 35vw;
+  height: 40em;
 }
 
 #card2 h2 {
@@ -569,7 +568,7 @@ background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom left;
-  height: 35vw;
+  height: 40em;
 }
 
 #card3 h2 {
@@ -637,7 +636,7 @@ padding-top: 1vw;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 30vw;
+  height: 30em;
   color: white;
   overflow: hidden;
 }
@@ -738,7 +737,7 @@ padding-top: 1vw;
 .bg-recruitment .divider,  .bg-recruitment .nav-spacer, .bg-recruitment nav,.bg-recruitment #menu,.bg-recruitment #content {
     background-color: #72b1d2;
 }
-.bg-events .divider,  .bg-events  .nav-spacer, .bg-events nav,.bg-events  #menu,.bg-events  #content{
+.bg-events .divider,  .bg-events  .nav-spacer, nav,.bg-events  #content{
     background-color: #e0a2a8;
 }
 .bg-events {
@@ -1037,11 +1036,11 @@ display: none;
   }
   nav ul li a {
     position: relative;
-   
-    padding: 20px 20px;
+    padding: 15px 20px;
     text-decoration: none;
-    font-size: 0.9em;
-    letter-spacing: 0.6px;
+    font-size: 1.3em;
+font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 0.3px;
     z-index: 2000;
   }
   #menu .menu-toggle {
@@ -1070,7 +1069,7 @@ background-size: 170px  ;
     position: absolute;
     outline: none !important;
     right: 1px;
-      top: -10px;
+      top: -13px;
        -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -ms-transform:scale(0.8);
@@ -1082,7 +1081,7 @@ background-size: 170px  ;
     font-size: 8px;
     position: absolute;
     right: 0;
-      top: 6px;
+      top: 3px;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -1115,14 +1114,14 @@ background-size: 170px  ;
     background-position: left bottom;
   }
   #card1 h2 {
-    font-size: 7.5vw;
+    font-size: 2.3em;
     color: #b55252;
     padding-bottom: 7vw;
   }
   #card1 .lead {
     color: #b55252;
     line-height: 2vw;
-    font-size: 4vw;
+    font-size: 1em;
   }
   #card1 .cta {
     color: #b55252;
@@ -1399,4 +1398,17 @@ textarea:focus,  textarea:valid{
  -webkit-transform: translateY(-40px);
  transform: translateY(-40px);
  visibility: visible !important;
+}
+
+
+/** Gradient **/
+.gradient1{
+    background: rgba(202,231,227,1);
+background: -moz-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(202,231,227,1)), color-stop(19%, rgba(202,231,227,1)), color-stop(46%, rgba(217,233,233,1)), color-stop(72%, rgba(231,235,238,1)), color-stop(100%, rgba(231,235,238,1)));
+background: -webkit-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
+background: linear-gradient(135deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cae7e3', endColorstr='#e7ebee', GradientType=1 );
 }
