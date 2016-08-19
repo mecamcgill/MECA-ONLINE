@@ -236,9 +236,10 @@ h2 {
   height: 85px;
   color: #333;
   z-index: 1000;
- 
+ text-align: center;
   text-transform: uppercase;
   font-size: 0.8em;
+
   z-index: -1;
 }
 
@@ -246,19 +247,7 @@ h2 {
   width: 90px;
 }
 
-#top-menu {
-  height: 50px;
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.90);
- 
-  font-size: 0.7em;
-  text-transform: uppercase;
-  letter-spacing: 0.001em;
-  line-height: 55px;
-  position: fixed;
-  bottom: 0;
-  z-index: 10;
-}
+
 
 .nav-up {
   top:0;
@@ -270,10 +259,10 @@ h2 {
 
 .nav-down {
   top: 0px;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .nav-spacer {
@@ -281,7 +270,7 @@ h2 {
   width: 100%;
   height: 85px;
   color: #333;
-  background-color: #fafaf3;
+
 }
 
 #menu {
@@ -291,8 +280,8 @@ h2 {
   width: 100%;
   height: 85px;
   color: #333;
-  background-color: #fafaf3;
   z-index: 1000;
+background-color: transparent;
 }
 
 nav {
@@ -737,7 +726,7 @@ padding-top: 1vw;
 .bg-recruitment .divider,  .bg-recruitment .nav-spacer, .bg-recruitment nav,.bg-recruitment #menu,.bg-recruitment #content {
     background-color: #72b1d2;
 }
-.bg-events .divider,  .bg-events  .nav-spacer, nav,.bg-events  #content{
+.bg-events .divider,  .bg-events  .nav-spacer,.bg-events  #content{
     background-color: #e0a2a8;
 }
 .bg-events {
@@ -932,12 +921,7 @@ width: 100%;
 }
 @media only screen and (max-width: 780px) {
     
-#menu {
-  position: fixed;
-  margin-top: 0;
-  padding-top: 0px;
- 
-}
+
 .bg-contact h1{
     font-size: 11.4vw;
   padding: 70px 0 70px 0;
@@ -979,14 +963,18 @@ display: none;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
   }
+
   #menu {
     position: fixed;
     z-index: 100;
       top: 0;
       height: 60px;
+      margin-top: 0;
+  padding-top: 0px;
+     background-color: inherit;
   }
   .colorless {
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: transparent!important;
   }
   nav {
     position: fixed;

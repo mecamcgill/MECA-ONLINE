@@ -97,20 +97,20 @@
 			});
 });
     </script>
-    <script>
-      $(".menu-toggle-secondary").bind("click", (function () {
-  
-  	$(".menu-toggle").trigger("click");
-  
-  }));
-      
-      $('.menu-toggle').click(function() {
-        var clicks = $(this).data('clicks');
-        if (clicks) {
-           // odd clicks
-          $("nav").removeClass("slidein");
-          $( "#darkness" ).hide();
-          $("body").removeClass("disablescroll");
+         <script>
+          $(".menu-toggle-secondary").bind("click", (function () {
+
+        $(".menu-toggle").trigger("click");
+
+      }));
+
+          $('.menu-toggle').click(function() {
+            var clicks = $(this).data('clicks');
+            if (clicks) {
+               // odd clicks
+              $("nav").removeClass("slidein");
+              $( "#darkness" ).hide();
+              $("body").removeClass("disablescroll");
             $(".hamburger").removeClass("is-active");
             $("#menu").removeClass("colorless");
         } else {
@@ -159,7 +159,6 @@
       lastScrollTop = st;
   }
     </script>
-
 </body>
 
 </html>

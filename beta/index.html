@@ -62,7 +62,7 @@
     <div id="darkness" class="displaynone"></div>
   </a>
   <div id="content" class="h-center text-align-center antialiased">
-    <br><br>
+    <br><br class="nomobile">
     <div class="wrapper grid ">
 
       <a href="events.html">
@@ -382,20 +382,20 @@
 			});
 });
     </script>
-    <script>
-      $(".menu-toggle-secondary").bind("click", (function () {
-  
-  	$(".menu-toggle").trigger("click");
-  
-  }));
-      
-      $('.menu-toggle').click(function() {
-        var clicks = $(this).data('clicks');
-        if (clicks) {
-           // odd clicks
-          $("nav").removeClass("slidein");
-          $( "#darkness" ).hide();
-          $("body").removeClass("disablescroll");
+        <script>
+          $(".menu-toggle-secondary").bind("click", (function () {
+
+        $(".menu-toggle").trigger("click");
+
+      }));
+
+          $('.menu-toggle').click(function() {
+            var clicks = $(this).data('clicks');
+            if (clicks) {
+               // odd clicks
+              $("nav").removeClass("slidein");
+              $( "#darkness" ).hide();
+              $("body").removeClass("disablescroll");
             $(".hamburger").removeClass("is-active");
             $("#menu").removeClass("colorless");
         } else {
