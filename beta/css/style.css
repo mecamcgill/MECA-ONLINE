@@ -645,12 +645,12 @@ padding-top: 1vw;
 /*Card4 Styling*/
 
 #card4 .caption {
-  background-color: #72b1d2;
+  background-color: #74acff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 30em;
+  height: 25em;
   color: white;
   overflow: hidden;
 }
@@ -683,7 +683,9 @@ padding-top: 1vw;
 #card4 .object {
   position: absolute;
   bottom: -180px;
-  z-index: 1
+    left: -90px;
+  z-index: 1;
+    transform: scale(1.4)
 }
 
 
@@ -1228,7 +1230,7 @@ background-color: #d8faff;
   }
   /*Card4 Styling*/
   #card4 .caption {
-    background-color: #72b1d2;
+  background-color: #74acff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
