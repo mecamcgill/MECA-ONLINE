@@ -15,14 +15,20 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-
+<script type='text/javascript'>
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+  </script>
 </head>
 
 <body class="bg-recruitment" >
  
-  <div class=" nav-spacer" ></div>
-  <div id="menu" class="nav-down" >
-    <div class="wrapper" >
+  <div class="se-pre-con"></div>
+  <div class=" nav-spacer"></div>
+  <div id="menu" class="nav-down">
+    <div class="wrapper">
       <a href="index.html">
         <div class="logowrap v-center">
         </div>
@@ -31,19 +37,22 @@
         <button id="menu-btn" class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
   <span class="hamburger-box hamburger--elastic">
     <span class="hamburger-inner hamburger--elastic"></span>
-  </span>            
+  </span>
+            
 </button>
-        <div class="hamburger-label">Menu</div>
+        <div class="hamburger-label Lato">Menu</div>
       </a>
       <nav>
+
         <ul class="menu">
-        <li><a href="about.html">About</a></li>
+         <li><a href="about.html">About</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="membership.html">Membership</a></li>
-          <li><a href="about.html" style="color:hotpink">Recruitment</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html">KOR</a></li>
+          <li><a href="recruitment.html">Recruitment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
         </ul>
+
       </nav>
     </div>
   </div>
