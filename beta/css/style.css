@@ -441,8 +441,6 @@ background-size: contain;
 #card1, #card2, #card3, #card4{
     position: relative;
     overflow: hidden; 
-
-
 }
 
 .caption {
@@ -452,7 +450,7 @@ background-size: contain;
   -o-transition: all .1s ease-in;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
-    
+overflow: hidden;
 }
 
 .caption:hover {
@@ -473,33 +471,43 @@ background-size: contain;
 }
 
 #card1 .caption {
-  background-image: url(imae1.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: right bottom;
   height: 23em;
+    background-color: #5ccbdd;
 }
-
+#card1 #o-1 {
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 600px;
+    z-index: 1;
+}
+#card1 #o-2 {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 450px;
+    z-index: 1000;
+}
 #card1 .module {
       padding: 40px;
     position: absolute;
 }
 
 #card1 h2 {
-  font-size: 5vw;
-  color: #b55252;
+  font-size: 5.6vw;
+  color: firebrick;
+    line-height: 5vw;
+position: relative;
 }
 
 #card1 .lead {
-  color: #b55252;
+  color: white;
   line-height: 40px;
   font-size: 1.5vw;
 }
 
 #card1 .cta {
-  color: #b55252;
+  color:white;
   font-size: 1.2vw;
   bottom: 50px;
  
@@ -915,9 +923,7 @@ width: 100%;
       .wrapper {
     padding: 0 7.5% 0 7.5% !important;
   }
-    .caption{
-        height: 70vw !important;
-    }
+
 }
 @media only screen and (max-width: 780px) {
     
@@ -928,7 +934,19 @@ width: 100%;
     color: #af6349;
     line-height: 1em;
 }
-
+#card1 #o-1 {
+    position: absolute;
+    right: -220px;
+    bottom: -100;
+    width: 110vw;
+    z-index: 1;
+}
+#card1 #o-2 {
+    position: absolute;
+    left: 0;
+    width: 380px;
+    z-index: 1000;
+}
   /* For mobile phones: */
     .ballonwrap {
 display: none;
@@ -1090,6 +1108,9 @@ background-size: 170px  ;
   }
   .caption {
     border-radius: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
   }
   .tag {
     font-size: 0.5em;
@@ -1098,21 +1119,18 @@ background-size: 170px  ;
     display: none;
   }
   #card1 .caption {
-    height: 95vw;
-    background-position: left bottom;
+    height: 80vw;
+  
   }
   #card1 h2 {
     font-size: 2.3em;
-    color: #b55252;
     padding-bottom: 7vw;
   }
   #card1 .lead {
-    color: #b55252;
     line-height: 2vw;
     font-size: 1em;
   }
   #card1 .cta {
-    color: #b55252;
     font-size: 4vw;
     bottom: 50px;
    
@@ -1128,7 +1146,7 @@ background-size: 170px  ;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 95vw;
+    height: 80vw;
   }
   #card2 h2 {
     font-size: 8vw;
@@ -1239,14 +1257,13 @@ background-size: 170px  ;
 }
 
 .bg-recruitment .module{
-    padding: 20px 10px 20px 10px;
-    height: 200px;
+    padding: 20px 5px 20px 5px;
+    min-height: 200px;
+    border-radius: 0;
+border: none;
 }
     
 
-.padding: 0;
-  
-}
 
 }
 
