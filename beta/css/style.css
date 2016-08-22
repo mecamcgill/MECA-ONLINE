@@ -45,6 +45,7 @@ footer, header, hgroup, menu, nav, section {
   background: url(Preloader.gif) center no-repeat white;
 }
 
+
 body {
   line-height: 1.5em;
   font-size: 1em;
@@ -528,12 +529,7 @@ line-height: 1.2em !important;
 }
 
 #card2 .caption {
-  background-image: url(image2.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
+ background-color: #d8faff;
   height: 40em;
 }
 
@@ -548,7 +544,23 @@ line-height: 1.2em !important;
   color: whitesmoke;
   font-size: 1.5vw;
 }
-
+#card2 #o-1 {
+    position: absolute;
+    margin: auto;
+  top: -100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+    width: 60%;
+    z-index: 1;
+}
+#card2 #o-2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 #card2 .btn {
   margin-top: 1.3vw;
 }
@@ -749,7 +761,7 @@ padding-top: 1vw;
     min-height: 45vh;
 }
 .bg-contact, .bg-contact .divider,  .bg-contact  .nav-spacer, .bg-contact nav,.bg-contact  #menu,.bg-contact  #content{
-      background-color: #f8fab4;
+      background-color: #fff600;
 }
 .bg-contact h1{
     font-size: 6.4vw;
@@ -943,14 +955,28 @@ width: 100%;
     position: absolute;
     left: 50%;
     bottom: -100;
-    width: 170vw;
+    width: 150vw;
     z-index: 1;
-    opacity: 0.2;
+    opacity: 0.8;
 }
 #card1 #o-2 {
     position: absolute;
     left: 0;
-    width: 380px;
+    width: 80vw;
+    z-index: 1000;
+}
+    #card2 #o-1 {
+    position: absolute;
+    top: -20px;
+
+    width: 50%;
+    z-index: 1;
+}
+    #card2 #o-2 {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
     z-index: 1000;
 }
   /* For mobile phones: */
@@ -1140,7 +1166,9 @@ background-size: 170px  ;
   }
   #card1 .lead {
     line-height: 2vw;
-    font-size: 1em;
+    font-size: 0.9em;
+      padding-right: 60px;
+      
   }
   #card1 .cta {
     font-size: 4vw;
@@ -1153,11 +1181,7 @@ background-size: 170px  ;
     padding: 40px;
   }
   #card2 .caption {
-    background-image: url(image2.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+background-color: #d8faff;
     height: 80vw;
   }
   #card2 h2 {
