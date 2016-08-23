@@ -50,6 +50,7 @@ body {
   line-height: 1.5em;
   font-size: 1em;
   background-color: #fafaf3;
+    color: #333;
 width: 100%;
 overflow-x: hidden !important;
 
@@ -95,8 +96,8 @@ h2 {
   line-height: 3.8vw;
 }
 
-.Reem, h2, h1{font-family: 'Reem Kufi', sans-serif;}
-.tag, .menu, .bg-recruitment h2, .bg-recruitment p, .lead,   .hamburger-label, Lato{font-family: 'Work+Sans:200', sans-serif;}
+.Reem,.event-date, .event-details, h2, h1{font-family: 'Reem Kufi', sans-serif;}
+ .tag, .menu, .bg-recruitment h2, .bg-recruitment p, .lead,   .hamburger-label, .Lato{font-family: 'Work+Sans:200', sans-serif;}
 .David {font-family: 'David Libre', serif; letter-spacing: 1px;}
 .Lora, .bg-recruitment h3{font-family: 'Lora', serif;}
 /*Classes*/
@@ -472,13 +473,13 @@ overflow: hidden;
 }
 
 #card1 .caption {
-  height: 23em;
+  height: 25em;
     background-color: #5ccbdd;
 }
 #card1 #o-1 {
     position: absolute;
-    right: 0;
-    bottom: -100px;
+    right: -20px;
+    bottom: -70px;
     width: 600px;
     z-index: 1;
 }
@@ -486,7 +487,7 @@ overflow: hidden;
     position: absolute;
     top: 40px;
     left: 0;
-    width: 450px;
+    width: 480px;
     z-index: 1000;
 }
 #card1 .module {
@@ -549,14 +550,14 @@ line-height: 1.2em !important;
     margin: auto;
   top: -100px;
   right: 0;
-  bottom: 0;
+  bottom:0;
   left: 0;
     width: 60%;
     z-index: 1;
 }
 #card2 #o-2 {
     position: absolute;
-    bottom: 0px;
+    bottom: -40px;
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -749,16 +750,69 @@ padding-top: 1vw;
     }  
 }
 
-
+.border{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    border: solid 30px #fafaf3;
+}
 .bg-recruitment .divider,  .bg-recruitment .nav-spacer, .bg-recruitment nav,.bg-recruitment #menu,.bg-recruitment #content {
-    background-color: #72b1d2;
+    background-color: #74acff;
 }
-.bg-events .divider,  .bg-events  .nav-spacer,.bg-events  #content{
-    background-color: #e0a2a8;
+.bg-events, .bg-events .divider,  .bg-events  .nav-spacer,.bg-events  #content{
+    background-color:#5ccbdd;
 }
-.bg-events {
-    background: white;
+.events h1{
+    text-align: left;
+color: white;
+    font-size: 7em;
+    line-height: 1em;
+    font-family: 'Kanit', sans-serif;
 }
+.event .lead{
+    text-align: left;
+font-size: 1em;
+}
+.events .bottom{
+    padding-bottom:120px ;
+}
+.events .top{
+    padding-top:120px ;
+}
+.event-date{
+    font-size: 1.3em;
+}
+
+
+.event-name{
+    font-size: 3em;
+
+    line-height: 1em;
+}
+.event-details{
+        font-size: 1.1em;
+}
+.events .card {
+color: white !important;
+  padding: 55px;
+   -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+
+
+.events .card:hover{
+color: black !important;
+    
+}
+.event-svg {
+width: 100%;
+height: 85px
+}
+
 .bg-events .hero {
     min-height: 45vh;
 }
@@ -783,12 +837,7 @@ padding-top: 1vw;
     padding: 0 25% 0 25%;
 }
 .bg-events #card1 .caption {
-  background-image: url(events.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: right bottom;
+  
 }
 .bg-events #card1 h2, .bg-events #card1 .lead{
     color: white;
@@ -814,7 +863,7 @@ padding-top: 1vw;
 .bg-recruitment h2{
  color: #47515b;
     font-size: 1.3em;
-    color: black;
+color: #333;
     line-height: 20px;
 }
 .bg-recruitment h3{
@@ -858,12 +907,17 @@ padding-bottom: 50px;
 }
 .bg-recruitment #content{
     padding-top: 150px;
-    background-image: url(rainbow.jpg);
-    animation: animatedBackground 10s linear infinite;
+ 
 
 }
 .bg-recruitment  [class*='col-'] {
-  padding-right: 20px;
+  padding-right: 40px;
+}
+.bg-recruitment .top{
+    padding-top: 40px;
+}
+.bg-recruitment .bottom{
+    padding-bottom: 40px;
 }
 .no {
     padding-right: 0px !important;
@@ -882,7 +936,7 @@ padding-bottom: 50px;
     height: 200px;
     text-align: center;
 border: solid 1px #d2d6d9;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: white;
 }
 .bg-recruitment .module:hover{
@@ -987,7 +1041,9 @@ width: 100%;
     font-size: 0.9em !important;
 
 }
-
+.events .card{
+    padding-top: 120px !important;
+    }
     .ballonwrap {
 display: none;
 }
@@ -1123,7 +1179,7 @@ background-size: 170px  ;
     }
   .hamburger-label {
     text-transform: uppercase;
-    color: black;
+color: #333;
     font-size: 8px;
     position: absolute;
     right: 0;
