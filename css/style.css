@@ -349,7 +349,7 @@ background-size: contain;
   z-index: 5;
   position: relative;
   overflow: hidden;
-    padding-top: 85px;
+
 }
 
 *,
@@ -689,7 +689,9 @@ padding-top: 1vw;
 
 
 /* PAGE STYLES */
-
+.index #content .wrapper{
+    padding-top: 100px !important;
+}
 .bg-404 .divider,  .bg-404 #content, .bg-404 nav, .bg-404, .bg-404 #menu {
     background-color: #ffff66;
 }
@@ -834,11 +836,11 @@ height: 100px
 
 .bg-events .hero {
     position: relative;
-    height: 510px;
+    height: 590px;
 
     overflow: hidden;
     background-color: #5ccbdd;
-    padding-top: 70px;
+    padding-top: 160px;
 }
 .bg-events #o-1{
     position: absolute;
@@ -850,10 +852,10 @@ height: 100px
 
 .bg-about .hero {
     position: relative;
-    height: 510px;
+    height: 580px;
     overflow: hidden;
     background-color: #f1f2b1;
-    padding-top: 100px;
+    padding-top: 180px;
 }
 
 .bg-about #menu,.bg-about nav, .bg-about, .bg-about .divider{
@@ -874,7 +876,7 @@ height: 100px
 .about h2{
 
     color: #193248;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1em;
 
 }
@@ -882,9 +884,10 @@ height: 100px
     font-size:1.2em;
     color:#193248;
     line-height: 1.6em;
+    
 }
 .about .accent {
-    font-family: 'Courgette', cursive;
+    font-family: 'Reem Kufi', sans-serif;
 
 }
 .about .hero .accent1{
@@ -914,6 +917,7 @@ padding-bottom: 100px;
 }
 .about .part2 h1{
     color:#65bceb;
+    font-size: 5em;
 }
 .exec{
      width: 175px;
@@ -928,6 +932,7 @@ div.item {
     display: inline-block;
     text-align: center;
         padding: 35px;
+    color:;
 }
     .about #content{
         padding-bottom: 100px;
@@ -960,7 +965,7 @@ font-size: 2.5em;
     display: block;
     font-family: 'Open-Sans', sans-serif;
         font-size: 0.8em;
-    
+    color:#193248;
 }
 div.item {
     vertical-align: top;
@@ -973,9 +978,36 @@ div.item {
     text-align: center;
         font-size: 2em;
     }
+    .about .part2 h1{
+    font-size: 3em;
+}
     .about .o-1{
 display: none;
     }
+}
+.membership .hero{
+background: linear-gradient(187deg, #ff6c5c, #53c1ff);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 31s ease infinite;
+-moz-animation: AnimationName 31s ease infinite;
+animation: AnimationName 31s ease infinite;
+
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
 }
 .caption {
     display: block;
@@ -1017,7 +1049,8 @@ display: none;
 }
 .hero {
 position: relative;
-   height: 510px;
+   height: 580px;
+    padding-top: 80px;
 }
 .bg-recruitment h1{
         margin-top: 1vw;
