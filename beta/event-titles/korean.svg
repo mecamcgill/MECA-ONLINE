@@ -87,7 +87,10 @@
 		<path fill="#C7FFCE" d="M232.032,1.767h3.717l13.533,15.1v-15.1h3.649v24.1h-2.517L235.715,9.2v16.3h-3.683V1.767z"/>
 	</g>
 </g>
+<g id="Layer_3" display="none">
+	<rect x="-111.25" y="-64" display="inline" fill="#5CCBDD" width="436" height="143"/>
+</g>
 <g id="Layer_2">
-	<text transform="matrix(1 0 0 1 0 17.5)"><tspan x="0" y="0" fill="#F6C2FF" font-family="'JCHEadA'" font-size="19">한가위</tspan><tspan x="51.322" y="0" fill="#F6C2FF" font-family="'DiwanThuluth'" font-size="19"> </tspan><tspan x="51.415" y="0" fill="#F6C2FF" font-family="'JCHEadA'" font-size="19">몬트리올</tspan><tspan x="119.845" y="0" fill="#F6C2FF" font-family="'DiwanThuluth'" font-size="19"> </tspan><tspan x="119.938" y="0" fill="#F6C2FF" font-family="'JCHEadA'" font-size="19">교민</tspan><tspan x="154.152" y="0" fill="#F6C2FF" font-family="'DiwanThuluth'" font-size="19"> </tspan><tspan x="154.245" y="0" fill="#F6C2FF" font-family="'JCHEadA'" font-size="19">축제</tspan></text>
+	<text transform="matrix(1 0 0 1 0 17.5)"><tspan x="0" y="0" fill="#C688D3" font-family="'JCHEadA'" font-size="19">한가위</tspan><tspan x="51.322" y="0" fill="#C688D3" font-family="'DiwanThuluth'" font-size="19"> </tspan><tspan x="51.415" y="0" fill="#C688D3" font-family="'JCHEadA'" font-size="19">몬트리올</tspan><tspan x="119.845" y="0" fill="#C688D3" font-family="'DiwanThuluth'" font-size="19"> </tspan><tspan x="119.938" y="0" fill="#C688D3" font-family="'JCHEadA'" font-size="19">교민</tspan><tspan x="154.152" y="0" fill="#C688D3" font-family="'DiwanThuluth'" font-size="19"> </tspan><tspan x="154.245" y="0" fill="#C688D3" font-family="'JCHEadA'" font-size="19">축제</tspan></text>
 </g>
 </svg>

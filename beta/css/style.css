@@ -96,9 +96,9 @@ h2 {
   line-height: 3.8vw;
 }
 
-.Reem,.event-date, .event-details, h2, h1{font-family: 'Reem Kufi', sans-serif;}
- .tag, .menu, .bg-recruitment h2, .bg-recruitment p, .lead,   .hamburger-label, .Lato{font-family: 'Work+Sans:200', sans-serif;}
-.David {font-family: 'David Libre', serif; letter-spacing: 1px;}
+.Reem, h2, h1{font-family: 'Reem Kufi', sans-serif;}
+ .tag, .menu, .bg-recruitment h2, .bg-recruitment p, .lead,  .event-date, .event-details, .hamburger-label, .Lato{font-family: 'Work+Sans:200', sans-serif;}
+.David, .event-date, .event-details,{font-family: 'David Libre', serif; letter-spacing: 1px;}
 .Lora, .bg-recruitment h3{font-family: 'Lora', serif;}
 /*Classes*/
 
@@ -761,12 +761,16 @@ padding-top: 1vw;
     background-color: #74acff;
 }
 .bg-events, .bg-events .divider,  .bg-events  .nav-spacer,.bg-events  #content{
-    background-color:#5ccbdd;
+    background-color:#e6fffb;
+}
+.bg-events  #menu{
+    background-color: #5ccbdd;
 }
 .events h1{
+
     text-align: left;
-color: white;
-    font-size: 7em;
+color: #ff8495;
+    font-size: 8em;
     line-height: 1em;
     font-family: 'Kanit', sans-serif;
 }
@@ -775,15 +779,14 @@ color: white;
 font-size: 1em;
 }
 .events .bottom{
-    padding-bottom:120px ;
+    padding-bottom:90px ;
 }
 .events .top{
-    padding-top:120px ;
+    padding-top:90px ;
 }
 .event-date{
     font-size: 1.3em;
 }
-
 
 .event-name{
     font-size: 3em;
@@ -794,8 +797,11 @@ font-size: 1em;
         font-size: 1.1em;
 }
 .events .card {
-color: white !important;
+position: relative;
+color: #333 !important;
   padding: 55px;
+    -webkit-filter: grayscale(90%);
+filter: grayscale(90%);
    -moz-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
@@ -805,16 +811,39 @@ color: white !important;
 
 
 .events .card:hover{
-color: black !important;
-    
+color: inherit !important;
+    -webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+}
+
+.success{
+    position: absolute;
+    width: 200px;
+top:45%;
+    left: 25%;
+    transform: rotate(15deg);
+        -webkit-filter: grayscale(0%) !important;
+filter: grayscale(0%) !important;
 }
 .event-svg {
 width: 100%;
-height: 85px
+height: 100px
 }
 
 .bg-events .hero {
-    min-height: 45vh;
+    position: relative;
+    min-height: 500px;
+   height: 85vh;
+    overflow: hidden;
+    background-color: #5ccbdd;
+    padding-top: 70px;
+}
+.bg-events #o-1{
+    position: absolute;
+    right:-200px;
+    bottom: -100px;
+    z-index: 1;
+    opacity: 0.8;
 }
 .bg-contact, .bg-contact .divider,  .bg-contact  .nav-spacer, .bg-contact nav,.bg-contact  #menu,.bg-contact  #content{
       background-color: #fff600;
@@ -851,7 +880,8 @@ height: 85px
   
 }
 .hero {
-    min-height: 65vh;
+min-height: 500px;
+   height: 65vh;
 }
 .bg-recruitment h1{
         margin-top: 1vw;
@@ -1035,6 +1065,7 @@ width: 100%;
     width: 100%;
     z-index: 1000;
 }
+    
   /* For mobile phones: */
     form {
 
@@ -1356,8 +1387,24 @@ background-color: #d8faff;
     border-radius: 0;
 border: none;
 }
+ .bg-events #o-1{
+    position: absolute;
+    right:-200px;
+    bottom: -100px;
+    z-index: 1;
+     width: 500px;
+    opacity: 0.8;
+}   
+     .bg-events .hero{
+    padding-top: 40% !important;
+}  
+ .bg-events h1{
+    font-size: 15vw;
+}   
+    .bg-event card{
+        
     
-
+    }
 
 }
 
