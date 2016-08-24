@@ -25,9 +25,8 @@
 
 <body class=" bg-contact">
 
-
   <div class="se-pre-con"></div>
-  <div class=" nav-spacer"></div>
+
   <div id="menu" class="nav-down">
     <div class="wrapper">
       <a href="index.html">
@@ -46,10 +45,10 @@
       <nav>
 
         <ul class="menu">
+         <li><a href="about.html">About</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="membership.html">Membership</a></li>
           <li><a href="recruitment.html">Recruitment</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -60,35 +59,30 @@
   <a class="menu-toggle-secondary">
     <div id="darkness" class="displaynone"></div>
   </a>
+    
+    
   <div id="content" class="h-center text-align-center">
-    <br><br>
-    <div class="wrapper grid contact">
+      <div class=" nav-spacer"><br><br></div>
+    <div class=" grid contact wrapper">
+        <h1 data-aos="fade-up" data-aos-once="true"> 
+        Let's Get in Touch</h1>
 
-<div class="col-5" data-aos="fade-up" data-aos-once="false" >
-    <div class="module">
-    <h1>Hello!</h1>
-    <p class="lead text-align-center">Whether you are a fellow student at McGill curious about the best places to study or an executive of another club wishing to collaborate on an event, we want to hear from you. <br>  <br> <br>
-
-        </p>
-        </div>
-    </div>
-      <div class="col-7 no" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+              <div class="col-12 no" >
 
           <form action="https://formspree.io/ilovemeca@gmail.com"
       method="POST">
-<input placeholder="Name" type="text" required>
-<input placeholder="Email" type="email" required>
-              <textarea placeholder="Your Message" type="text" required ></textarea>
-              <button type="submit" value="Send"> Send</button>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="200"><input placeholder="Name" type="text"autocomplete="off"  required ></div>
+              <div id="email" data-aos="fade-up" data-aos-once="true" data-aos-delay="300"><input placeholder="Where can we email you back?" type="email" autocomplete="off" required></div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="400" data-aos-anchor="#email"><textarea placeholder="What's on your mind?" type="text" autocomplete="off" required ></textarea></div>
+              <div data-aos="zoom-in"><button type="submit" value="Send"> Send</button></div>
 </form>
 
-
+<br><br><br>
+<br><br><br>
+<br><br><br>
 </div>
 
-      <div class="col-12 top no">
 
-
-      </div>
 
 
     </div>
@@ -104,20 +98,20 @@
 			});
 });
     </script>
-    <script>
-      $(".menu-toggle-secondary").bind("click", (function () {
-  
-  	$(".menu-toggle").trigger("click");
-  
-  }));
-      
-      $('.menu-toggle').click(function() {
-        var clicks = $(this).data('clicks');
-        if (clicks) {
-           // odd clicks
-          $("nav").removeClass("slidein");
-          $( "#darkness" ).hide();
-          $("body").removeClass("disablescroll");
+         <script>
+          $(".menu-toggle-secondary").bind("click", (function () {
+
+        $(".menu-toggle").trigger("click");
+
+      }));
+
+          $('.menu-toggle').click(function() {
+            var clicks = $(this).data('clicks');
+            if (clicks) {
+               // odd clicks
+              $("nav").removeClass("slidein");
+              $( "#darkness" ).hide();
+              $("body").removeClass("disablescroll");
             $(".hamburger").removeClass("is-active");
             $("#menu").removeClass("colorless");
         } else {
@@ -145,7 +139,7 @@
           hasScrolled();
           didScroll = false;
       }
-  }, 250);
+  }, 150);
   function hasScrolled() {
       var st = $(this).scrollTop();
       // Make sure they scroll more than delta
@@ -166,7 +160,6 @@
       lastScrollTop = st;
   }
     </script>
-
 </body>
 
 </html>
