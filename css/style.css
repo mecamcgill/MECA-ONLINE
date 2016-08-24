@@ -902,7 +902,7 @@ position:absolute;
     position:absolute; width:100%;background-color:#65bceb; top:-75px;padding:100px 200px;color:white; font-size:1.5em;line-height:1.5em;
 }
 .about .overlay .accent{
-font-size: 3.5em;
+font-size: 2.3em;
 }
 .about .card .accent{
     font-family: inherit;
@@ -970,7 +970,8 @@ div.item {
 }
 .about h1{
     padding-top: 50px;
-        font-size: 2.5em;
+    text-align: center;
+        font-size: 2em;
     }
     .about .o-1{
 display: none;
