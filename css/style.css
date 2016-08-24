@@ -762,7 +762,7 @@ padding-top: 1vw;
 }
 .bg-recruitment .hero {
     position: relative;
-    height: 510px;
+    height: 600px;
     overflow: hidden;
     padding-top: 100px;
 }
@@ -836,7 +836,7 @@ height: 100px
 
 .bg-events .hero {
     position: relative;
-    height: 590px;
+    height: 600px;
 
     overflow: hidden;
     background-color: #5ccbdd;
@@ -852,14 +852,14 @@ height: 100px
 
 .bg-about .hero {
     position: relative;
-    height: 580px;
+    height: 600px;
     overflow: hidden;
-    background-color: #f1f2b1;
+    background-color: #fff579;
     padding-top: 180px;
 }
 
 .bg-about #menu,.bg-about nav, .bg-about, .bg-about .divider{
-    background-color: #f1f2b1;
+    background-color: #fff579;
 }
 .bg-about #content{
     background-color:#fafaf3;
@@ -900,7 +900,7 @@ position:absolute;
     right:0;bottom:-300px;
 }
 .about .overlay-wrap{
-    width:100%;height:380px;position:relative;}
+    width:100%;height:400px;position:relative;}
 .about .overlay{
     position:absolute; width:100%;background-color:#65bceb; top:-75px;padding:100px 200px;color:white; font-size:1.5em;line-height:1.5em;
 }
@@ -942,7 +942,7 @@ div.item {
     top:-75px;padding:100px 20px;color:white; font-size:1.1em;line-height:1.5em;
     }
     .about .overlay-wrap{
-    width:100%;height:300px;position:relative;}
+    width:100%;height:370px;position:relative;}
   .about .overlay .accent{
 font-size: 2.5em;
 }
@@ -976,7 +976,7 @@ div.item {
 .about h1{
     padding-top: 50px;
     text-align: center;
-        font-size: 2em;
+        font-size: 10vw;
     }
     .about .part2 h1{
     font-size: 3em;
@@ -985,17 +985,78 @@ div.item {
 display: none;
     }
 }
-.membership, .membership .divider .membershipnav,.membership  #menu,.membership  #content{
-      background-color: white;
+
+ .membership nav, .membership #menu{
+      background-color: #4ecabf;
 }
 .membership .hero{
-background-color: #f2f2f2;
-padding-top: 250px;
+background-color: #4ecabf;
+padding-top: 200px;
+overflow: hidden;
 }
 .membership h1{
     line-height: 1em;
+    color: #daf2f0;
+font-size:  4.6em;
+
+}
+.membership h2{
+    font-size: 1.5em;
+    line-height: 1em;
     color: #333;
 }
+.membership .card{
+    position: relative;
+    min-height: 500px;
+}
+.membership .btn{
+    padding: 20px 15px;
+    background-color: #e69ca4;
+    color: white;
+}
+.membership .padding-top{
+    padding-top: 100px;
+}
+.membership .o-1{
+    position: absolute;
+    width: 200%;
+    bottom: 100px;
+    right:-350px;
+}
+.membership .o-2{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+.membership .o-3{
+    position: relative;
+    height: 420px;
+
+}
+
+@media only screen and (max-width: 780px) {
+ .membership h1{
+    line-height: 1em;
+    color: #daf2f0;
+font-size:  3.6em;
+
+}
+    .membership .o-1{
+left:-20px;
+        top: 100px;
+        bottom: 0;
+    width: 150%;
+opacity: 0.7;
+
+}
+    .membership .o-3{
+    position: relative;
+
+
+}
+}
+
 .caption {
     display: block;
     font-family: 'Open-Sans', sans-serif;
@@ -1036,7 +1097,7 @@ padding-top: 250px;
 }
 .hero {
 position: relative;
-   height: 580px;
+   height: 600px;
     padding-top: 80px;
 }
 .bg-recruitment h1{
