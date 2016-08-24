@@ -42,7 +42,7 @@ footer, header, hgroup, menu, nav, section {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(Preloader.gif) center no-repeat white;
+background-color: #ede9de;
 }
 
 
@@ -55,7 +55,10 @@ width: 100%;
 overflow-x: hidden !important;
 
 }
-
+a{
+text-decoration: none;
+    color: inherit;
+}
 ol,
 ul {
   list-style: none;
@@ -98,7 +101,7 @@ h2 {
 
 .Reem, h2, h1{font-family: 'Reem Kufi', sans-serif;}
  .tag, .menu, .bg-recruitment h2, .bg-recruitment p, .lead,  .event-date, .event-details, .hamburger-label, .Lato{font-family: 'Work+Sans:200', sans-serif;}
-.David, .event-date, .event-details,{font-family: 'David Libre', serif; letter-spacing: 1px;}
+.David, .event-date, .event-details,{font-family: 'David Libre', serif;}
 .Lora, .bg-recruitment h3{font-family: 'Lora', serif;}
 /*Classes*/
 
@@ -233,7 +236,7 @@ h2 {
 #footer {
   position: relative;
   margin-top: 10px;
-  padding: 130px 30px 30px 30px;
+  padding: 50px 30px 0px 30px;
   width: 100%;
   height: 85px;
   color: #333;
@@ -755,9 +758,16 @@ padding-top: 1vw;
 .bg-recruitment .divider,  .bg-recruitment nav,.bg-recruitment #menu,.bg-recruitment #content {
     background-color: #74acff;
 }
-.bg-events, .bg-events .divider,.bg-events #content{
-    background-color:#e6fffb;
+.bg-recruitment .hero {
+    position: relative;
+    height: 510px;
+    overflow: hidden;
+    padding-top: 100px;
 }
+.bg-events, .bg-events .divider,.bg-events #content{
+    background-color:#fafaf3;
+}
+
 .bg-events #menu,.bg-events nav{
     background-color: #5ccbdd;
 }
@@ -770,7 +780,7 @@ padding-top: 1vw;
 }
 .events .lead{
     text-align: left;
-font-size: 1.2em;
+font-size: 1em;
      color: white;
 }
 .events .bottom{
@@ -836,6 +846,128 @@ height: 100px
     bottom: -100px;
     z-index: 1;
     opacity: 0.8;
+}
+
+.bg-about .hero {
+    position: relative;
+    height: 510px;
+    overflow: hidden;
+    background-color: #f1f2b1;
+    padding-top: 100px;
+}
+
+.bg-about #menu,.bg-about nav, .bg-about, .bg-about .divider{
+    background-color: #f1f2b1;
+}
+.bg-about #content{
+    background-color:#fafaf3;
+}
+.about .grid .wrapper{
+    padding-top: 100px;
+}
+.about h1{
+    color: #698391;
+    font-size: 3em;
+    line-height: 1.8em;
+
+}
+.about h2{
+
+    color: #193248;
+    font-size: 2em;
+    line-height: 1em;
+
+}
+.about p{
+    font-size:1.2em;
+    color:#193248;
+    line-height: 1.6em;
+}
+.about .accent {
+    font-family: 'Courgette', cursive;
+
+}
+.about .hero .accent1{
+    color:#72b0d1;
+    font-size:2.25em
+}
+.about .o-1{
+position:absolute;right:0;top:-100px;
+}
+.about .overlay-wrap{
+    width:100%;height:360px;position:relative;}
+.about .overlay{
+    position:absolute; width:100%;background-color:#73b0d1; top:-75px;padding:100px 200px;color:white; font-size:1.5em;line-height:1.5em;
+}
+.about .overlay .accent{
+font-size: 3.5em;
+}
+.about .card{
+padding-bottom: 100px;
+
+}
+.exec{
+     width: 175px;
+    height: 175px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+        padding: 35px;
+}
+    .about #content{
+        padding-bottom: 100px;
+    }
+@media only screen and (max-width: 780px) {
+    .about .overlay{
+    top:-75px;padding:100px 20px;color:white; font-size:1.1em;line-height:1.5em;
+    }
+    .about .overlay-wrap{
+    width:100%;height:300px;position:relative;}
+  .about .overlay .accent{
+font-size: 2.5em;
+}
+    .about .hero {
+        padding-top: 120px !important;
+    }
+    .about p{
+        padding-top: 20px;
+    }
+.exec{
+     width: 100px;
+    height: 100px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+    .caption {
+    display: block;
+    font-family: 'Open-Sans', sans-serif;
+        font-size: 0.8em;
+    
+}
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+        padding: 10px;
+}
+.about h1{
+        font-size: 2.5em;
+    }
+    .about .o-1{
+        display: none;
+    }
+}
+.caption {
+    display: block;
+    font-family: 'Open-Sans', sans-serif;
 }
 .bg-contact, .bg-contact .divider .bg-contact nav,.bg-contact  #menu,.bg-contact  #content{
       background-color: #fff600;
@@ -984,8 +1116,8 @@ width: 100%;
 
 .ballonwrap {
     position: absolute;
-    top: -50px;
-    transform: scale(0.8);
+    top: -80px;
+    transform: scale(7);
     z-index: -1;
     width: 100%;
 }
@@ -995,7 +1127,7 @@ width: 100%;
 
 @media (min-width:780px) and (max-width:1200px) {
   .wrapper {
-    padding: 0 4.5% 0 4.5% !important;
+    padding: 0 4.5% 0 4.5%;
   }
     
   #card4 .lead {
@@ -1390,11 +1522,11 @@ border: none;
      width: 600px;
     opacity: 0.8;
 }   
-.bg-events .hero{
-    padding-top: 40% !important;
+.hero{
+    padding-top: 100px !important;
 }  
  .bg-events h1{
-    font-size: 15vw;
+    font-size: 14vw;
 }   
     .bg-event card{
         
