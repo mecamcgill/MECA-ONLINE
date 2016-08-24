@@ -99,7 +99,7 @@ h2 {
   line-height: 3.8vw;
 }
 
-.Reem, h2, h1{font-family: 'Reem Kufi', sans-serif;}
+.Reem, h2, h1, h3{font-family: 'Reem Kufi', sans-serif;}
  .tag, .menu, .bg-recruitment h2, .bg-recruitment p, .lead,  .event-date, .event-details, .hamburger-label, .Lato{font-family: 'Work+Sans:200', sans-serif;}
 .David, .event-date, .event-details,{font-family: 'David Libre', serif;}
 .Lora, .bg-recruitment h3{font-family: 'Lora', serif;}
@@ -1001,13 +1001,26 @@ font-size:  4.6em;
 
 }
 .membership h2{
-    font-size: 1.5em;
+    font-size: 3em;
     line-height: 1em;
     color: #333;
 }
+.membership h3{
+    font-size: 2em;
+}
+.membership p{
+    padding: 20px 0;
+    font-size:1.2em;
+    color:#193248;
+    line-height: 1.6em;
+    
+}
 .membership .card{
     position: relative;
-    min-height: 500px;
+    padding: 100px 0;
+}
+.membership .sub-card{
+min-height: 300px;
 }
 .membership .btn{
     padding: 20px 15px;
@@ -1062,11 +1075,22 @@ opacity: 0.7;
     font-family: 'Open-Sans', sans-serif;
 }
 .bg-contact, .bg-contact .divider .bg-contact nav,.bg-contact  #menu,.bg-contact  #content{
-      background-color: #fff600;
+      background-color: #f8f8d8;
+}
+.bg-contact #content{
+    padding-top: 140px;
+}
+.bg-contact p{
+    color: #af6349;
+    padding-left: 20px;
+    font-size: 1.3em;
+}
+.bg-contact a {
+    text-decoration: underline;
 }
 .bg-contact h1{
     font-size: 6.4vw;
-  padding: 70px 0 70px 0;
+  padding: 0 0 70px 0;
     color: #af6349;
     line-height: 1em;
 }
@@ -1250,7 +1274,7 @@ padding-top: 0;
 }
 .bg-contact h1{
     font-size: 11.4vw;
-  padding: 70px 0 70px 0;
+  padding: 70px 0 0px 0;
     color: #af6349;
     line-height: 1em;
 }
@@ -1282,7 +1306,11 @@ padding-top: 0;
     width: 100%;
     z-index: 1000;
 }
-    
+    .bg-contact p{
+    color: #af6349;
+    padding-left: 0;
+text-align: center;
+}
   /* For mobile phones: */
     form {
 
@@ -1692,7 +1720,7 @@ textarea:focus::-webkit-textarea-placeholder, textarea:valid::-webkit-textarea-p
   cursor: pointer;
   border-radius: 3px;
   padding: 15px;
-  width: 200px;
+  width: 100px;
   color: white;
   margin-left: 25px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
