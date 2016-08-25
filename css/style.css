@@ -850,7 +850,9 @@ height: 100px
     z-index: 1;
     opacity: 0.8;
 }
-
+.bg-events-details #menu,.bg-events-details nav,.bg-events-details #content , .bg-events-details, .events-details{
+       background-color: cadetblue; 
+}
 .bg-events-details #content {
     position: relative;
     height: 100vh;
@@ -874,7 +876,7 @@ height: 100px
 }
 .bg-events-details p{
     padding-top: 10px;
-    font-size: 1vw;
+    font-size: 0.95em;
     
 }
 #goback {
@@ -931,6 +933,8 @@ height: 100px
     width: 100%;
     padding: 40px;
     background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
     z-index: 1;
 }
 .bg-events-details .float{
@@ -943,11 +947,23 @@ height: 100px
 color: white;
     
 }
+.scroll-pane
+{
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+}
+.horizontal-only
+{
+	height: auto;
+	max-height: 200px;
+}
 .bg-events-details #content .v-center {
   position: absolute;
   top: 30%;
   transform: translate(0, -30%);
 }
+
 .bg-events-details .btn{
     padding: 1vw 0.5vw;
     font-size: 0.9vw;
@@ -963,15 +979,131 @@ width: 100%;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
+
+
+}
+
+
+
+@media only screen and (max-width: 780px) {
+.bg-events-details #content {
+    position: relative;
+    height: auto;
+    overflow: visible;
+    background-color: cadetblue;
+    padding-top: 150px;
+    margin: 0;
+}
+
+.bg-events-details .side-a,
+.bg-events-details .side-b {
+    position: relative;
+    height: auto;
+}
+.bg-events-details h1{
+    font-size: 1.5em;
+}
+.bg-events-details .price{
+        font-style: italic;
+}
+.bg-events-details p{
+    padding-top: 10px;
+    font-size: 1em;
+    
+}
+#goback {
+    position: fixed;
+    text-align: center;
+    background-color: #eb5565;
+    border-radius: 50%;
+    width:35px;
+    height: 35px;
+    bottom: 30px;
+    left: 30px;
+    z-index: 100;
+            -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.hover {
+    position: absolute;
+    bottom: 5px;
+    right: -130px;
+    opacity: 0;
+    font-size: 1em;
+    color: #eb5565;
+                -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+#goback:hover .hover{
+    opacity: 1;
+}
+#goback:hover{
+       bottom: 60px; 
+        background-color: white;
+}
+#goback:hover .triangle{
+        border-right:  #eb5565 5px solid; 
+    border-bottom:  #eb5565 5px solid;
+}
+    .no-wrap-mobile{
+        padding: 0 !important;
+    }
+.triangle {
+    position: absolute;
+    border-right: white 5px solid; 
+    border-bottom: white 5px solid;
+    width: 15px; height: 15px;
+    transform: rotate(135deg);
+    top: 10px;
+    left: 13px;
+}
+.bg-events-details .card{
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 40px;
+    background-color: white;
+    z-index: 1;
+    overflow: visible;
+}
+.bg-events-details .float{
+    position: absolute;
+    top:-1%;
+    z-index: 1000;
+}
+.bg-events-details h2{
+    font-size: 15vw;
+color: white;
+    
+}
+.bg-events-details #content .v-center {
+  position: relative;
+  top: 0;
+  transform: translate(0, 0);
+}
+.bg-events-details .btn{
+    padding: 1vw 0.5vw;
+    font-size:1em;
+    border: 1px solid red;
+    border-radius: 5px;
+width: 100%;
+    text-align: center;
+}
+.bg-events-details #img{
+    display: block;
+    height: 250px;
+    width: 100%;
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
     -webkit-filter: grayscale(90%);
 filter: grayscale(90%);
 }
-@media only screen and (max-width: 780px) {
-    .bg-events-details #content .v-center{
-position: relative;
-  top: 0;
-
-    }
 }
 .bg-about .hero {
     position: relative;
@@ -1214,9 +1346,10 @@ color: #e69ca4
 }
 .membership .o-1{
     position: absolute;
-    width: 200%;
+    width: 900px;
     bottom: 50px;
-    right:-350px;
+    right:-25vw;
+    z-index: 1;
 }
 .membership .o-2{
     color: white;
@@ -1233,6 +1366,8 @@ color: #e69ca4
         display: none;
     }
 .membership .o-5{
+    position: relative;
+    z-index: 1000;
     text-align: left
 }
 @media only screen and (max-width: 780px) {

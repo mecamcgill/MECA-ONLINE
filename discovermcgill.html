@@ -18,11 +18,19 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <link type="text/css" href="style/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<script type="text/javascript" src="script/jquery.mousewheel.js"></script>
+
+<script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
   <script type='text/javascript'>
     $(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
+      $(function()
+{
+	$('.scroll-pane').jScrollPane();
+});
   </script>
 </head>
 
@@ -89,14 +97,14 @@
   <div id="content" class="h-center text-align-left">
       <div class="grid wrapper">
 
-      <div class="col-6 side-a">
+      <div class="col-6 side-a no-wrap-mobile">
           
             <div class="v-center" >
             <div class="float"  data-aos="fade-up">
           <h2>DETAILS</h2>
           </div>
                 <div id="img" data-aos="fade-up" style="background-image:url(https://mcgillinmind.mcgill.ca/mcgill/upload/Image/ht-orientation-0437.jpg)">
-            
+s
                 </div>
             
 
