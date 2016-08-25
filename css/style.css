@@ -101,7 +101,8 @@ h2 {
 
 .Reem, h2, h1, h3{font-family: 'Reem Kufi', sans-serif;}
  .tag, .menu, .bg-recruitment h2, .bg-recruitment p, .lead,  .event-date, .event-details, .hamburger-label, .Lato{font-family: 'Work+Sans:200', sans-serif;}
-.David, .event-date, .event-details,{font-family: 'David Libre', serif;}
+.David, .event-date, .event-details, .membership, .about{font-family: 'Playfair Display', serif;  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; color: #3e3e49}
 .Lora, .bg-recruitment h3{font-family: 'Lora', serif;}
 /*Classes*/
 
@@ -249,7 +250,7 @@ h2 {
 }
 
 #footer .object {
-  width: 90px;
+  width: 70px;
 }
 
 
@@ -596,7 +597,7 @@ line-height: 1.2em !important;
   font-size: 1.25vw;
   letter-spacing: 0.01vw;
 padding-top: 1vw;    
-  line-height: 1.2vw;
+  line-height: 1.3em;
 }
 
 #card3 .btn {
@@ -989,17 +990,13 @@ display: none;
   padding-right: 50px;
 }
 .membership .lead{
-    color: white;
-    margin-top: -40px;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .membership .heading{
     padding-bottom: 90px;
     text-align: center;
 }
- .membership nav, .membership #menu{
-      background-color: #4ecabf;
-}
+
 .membership .hero{
 background-color: #4ecabf;
 padding-top: 200px;
@@ -1040,7 +1037,7 @@ font-size:  4.6em;
 }
 .membership p{
     padding: 20px 0;
-    font-size:1.2em;
+    font-size:1.1em;
     color:#193248;
     line-height: 1.6em;
         position: relative;
@@ -1051,6 +1048,7 @@ font-size:  4.6em;
     padding: 100px 0;
 }
 .membership .sub-card{
+    padding-bottom: 100px !important;
 min-height: 300px;
     position: relative;
 }
@@ -1064,10 +1062,19 @@ min-height: 300px;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
-.membership .number{
+.membership .number-odd{
     position: absolute;
     color: #f4e8e4;
     left: -25px;
+    top: -15px;
+    z-index: 1;
+    font-size: 10em;
+
+}
+.membership .number-even{
+    position: absolute;
+    color: #f4e8e4;
+    right: 0;
     top: -15px;
     z-index: 1;
     font-size: 10em;
@@ -1107,6 +1114,9 @@ color: #e69ca4
     text-align: left
 }
 @media only screen and (max-width: 780px) {
+     .membership nav, .membership #menu{
+      background-color: #4ecabf;
+}
  .membership h1{
     line-height: 1em;
     color: #daf2f0;
@@ -1255,15 +1265,7 @@ padding-bottom: 50px;
 .no {
     padding-right: 0px !important;
 }
-.bg-recruitment .spacer{
-    width: 100%;
-    height: 15vw;
-}
-.bg-recruitment .overlay{
-    width: 100%;
-  position: relative;
-        height: 400px;
-}
+
 .bg-recruitment .module{
     padding: 40px;
     height: 200px;
@@ -1620,9 +1622,9 @@ background-color: #d8faff;
   #card3 .lead {
     color: #65726b;
       padding-top: 1em;
-    font-size: 3.5vw;
+    font-size: 1em;
     letter-spacing: 0.01vw;
-    line-height: 3.5vw
+    line-height: 4.5vw;
   }
   /*Card4 Styling*/
   #card4 .caption {
@@ -1868,3 +1870,88 @@ background: -ms-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227
 background: linear-gradient(135deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cae7e3', endColorstr='#e7ebee', GradientType=1 );
 }
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    min-height:300px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    transition:all 0.4s ease;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+

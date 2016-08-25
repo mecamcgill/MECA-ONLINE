@@ -90,12 +90,12 @@
       <div class=" nav-spacer"><br><br></div>
     <div class=" grid contact wrapper">
         <div class="col-6">        <h1 data-aos="fade-up" data-aos-once="true"> 
-        Let's Get in Touch</h1></div>
+        Let's Get In Touch</h1></div>
 <div class="col-6">
         <p class="text-align-left Lato antialiased">
             <br>
             We want to talk. <br>
-            Use the contact form below or reach us via our email, ilovemeca@gmail.com or our <a href="facebook.com">facebook</a>
+            Use the contact form below or reach us via our email, ilovemeca@gmail.com or our <a href="https://www.facebook.com/profile.php?id=100005695692577&fref=ts">facebook</a>
     </p>
         </div>
 
@@ -103,10 +103,17 @@
 
           <form action="https://formspree.io/ilovemeca@gmail.com"
       method="POST">
-              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="200"><input placeholder="Name" type="text"autocomplete="off"  name="fullname" required ></div>
-              <div id="email" data-aos="fade-up" data-aos-once="true" data-aos-delay="300"><input placeholder="Where can we email you back?" type="email" name="email" autocomplete="off" required></div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+                  <input placeholder="Name" type="text"autocomplete="off"  name="fullname" required >
+              </div>
+              <div id="email" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+                  <input placeholder="Where can we email you back?" type="email" name="_replyto" autocomplete="off" required>
+              </div>
               <div data-aos="fade-up" data-aos-once="true" data-aos-delay="400" data-aos-anchor="#email"><textarea placeholder="What's on your mind?" type="text" name="message" autocomplete="off" required ></textarea></div>
               <div data-aos="zoom-in"><button type="submit" value="Send"> Send</button></div>
+              <input type="hidden" name="_next" value="index.html" />
+              <input type="hidden" name="_format" value="plain" />
+              <input type="text" name="_gotcha" style="display:none" />
 </form>
 
 <br><br><br>
