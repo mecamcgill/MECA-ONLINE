@@ -89,29 +89,72 @@
   </a>
   <div id="content" class="h-center text-align-left">
       <div class="wrapper grid hero"  >
-        <div class="col-7 text-align-left" >
+        <div class="col-7 o-5" data-aos="fade-down" data-aos-once="true"  >
+            <h1 class="antialiased">Montreal's Most Exclusive Card* </h1>  
             <br>
-            <h1 class="antialiased">The World's Most Exclusive Card* </h1>  
             <br>
-            <br>
-            <span class="btn Lato antialiased">Get Yours Now</span>
+  <span class="btn Lato antialiased">Get Yours Now</span>
           </div>
                   <div class="col-5 o-3">  <img src="images/standing-mockup.png" class="o-1" data-aos="fade-up">
-                    <div class="o-2 lead">*Not really</div>
+                      <img src="images/card.png" class="o-4" data-aos="fade-up">
+                    
           </div>
+        
 
       </div>
       
     <div class="padding-top grid wrapper text-align-left ">
-        <div class="col-6 card text-align-left">
-           <h2>VIPs gets cheaper rates and priority registrations</h2>
-           </div>        
-        <div class="col-6 card" >
+    
+        <div class="col-12" >
+  
+            <div class="col-6 sub-card">  
+                <div class="module" >
+                <div class="number" data-aos="fade-up"  data-aos-anchor=".o-1" data-aos-once="true"  >1</div>    
+                <h3  id="follow1" data-aos="fade-up"data-aos-anchor=".o-1" data-aos-once="true" >Exam Care Packages.</h3>
+                <p data-aos="fade-up"  data-aos-anchor="#follow1" data-aos-delay="200" data-aos-once="true" >Exam seasons are tough. That's why all VIP members receives a care package filled with healthy snacks, drinks, and extra stationary items during the semester's most stressful weeks.</p>
+                </div>
+                </div>
+    
+            <div class="col-6 sub-card">  
+                <div class="module">
+                             <div class="number" data-aos="fade-up" data-aos-anchor=".o-1" data-aos-once="true" >2</div>
+                <h3  id="follow2" data-aos="fade-up" data-aos-anchor=".o-1" data-aos-once="true" >Discounts at local businesses</h3>
+                <p data-aos="fade-up"  data-aos-anchor="#follow2" data-aos-delay="200" data-aos-once="true" >Eating out adds up quick. That's why we've partnered up with the best local restaurants, bars, grocery stores, and salons to provide you with discounts, MECA Happy Hours, and other special benefits. Our list of sponsors will be released on September.</p>
            </div>
+                </div>
+            <div class="col-6 sub-card">
+                <div class="module no">
+                             <div class="number" data-aos="fade-up" data-aos-once="true" >3</div>
+                <h3  id="follow3" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" >Cheaper MECA events.</h3>
+                <p data-aos="fade-up"  data-aos-anchor="#follow3" data-aos-delay="200" data-aos-once="true">Save money on our MECA events as VIP members have access to members-only event pricings. Save up to 15% on our flagship events.</p>
+            </div>
+                </div>
+            <div class="col-6 sub-card">
+                <div class="module no">
+                             <div class="number" data-aos="fade-up" data-aos-once="true" >4</div>
+                <h3  id="follow4" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" >Priority Registration</h3>
+                <p data-aos="fade-up"  data-aos-anchor="#follow4" data-aos-delay="200" data-aos-once="true" >Life's busy as a student. Put your mind to ease as members also hold priority registration privileges, helping you squeeze past the waitlist.</p>
+            </div>
+                </div>
+               
+          
+           </div>
+        
 
     
 </div>
+      <div class="wrapper grid hero2"  >
+         <div class="col-6 sub-card"  data-aos="fade-right"  >
+            <img src="images/cardmockup.png" class="o-5">
+            </div>
+            <div id="scrollto" class="col-6 sub-card text-align-right"  data-aos="fade-left">  
+                <h3>Convinced? <br>Become a Member</h3>
+            <p>VIP Cards are only $10. Get yours at one of our events.
+                <br><a href="events.html"><h2 class="text-align-right" style="font-size:1.3em"  data-aos="flip-up" ><span class="accent">Explore our Events &rarr;</span> </h2></a>
+                </p>
+            </div>
 
+      </div>
     </div>
       <div class="wrapper grid part2"  >
 
@@ -189,6 +232,11 @@
       
       lastScrollTop = st;
   }
+       $(".btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scrollto").offset().top
+    }, 500);
+});
     </script>
 </body>
 
