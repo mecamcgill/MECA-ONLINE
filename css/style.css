@@ -851,6 +851,114 @@ height: 100px
     opacity: 0.8;
 }
 
+.bg-events-details #content {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #5ccbdd;
+    padding-top: 100px;
+    margin: 0;
+}
+
+.bg-events-details .side-a,
+.bg-events-details .side-b {
+    position: relative;
+    height: 100vh;
+}
+.bg-events-details h1{
+    font-size: 2em;
+        padding:10px 0;
+}
+.bg-events-details .price{
+        font-style: italic;
+}
+.bg-events-details p{
+    padding-top: 10px;
+    
+}
+#goback {
+    position: fixed;
+    text-align: center;
+    background-color: #eb5565;
+    border-radius: 50%;
+    width:55px;
+    height: 55px;
+    bottom: 55px;
+    left: 65px;
+    z-index: 100;
+            -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.hover {
+    position: absolute;
+    bottom: 15px;
+    right: -140px;
+    opacity: 0;
+    font-size: 1em;
+    color: #eb5565;
+                -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+#goback:hover .hover{
+    opacity: 1;
+}
+#goback:hover{
+       bottom: 60px; 
+        background-color: white;
+}
+#goback:hover .triangle{
+        border-right:  #eb5565 8px solid; 
+    border-bottom:  #eb5565 8px solid;
+}
+
+.triangle {
+    position: absolute;
+    border-right: white 8px solid; 
+    border-bottom: white 8px solid;
+    width: 20px; height: 20px;
+    transform: rotate(135deg);
+    top: 17px;
+    left: 20px;
+}
+.bg-events-details .card{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    padding: 40px;
+    background-color: white;
+    z-index: 1;
+}
+.bg-events-details .float{
+    position: absolute;
+    top:-40px;
+    z-index: 1000;
+}
+.bg-events-details h2{
+    font-size: 7vw;
+color: white;
+    
+}
+.bg-events-details #content .v-center {
+  position: absolute;
+  top: 30%;
+  transform: translate(0, -30%);
+}
+.bg-events-details img{
+    height: 500px;
+    -webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+@media only screen and (max-width: 780px) {
+    .bg-events-details #content .v-center{
+position: relative;
+  top: 0;
+
+    }
+}
 .bg-about .hero {
     position: relative;
     height: 600px;
@@ -999,7 +1107,7 @@ display: none;
 
 .membership .hero{
 background-color: #4ecabf;
-padding-top: 200px;
+padding-top: 150px;
 overflow: hidden;
 }
 .membership .hero2{
@@ -1074,7 +1182,7 @@ min-height: 300px;
 .membership .number-even{
     position: absolute;
     color: #f4e8e4;
-    right: 0;
+    right: -25px;
     top: -15px;
     z-index: 1;
     font-size: 10em;
@@ -1093,7 +1201,7 @@ color: #e69ca4
 .membership .o-1{
     position: absolute;
     width: 200%;
-    bottom: 100px;
+    bottom: 50px;
     right:-350px;
 }
 .membership .o-2{
@@ -1857,101 +1965,3 @@ textarea:focus,  textarea:valid{
  transform: translateY(-40px);
  visibility: visible !important;
 }
-
-
-/** Gradient **/
-.gradient1{
-    background: rgba(202,231,227,1);
-background: -moz-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(202,231,227,1)), color-stop(19%, rgba(202,231,227,1)), color-stop(46%, rgba(217,233,233,1)), color-stop(72%, rgba(231,235,238,1)), color-stop(100%, rgba(231,235,238,1)));
-background: -webkit-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
-background: linear-gradient(135deg, rgba(202,231,227,1) 0%, rgba(202,231,227,1) 19%, rgba(217,233,233,1) 46%, rgba(231,235,238,1) 72%, rgba(231,235,238,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cae7e3', endColorstr='#e7ebee', GradientType=1 );
-}
-
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 100000; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s
-}
-
-/* Modal Content */
-.modal-content {
-    position: fixed;
-    bottom: 0;
-    background-color: #fefefe;
-    width: 100%;
-    min-height:300px;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s;
-    transition:all 0.4s ease;
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-/* Add Animation */
-@-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
-}
-
-@keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
-}
-
-@-webkit-keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
-}
-
