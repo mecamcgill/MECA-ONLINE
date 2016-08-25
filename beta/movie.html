@@ -3,28 +3,67 @@
 
 <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>Talk to Us | MECA</title>
+  <title>Event Details | MECA</title>
   <meta content="MECA is an official club of McGill that promotes and celebrates Academia and Korean Culture. We host bold events, conferences, and mentorship programs. Become a member today." name="description">
   <meta content="McGill Korean Society Club Association Culture" name="keywords">
   <meta content="MECA McGill" name="author">
   <meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
-     <meta name="theme-color" content="#f8f8d8">
-<meta name="msapplication-navbutton-color" content="#f8f8d8">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f8d8">
+  <meta name="theme-color" content="#5ccbdd">
+  <meta name="msapplication-navbutton-color" content="#5ccbdd">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#5ccbdd">
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/animation.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=David+Libre|Work+Sans:200|Lora:700|Reem+Kufi" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans:200|Lora:700|Reem+Kufi|Kanit:800" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <link type="text/css" href="style/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+  <script type="text/javascript" src="script/jquery.mousewheel.js"></script>
 
+  <script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
+  <script type='text/javascript'>
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+      $(function()
+{
+	$('.scroll-pane').jScrollPane();
+});
+  </script>
 </head>
 
-<body class=" bg-contact">
+<body class="event-details bg-events-details">
 
-
-
+  <div class="se-pre-con">
+    <div aria-busy="true" aria-label="Loading" role="progressbar" class="container">
+      <div class="swing">
+        <div class="swing-l"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="swing-r"></div>
+      </div>
+      <div class="shadow">
+        <div class="shadow-l"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="shadow-r"></div>
+      </div>
+    </div>
+  </div>
+  <a href="events.html">
+    <div id="goback">
+      <div class="triangle "></div>
+      <div class="hover Reem">Go Back to Events</div>
+    </div>
+  </a>
   <div id="menu" class="nav-down">
     <div class="wrapper">
       <a href="index.html">
@@ -43,7 +82,7 @@
       <nav>
 
         <ul class="menu">
-         <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="membership.html">Membership</a></li>
           <li><a href="recruitment.html">Recruitment</a></li>
@@ -57,61 +96,54 @@
   <a class="menu-toggle-secondary">
     <div id="darkness" class="displaynone"></div>
   </a>
-    
-    
-  <div id="content" class="h-center text-align-center">
-      <div class=" nav-spacer"><br><br></div>
-    <div class=" grid contact wrapper">
-        <div class="col-6">        <h1 data-aos="fade-up" data-aos-once="true"> 
-        Let's Get In Touch</h1></div>
-<div class="col-6">
-        <p class="text-align-left Lato antialiased">
-            <br>
-            We want to talk. <br>
-            Use the contact form below or reach us via our email, ilovemeca@gmail.com or our <a href="https://www.facebook.com/profile.php?id=100005695692577&fref=ts">facebook</a>
-    </p>
+  <div id="content" class="h-center text-align-left">
+    <div class="grid wrapper">
+
+      <div class="col-6 side-a no-wrap-mobile">
+
+        <div class="v-center">
+          <div class="float" data-aos="fade-down">
+            <h2>DETAILS</h2>
+          </div>
+          <div id="img" data-aos="fade-up" style="background-image:url(images/takeoff.jpg)">
+          </div>
+
+
         </div>
 
-              <div class="col-12 no" >
-
-          <form action="https://formspree.io/ilovemeca@gmail.com"
-      method="POST">
-              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
-                  <input placeholder="Name" type="text"autocomplete="off"  name="fullname" required >
-              </div>
-              <div id="email" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
-                  <input placeholder="Where can we email you back?" type="email" name="_replyto" autocomplete="off" required>
-              </div>
-              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="400" data-aos-anchor="#email"><textarea placeholder="What's on your mind?" type="text" name="message" autocomplete="off" required ></textarea></div>
-              <div data-aos="zoom-in"><button type="submit" value="Send"> Send</button></div>
-              <input type="hidden" name="_next" value="index.html" />
-              <input type="hidden" name="_format" value="plain" />
-              <input type="text" name="_gotcha" style="display:none" />
-</form>
-
-<br><br><br>
-<br><br><br>
-<br><br><br>
-</div>
+      </div>
+      <div class="col-6 side-b" data-aos="fade-left">
+        <div class="card v-center">
+          <span class="date">Monday August 29th</span>
+          <h1>Montreal Full Moon Thanksgiving</h1>
+          <span class="price">5:30PM at Concordia Field</span>
+          <p>
+            MECA will be celebrating Korean Thanksgiving with various Korean organizations in Montreal to host a dinner, a movie screening and an after party. Tickets will go on sale starting this September.
+            </p>
+          <br>
 
 
-
-
+        </div>
+      </div>
     </div>
-    <div id="footer" class="grid">
+
+
+  </div>
+
+<div id="footer" class="grid">
       <div class="col-12"><img class="object nodrag nocursor" src="images/footer.gif" data-aos="fade-up" data-aos-once="false" data-aos-offset="15"></div>
     </div>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
-    <script>
-      $(window).load(function() {
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+  <script>
+    $(window).load(function() {
   AOS.init({
       duration: 400,
       easing: 'ease-in-sine',
 			});
 });
-    </script>
-         <script>
-          $(".menu-toggle-secondary").bind("click", (function () {
+  </script>
+  <script>
+    $(".menu-toggle-secondary").bind("click", (function () {
 
         $(".menu-toggle").trigger("click");
 
@@ -171,7 +203,9 @@
       
       lastScrollTop = st;
   }
-    </script>
+  </script>
+
+
 </body>
 
 </html>

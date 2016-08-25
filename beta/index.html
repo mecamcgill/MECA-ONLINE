@@ -1,3 +1,11 @@
+<!-- 
+
+Designed and developed by Eric D. Lee
+Animations outsourced from Codepen. 
+Special thanks to Min Kim and the MECA executives :)
+
+Side note: code is messy due to rushed launch. plz dont judge
+!-->
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -11,10 +19,13 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/animation.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=David+Libre|Work+Sans:200|Lora:700|Reem+Kufi|Montserrat+Subrayada:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans:200|Lora:700|Reem+Kufi|Montserrat+Subrayada:700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+          <script src="js/jquery.smoothState.min.js"></script>
+      <script src="js/smoothStateint.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
   <script type='text/javascript'>
     $(window).load(function() {
 		// Animate loader off screen
@@ -23,11 +34,32 @@
   </script>
 </head>
 
-<body>
+<body class="index">
 
 
-  <div class="se-pre-con"></div>
-  <div class=" nav-spacer"></div>
+  <div class="se-pre-con">
+    <div aria-busy="true" aria-label="Loading" role="progressbar" class="container">
+  <div class="swing">
+    <div class="swing-l"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="swing-r"></div>
+  </div>
+  <div class="shadow">
+    <div class="shadow-l"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="shadow-r"></div>
+  </div>
+ </div>
+    </div>
+
   <div id="menu" class="nav-down">
     <div class="wrapper">
       <a href="index.html">
@@ -61,17 +93,16 @@
     <div id="darkness" class="displaynone"></div>
   </a>
   <div id="content" class="h-center text-align-center antialiased">
-    <br>
     <div class="wrapper grid ">
-
       <a href="events.html">
          
         <div id="card1" class="col-12 no gradient1" data-aos="fade-up" data-aos-once="true" >
           <div class="caption "> 
             <img id="o-2" src="css/image1-2.svg" data-aos="fade-right"  alt="Your First Month - View Events"  >
             <img id="o-1" src="css/image1-1.png" data-aos="fade-left"  >
-            <p class="lead" data-aos="fade-up"  >Events every week for the month of September </p>
-            
+            <p class="lead" data-aos="fade-up"  >Events every week for the month of September 
+              
+            </p>
     
           </div>
         </div>
@@ -97,8 +128,9 @@
               <div class="module">
                 <span class="tag" data-aos="flip-up" >Membership</span>
                 <h2 data-aos="fade-up" >BECOME A MEMBER</h2>
-                <p class="lead"data-aos="fade-right" >Recieve Exam care packages. Event discounts.  & Discounts on local businesses. </p>
+                <p class="lead"data-aos="fade-right" >Recieve Exam care packages. Event discounts.  & Discounts on local businesses</p>
               </div>
+
             </div>
           </a>
 
@@ -116,7 +148,7 @@
               <div class="module v-h-center antialiased" >
                 <span class="tag" data-aos="flip-up">Recruitment</span>
                 <h2  id="follow" data-aos="fade-up"  data-aos-offset="30">We Want <br>You On <br>Our Team</h2><br>
-                <p class="lead" data-aos="fade-left" data-aos-anchor="#follow">We are on a lookout for First Year Reps as well as <br class="nomobile">talented designers, communicators, and developers<br class="nomobile"/>&rarr; </p>
+                <p class="lead" data-aos="fade-left" data-aos-anchor="#follow">We are on a lookout for First Year Reps as well as <br class="nomobile">talented designers, communicators, and developers</p>
               </div>
 
               <!--- Animation by cihadturhan, sourced from his CodePen: http://codepen.io/cihadturhan/pen/jwipD !-->
