@@ -1347,7 +1347,7 @@ color: #e69ca4;
 color: #e69ca4
 }
 .membership .padding-top{
-    padding-top: 150px !important;
+    padding-top: 90px !important;
 }
 .membership .o-1{
     position: absolute;
@@ -2119,4 +2119,74 @@ textarea:focus,  textarea:valid{
  -webkit-transform: translateY(-40px);
  transform: translateY(-40px);
  visibility: visible !important;
+}
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+}
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Basic styles for an animated element */
+  /** An element that fades in */
+  /** An element that fades in and slides up */
+  /** An element that fades in and slides from the right */
+}
+.m-scene .scene_element {
+  -webkit-animation-duration: 0.25s !important;
+          animation-duration: 0.25s !important;
+  -webkit-transition-timing-function: ease-in !important;
+          transition-timing-function: ease-in !important;
+  -webkit-animation-fill-mode: both !important;
+          animation-fill-mode: both !important;
+}
+.m-scene .scene_element--fadein {
+  -webkit-animation-name: fadeIn !important;
+          animation-name: fadeIn !important;
+}
+.m-scene .scene_element--fadeinup {
+  -webkit-animation-name: fadeInUp !important;
+          animation-name: fadeInUp !important;
+}
+.m-scene .scene_element--fadeinright {
+  -webkit-animation-name: fadeInRight !important;
+          animation-name: fadeInRight !important;
 }
