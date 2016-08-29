@@ -551,7 +551,7 @@ line-height: 1.2em !important;
   right: 0;
   bottom:0;
   left: 0;
-    width: 70%;
+    width: 45%;
     z-index: 1;
 }
 #card2 #o-2 {
@@ -775,14 +775,13 @@ padding-top: 1vw;
     background-color: #5ccbdd;
 }
 .events h1{
-    text-align: left;
     color: #eb5565;
     font-size: 5em;
     line-height: 1em;
     font-family: 'Kanit', sans-serif;
 }
 .events .lead{
-    text-align: left;
+
 font-size: 1em;
      color: white;
 }
@@ -1208,6 +1207,7 @@ font-size: 2.5em;
 }
     .about .hero {
         padding-top: 120px !important;
+        
     }
     .about p{
         font-size: 1em;
@@ -1234,9 +1234,9 @@ div.item {
         padding: 10px;
 }
 .about h1{
-    padding-top: 50px;
+    padding-top: 0px;
     text-align: center;
-        font-size: 10vw;
+        font-size: 13vw;
     }
     .about .part2 h1{
     font-size: 3em;
@@ -1417,7 +1417,8 @@ font-size:  2.6em;
 .bg-contact p{
     color: #af6349;
     padding-left: 20px;
-    font-size: 1.3em;
+    font-size: 1.6vw;
+    line-height: 1.2em;
 }
 .bg-contact a {
     text-decoration: underline;
@@ -1599,10 +1600,16 @@ width: 100%;
 padding-top: 0;
 }
 .bg-contact h1{
-    font-size: 11.4vw;
+    font-size: 20.4vw;
   padding: 70px 0 0px 0;
     color: #af6349;
     line-height: 1em;
+}
+    .bg-contact p{
+        font-size: 1em;
+    }
+    .bg-contact #content{
+    padding-top: 70px;
 }
 #card1 #o-1 {
     position: absolute;
@@ -1622,7 +1629,7 @@ padding-top: 0;
     position: absolute;
     top: -20px;
 
-    width: 70%;
+    width: 40%;
     z-index: 1;
 }
     #card2 #o-2 {
@@ -1640,7 +1647,7 @@ text-align: center;
   /* For mobile phones: */
     form {
 
-    font-size: 0.9em !important;
+    font-size: 3vw !important;
 
 }
 .events .card{
@@ -1965,15 +1972,41 @@ border: none;
 }
  .bg-events #o-1{
     position: absolute;
-    right:-450px;
-    bottom: -200px;
+    right:0px;
+    bottom: -40px;
     z-index: 1;
-     width: 600px;
+     width: 105%;
     opacity: 0.8;
 }   
 .hero{
-    padding-top: 100px !important;
+    padding-top: 150px !important;
+    height: 100vh!important ;
 }  
+  .mobile-v-h-center {
+  position: absolute;
+  /* must be wrapped in relative parent div*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mobile-v-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.mobile-h-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+    .mobile-text-align-center{
+        text-align: center;
+    }
+    .mobile-text-align-left{
+        text-align: left;
+    }
  .bg-events h1{
     font-size: 14vw;
 }   
