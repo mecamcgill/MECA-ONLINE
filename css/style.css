@@ -1749,6 +1749,9 @@ text-align: center;
     font-size: 3vw !important;
 
 }
+    .hero{
+            transition: height 999999s !important;
+    }
 .events .card{
     padding-top: 120px !important;
     -webkit-filter: grayscale(0%);
