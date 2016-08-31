@@ -2082,6 +2082,9 @@ border: none;
     padding-top: 150px !important;
     height: 100vh!important ;
 }  
+    .bg-mt-details .hero{
+          padding-top: 75px !important;
+    }
   .mobile-v-h-center {
   position: absolute;
   /* must be wrapped in relative parent div*/
