@@ -1379,7 +1379,7 @@ overflow: hidden;
 }
 .membership h1{
     line-height: 1em;
-    color: #daf2f0;
+    color: white;
 font-size:  4.6em;
 
 }
@@ -1481,7 +1481,6 @@ color: #e69ca4
 }
  .membership h1{
     line-height: 1em;
-    color: #daf2f0;
 font-size:  2.6em;
 }
     .membership .btn{
