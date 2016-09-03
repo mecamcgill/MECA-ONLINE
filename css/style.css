@@ -518,7 +518,6 @@ position: relative;
 line-height: 1.2em !important;
   font-size: 1em;
     z-index: 999;
-
 }
 
 #card1 .cta {
@@ -1718,7 +1717,7 @@ padding-top: 0;
     position: absolute;
     right: -50px;
     bottom: -100;
-    width: 50vw;
+    width: 80vw;
     z-index: 1;
     opacity: 0.8;
 }
@@ -1935,21 +1934,21 @@ color: #333;
   }
   #card1 .caption {
     height: 80vw;
-  
+
   }
   #card1 h2 {
       position: relative;
-    font-size: 15vw;
+    font-size: 14vw;
       line-height: 1em;
       padding-top: 10vw;
     padding-bottom: 5vw;
       z-index: 100;
   }
   #card1 .lead {
-    line-height: 2vw;
-    font-size: 1em;
+    line-height: 1em;
+    font-size: 3vw;
       padding-right: 60px;
-      
+
   }
   #card1 .cta {
     font-size: 4vw;
@@ -2003,7 +2002,7 @@ background-color: #d8faff;
   #card3 .lead {
     color: #65726b;
       padding-top: 1em;
-    font-size: 1em;
+    font-size: 3vw;
     letter-spacing: 0.01vw;
     line-height: 4.5vw;
   }
