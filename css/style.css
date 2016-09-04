@@ -737,9 +737,21 @@ padding-top: 1vw;
     text-align: left;
 }
 
-@media only screen and (min-width :1824){
+@media only screen and (min-width :1824px){
     .wrapper{
-            padding: 0 12.5% 0 12.5% !important;
+            padding: 0 15.5% 0 15.5% !important;
+    }
+    #card1 .caption{
+        height: 29em;
+    }
+    #card2 .caption, #card3 .caption{
+        height: 43em;
+    }
+    #card4 .caption{
+        height: 33em;
+    }
+    .hero{
+        height: 650px !important;
     }
 }
 @media only screen and (max-width: 768px) {
