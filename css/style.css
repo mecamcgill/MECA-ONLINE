@@ -447,7 +447,7 @@ background-size: contain;
     overflow: hidden; 
 }
 
-.caption {
+.index .caption {
   position: relative;
   width: 100%;
   -moz-transition: all .1s ease-in;
@@ -1375,15 +1375,19 @@ display: none;
 background-color: #4ecabf;
 padding-top: 150px;
 overflow: hidden;
+    border: 0.1px solid #42cabf;
 }
 .membership .hero2{
 background-color: #f1f26f;
 padding-top: 200px;
 overflow: hidden;
+border: 0.1px solid #f1f26f;
+
 }
 .membership .hero2 h3{
     font-size: 3em;
     line-height: 1em;
+    
 }
 .membership .sub-card .o-5{
     position: absolute;
@@ -1391,6 +1395,7 @@ overflow: hidden;
   transform: translateY(-65%);
     left: -100px;
     width: 120%;
+    
 }
 .membership h1{
     line-height: 1em;
@@ -1416,15 +1421,18 @@ font-size:  4.6em;
     line-height: 1.6em;
         position: relative;
     z-index: 1000;
+    
 }
 .membership .card{
     position: relative;
     padding: 100px 0;
+    
 }
 .membership .sub-card{
     padding-bottom: 100px !important;
 min-height: 300px;
     position: relative;
+    
 }
 .membership .btn{
     padding: 20px 15px;
@@ -1466,7 +1474,7 @@ color: #e69ca4
 }
 .membership .o-1{
     position: absolute;
-    width: 900px;
+    width: 70vw;
     bottom: 50px;
     right:-25vw;
     z-index: 1;
