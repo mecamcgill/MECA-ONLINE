@@ -54,7 +54,6 @@ background-color: #ede9de;
 body {
   line-height: 1.5em;
   font-size: 1em;
-  background-color: #fafaf3;
     color: #333;
 width: 100%;
 overflow-x: hidden !important;
@@ -351,7 +350,6 @@ background-size: contain;
   height: auto;
   width: 100%;
   top: 0px;
-  background-color: #fafaf3;
   z-index: 5;
   position: relative;
   overflow: hidden;
@@ -739,7 +737,7 @@ padding-top: 1vw;
 
 @media only screen and (min-width :1824px){
     .wrapper{
-            padding: 0 14.5% 0 14.5% !important;
+            padding: 0 13.5% 0 13.5% !important;
     }
     #card1 .caption{
         height: 29em;
