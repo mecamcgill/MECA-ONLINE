@@ -455,6 +455,7 @@ background-size: contain;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
 overflow: hidden;
+border: 0.1px solid #ffffff !important;
 }
 
 .caption:hover {
@@ -477,6 +478,7 @@ overflow: hidden;
 #card1 .caption {
   height: 25em;
     background-color: #ff5770;
+    
 }
 #card1 #o-1 {
     position: absolute;
@@ -586,6 +588,7 @@ line-height: 1.2em !important;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    background-color: #d3f5f6;
   background-repeat: no-repeat;
   background-position: bottom left;
   height: 40em;
@@ -652,10 +655,6 @@ padding-top: 1vw;
 
 #card4 .caption {
   background-color: #74acff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 25em;
   color: white;
   overflow: hidden;
