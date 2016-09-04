@@ -242,14 +242,14 @@ h2 {
 #footer {
   position: relative;
   margin-top: 10px;
-  padding: 50px 30px 0px 30px;
+  padding: 50px 30px 10px 30px;
   width: 100%;
   height: 85px;
   color: #333;
   z-index: 1000;
  text-align: center;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.5em;
 
   z-index: -1;
 }
@@ -478,13 +478,13 @@ overflow: hidden;
 
 #card1 .caption {
   height: 25em;
-    background-color: #5ccbdd;
+    background-color: #ff5770;
 }
 #card1 #o-1 {
     position: absolute;
-    right: -20px;
-    bottom: -70px;
-    width: 600px;
+    right: -10px;
+    bottom: -10px;
+    width: 400px;
     z-index: 1;
 }
 #card1 #o-2 {
@@ -500,17 +500,20 @@ overflow: hidden;
 }
 
 #card1 h2 {
-  font-size: 5.6vw;
-  color: firebrick;
-    line-height: 5vw;
+  font-size: 5.3em;
+  color: white;
+    line-height: 0.9em;
+    padding-top: 5%;
+    padding-left: 40px;
 position: relative;
+    font-family: 'Kanit', sans-serif
 }
 
 #card1 .lead {
     position: absolute;
     text-align: left;
     bottom: 40px;
-    left: 30px;
+   padding-left: 40px;
   color: white;
 line-height: 1.2em !important;
   font-size: 1em;
@@ -734,7 +737,21 @@ padding-top: 1vw;
     text-align: left;
 }
 
+@media only screen and (min-width :1824px){
+    .wrapper{
+            padding: 0 14.5% 0 14.5% !important;
+    }
+    #card1 .caption{
+        height: 29em;
+    }
+    #card2 .caption, #card3 .caption{
+        height: 43em;
+    }
+    #card4 .caption{
+        height: 33em;
+    }
 
+}
 @media only screen and (max-width: 768px) {
         .right-mobile, .left-mobile{
         text-align: center;     
@@ -997,8 +1014,8 @@ width: 100%;
        background-color: #a7eff8; 
 }
 .bg-mt-details .hero{
-    height: 100vh;
-
+min-height: 100vh;
+padding-bottom: 50px !important;
 }
 .bg-mt-details .card{
     text-align: center
@@ -1379,7 +1396,7 @@ overflow: hidden;
 }
 .membership h1{
     line-height: 1em;
-    color: #daf2f0;
+    color: white;
 font-size:  4.6em;
 
 }
@@ -1481,7 +1498,6 @@ color: #e69ca4
 }
  .membership h1{
     line-height: 1em;
-    color: #daf2f0;
 font-size:  2.6em;
 }
     .membership .btn{
@@ -1713,12 +1729,13 @@ padding-top: 0;
 }
 #card1 #o-1 {
     position: absolute;
-    left: 50%;
+    right: -50px;
     bottom: -100;
-    width: 150vw;
+    width: 80vw;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 0.5;
 }
+
 #card1 #o-2 {
     position: absolute;
     left: 0;
@@ -1750,6 +1767,9 @@ text-align: center;
     font-size: 3vw !important;
 
 }
+    .hero{
+            transition: height 999999s !important;
+    }
 .events .card{
     padding-top: 120px !important;
     -webkit-filter: grayscale(0%);
@@ -1928,17 +1948,21 @@ color: #333;
   }
   #card1 .caption {
     height: 80vw;
-  
+
   }
   #card1 h2 {
-    font-size: 2.3em;
-    padding-bottom: 7vw;
+      position: relative;
+    font-size: 14vw;
+      line-height: 1em;
+      padding-top: 10vw;
+    padding-bottom: 5vw;
+      z-index: 100;
   }
   #card1 .lead {
-    line-height: 2vw;
-    font-size: 0.9em;
+    line-height: 1em;
+    font-size: 3vw;
       padding-right: 60px;
-      
+
   }
   #card1 .cta {
     font-size: 4vw;
@@ -1992,7 +2016,7 @@ background-color: #d8faff;
   #card3 .lead {
     color: #65726b;
       padding-top: 1em;
-    font-size: 1em;
+    font-size: 3vw;
     letter-spacing: 0.01vw;
     line-height: 4.5vw;
   }
