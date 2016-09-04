@@ -1474,15 +1474,14 @@ color: #e69ca4
 }
 .membership .o-1{
     position: absolute;
-    width: 70vw;
-    bottom: 50px;
+    bottom: 70px;
     right:-25vw;
     z-index: 1;
 }
 .membership .o-2{
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     right: 0px;
 }
 .membership .o-3{
@@ -1518,7 +1517,7 @@ font-size:  2.6em;
     .membership .o-4{
 display: inline;
         position: absolute;
-        bottom: 80px;
+        top: 10px;
         width: 100%;
     }
     .membership .o-5{
