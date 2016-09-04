@@ -1475,7 +1475,8 @@ color: #e69ca4
 .membership .o-1{
     position: absolute;
     bottom: 70px;
-    right:-25vw;
+    right:-200px;
+    width: 850px;
     z-index: 1;
 }
 .membership .o-2{
