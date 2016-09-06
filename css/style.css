@@ -46,10 +46,10 @@ background-color: #ede9de;
 }
 
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+  background: #da8bfb; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+  background: #da8bfb; /* Gecko Browsers */
 }
 body {
   line-height: 1.5em;
@@ -57,7 +57,7 @@ body {
     color: #333;
 width: 100%;
 overflow-x: hidden !important;
-
+background-color: #edf0e9
 }
 a{
 text-decoration: none;
@@ -455,7 +455,7 @@ background-size: contain;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
 overflow: hidden;
-border: 0.1px solid #ffffff !important;
+border: 0.1px solid #edf0e9 !important;
 }
 
 .caption:hover {
@@ -621,21 +621,22 @@ padding-top: 1vw;
 }
 
 #card5 .caption {
-  background-image: url(image5.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  height: 19vw;
+background-color: #c2fff7;
+  min-height: 8em;
+    color: white;
+    padding: 0 45px;
 }
-
+#card5 .alert{
+    width: 100%;
+    min-height: 10px;
+    background-color: #97f2e6;
+}
 #card5 h2 {
-  font-size: 3.5vw;
-  letter-spacing: -0.2vw;
-  color: #65726b;
- 
+padding-top: 30px;
+  font-size: 1.1em;
+    line-height: 1em;
+color: #ff5770;
+
 }
 
 #card5 .lead {
@@ -1237,6 +1238,7 @@ width: 100%;
 }
 .bg-about #content{
     background-color:#fafaf3;
+    border: 0.1px solid #edf0e9 !important;
 }
 .about .grid .wrapper{
     padding-top: 100px;
