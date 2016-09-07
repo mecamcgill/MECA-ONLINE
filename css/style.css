@@ -619,16 +619,7 @@ line-height: 1.2em !important;
   font-size: 1em;
         padding: 10px 45px;
 }
-#card2 #o-1 {
-    position: absolute;
-    margin: auto;
-  top: -10px;
-  right: 0;
-  bottom:0;
-  left: 0;
-    width: 45%;
-    z-index: 1;
-}
+
 
 #card2 .btn {
   margin-top: 1.3vw;
@@ -810,6 +801,14 @@ padding-top: 1vw;
     #card4 .caption{
         height: 33em;
     }
+    #card2 .o-1{
+    position: absolute;
+    bottom:-60%;
+    -webkit-animation:spin 36s linear infinite;
+    -moz-animation:spin 36s linear infinite;
+    animation:spin 36s linear infinite;
+    width: 100%;
+}
 
 }
 @media only screen and (max-width: 768px) {
