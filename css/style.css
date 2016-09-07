@@ -809,6 +809,9 @@ padding-top: 1vw;
     animation:spin 36s linear infinite;
     width: 100%;
 }
+    #card2 h2{
+        font-size: 10vw;
+    }
 
 }
 @media only screen and (max-width: 768px) {
