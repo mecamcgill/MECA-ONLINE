@@ -2064,8 +2064,8 @@ color: #333;
 }
   #card2 .lead {
 
-    line-height: 1em;
-    font-size: 1.1em;
+    line-height: 1.5em;
+    font-size: 0.9em;
        position: relative;
       z-index: 100;
   }
