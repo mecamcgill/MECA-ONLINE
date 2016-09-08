@@ -544,10 +544,11 @@ line-height: 1.2em !important;
 #card2 .o-1{
     position: absolute;
     top:55%;
+    left: -5%;
     -webkit-animation:spin 46s linear infinite;
     -moz-animation:spin 46s linear infinite;
     animation:spin 46s linear infinite;
-    width: 100%;
+    width: 110%;
     z-index: 5;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -638,26 +639,26 @@ line-height: 1.2em !important;
 }
 
 #card3 .caption {
-  background-image: url(image3.jpg);
+  background-image: url(cards.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    background-color: #d3f5f6;
+    background-color: #9ae9f1;
   background-repeat: no-repeat;
   background-position: bottom left;
   height: 40em;
 }
 
 #card3 h2 {
-  font-size: 3.5vw;
+  font-size: 5.5vw;
   letter-spacing: -0.2vw;
-  color: #65726b;
+  color: whitesmoke;
  
 }
 
 #card3 .lead {
-  color: #65726b;
+  color: whitesmoke;
   font-size: 1.25vw;
   letter-spacing: 0.01vw;
 padding-top: 1vw;    
@@ -2061,11 +2062,8 @@ color: #333;
   }
     #card2 .o-1 {
     position: absolute;
+top:65%;
 
-  bottom:-75%;
-  left: 0;
-    width: 100%;
-    z-index: 1;
 }
   #card2 .lead {
     line-height: 1.5em;
@@ -2084,26 +2082,20 @@ color: #333;
     bottom: 0;
   }
   #card3 .caption {
-    background-image: url(image3.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
     height: 95vw;
   }
   #card3 h2 {
     font-size: 8.5vw;
     letter-spacing: -0.2vw;
-    color: #65726b;
-   
-    line-height: 8vw;
+  
   }
   #card3 .lead {
-    color: #65726b;
+    
       padding-top: 1em;
     font-size: 3vw;
     letter-spacing: 0.01vw;
-    line-height: 4.5vw;
+    line-height: 1.5em;
   }
   /*Card4 Styling*/
   #card4 .caption {
