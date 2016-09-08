@@ -484,7 +484,8 @@ border: 0.1px solid #edf0e9 !important;
     position: absolute;
     right: -10px;
     bottom: -10px;
-    width: 400px;
+    
+    height: 140%;
     z-index: 1;
 }
 #card1 #o-2 {
@@ -542,7 +543,7 @@ line-height: 1.2em !important;
 }
 #card2 .o-1{
     position: absolute;
-    bottom:-50%;
+    top:55%;
     -webkit-animation:spin 46s linear infinite;
     -moz-animation:spin 46s linear infinite;
     animation:spin 46s linear infinite;
