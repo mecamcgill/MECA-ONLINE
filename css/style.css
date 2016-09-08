@@ -477,15 +477,17 @@ border: 0.1px solid #edf0e9 !important;
 
 #card1 .caption {
   height: 25em;
-    background-color: #ff5770;
+    background-color: #50e2f0;
     
 }
 #card1 #o-1 {
     position: absolute;
     right: -10px;
     bottom: -10px;
-    
-    height: 140%;
+     -webkit-filter: drop-shadow(5px 5px 15px #2b5c79);
+  filter: drop-shadow(5px 5px 15px #2b5c79);
+    opacity: 0.95;
+    height: 100%;
     z-index: 1;
 }
 #card1 #o-2 {
@@ -550,6 +552,8 @@ line-height: 1.2em !important;
     animation:spin 46s linear infinite;
     width: 110%;
     z-index: 5;
+         -webkit-filter: drop-shadow(5px 5px 20px #f5f3d6);
+  filter: drop-shadow(5px 5px 20px #f5f3d6);
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -644,7 +648,7 @@ line-height: 1.2em !important;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    background-color: #9ae9f1;
+    background-color: #8febf4;
   background-repeat: no-repeat;
   background-position: bottom left;
   height: 40em;
@@ -653,12 +657,12 @@ line-height: 1.2em !important;
 #card3 h2 {
   font-size: 5.5vw;
   letter-spacing: -0.2vw;
-  color: whitesmoke;
+  color: white;
  
 }
 
 #card3 .lead {
-  color: whitesmoke;
+  color: white;
   font-size: 1.25vw;
   letter-spacing: 0.01vw;
 padding-top: 1vw;    
@@ -1888,8 +1892,8 @@ display: none;
   #menu {
     position: fixed;
     z-index: 100;
-      top: 0;
-      height: 60px;
+      top: -40px;
+      height: 70px;
       margin-top: 0;
   padding-top: 0px;
      background-color: inherit;
@@ -2067,7 +2071,7 @@ top:65%;
 }
   #card2 .lead {
     line-height: 1.5em;
-    font-size: 0.9em;
+    font-size: 3vw;
        position: relative;
       z-index: 100;
   }
@@ -2086,16 +2090,16 @@ top:65%;
     height: 95vw;
   }
   #card3 h2 {
-    font-size: 8.5vw;
+    font-size: 10.5vw;
     letter-spacing: -0.2vw;
   
   }
   #card3 .lead {
     
-      padding-top: 1em;
+      padding-top: 1.5em;
     font-size: 3vw;
     letter-spacing: 0.01vw;
-    line-height: 1.5em;
+    line-height: 1.3em;
   }
   /*Card4 Styling*/
   #card4 .caption {
