@@ -477,15 +477,15 @@ border: 0.1px solid #edf0e9 !important;
 
 #card1 .caption {
   height: 25em;
-    background-color: #50e2f0;
+    background-color: #ff7885;
     
 }
 #card1 #o-1 {
     position: absolute;
     right: -10px;
     bottom: -10px;
-     -webkit-filter: drop-shadow(5px 5px 15px #2b5c79);
-  filter: drop-shadow(5px 5px 15px #2b5c79);
+     -webkit-filter: drop-shadow(5px 5px 15px #9c4c54);
+  filter: drop-shadow(5px 5px 15px #9c4c54);
     opacity: 0.95;
     height: 100%;
     z-index: 1;
