@@ -615,7 +615,7 @@ line-height: 1.2em !important;
 }
 
 #card2 h2 {
-  font-size: 4.8vw;
+  font-size: 5vw;
     line-height: 0.9em;
   letter-spacing: 0.01vw;
   color: #fdffd0;
@@ -624,8 +624,9 @@ line-height: 1.2em !important;
 
 #card2 .lead {
   color: #fdffd0;
-  font-size: 1em;
+  font-size: 0.9em;
         padding: 10px 45px;
+    z-index: 1000;
 }
 
 
@@ -655,7 +656,8 @@ line-height: 1.2em !important;
 }
 
 #card3 h2 {
-  font-size: 5.5vw;
+  font-size: 5.2vw;
+    line-height: 1em;
   letter-spacing: -0.2vw;
   color: white;
  
